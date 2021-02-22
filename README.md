@@ -5,7 +5,7 @@
 ##Resuldados 
 
 1.Captura de pantalla de la ortofoto generada
-! [Imagen](https://cdn.discordapp.com/attachments/501881994469441543/813250420831027220/Captura_ortofoto.png) 
+!(https://ibb.co/Q9qcDHG) 
 
 
 
