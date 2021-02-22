@@ -5,7 +5,7 @@
 ##Resuldados 
 
 1.Captura de pantalla de la ortofoto generada
-!(https://ibb.co/Q9qcDHG) 
+!![Captura Ortofoto](https://ibb.co/Q9qcDHG) 
 
 
 
