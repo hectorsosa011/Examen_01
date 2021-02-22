@@ -5,9 +5,16 @@
 ##Resuldados 
 
 1.Captura de pantalla de la ortofoto generada
-!![Captura Ortofoto](https://cdn.discordapp.com/attachments/501881994469441543/813250376190918727/Captura_D3.png) 
+![Captura Ortofoto](https://cdn.discordapp.com/attachments/501881994469441543/813250376190918727/Captura_D3.png) 
 
+2.Captura de pantalla del DSM generado.
+![Captura DSM](https://cdn.discordapp.com/attachments/501881994469441543/813250398033805332/Captura_DSM.png)
 
+3.	Captura de pantalla del DTM generado.
+![Captura DTM](https://cdn.discordapp.com/attachments/501881994469441543/813250408436858902/Captura_DTM.png)
+
+4.	Captura de pantalla del modelo 3D generado.
+![Captura 3D](https://cdn.discordapp.com/attachments/501881994469441543/813250376190918727/Captura_D3.png)
 
 ----------------------------------
 
