@@ -1,0 +1,2849 @@
+[INFO]    DTM is turned on, automatically turning on point cloud classification
+[INFO]    Initializing ODM - Sun Feb 21 21:42:07  2021
+[INFO]    ==============
+[INFO]    build_overviews: False
+[INFO]    camera_lens: auto
+[INFO]    cameras: {}
+[INFO]    crop: 3
+[INFO]    debug: False
+[INFO]    dem_decimation: 1
+[INFO]    dem_euclidean_map: False
+[INFO]    dem_gapfill_steps: 3
+[INFO]    dem_resolution: 3.0
+[INFO]    depthmap_resolution: 640
+[INFO]    dsm: True
+[INFO]    dtm: True
+[INFO]    end_with: odm_report
+[INFO]    fast_orthophoto: False
+[INFO]    feature_quality: high
+[INFO]    feature_type: sift
+[INFO]    force_gps: False
+[INFO]    gcp: None
+[INFO]    geo: None
+[INFO]    gps_accuracy: 10
+[INFO]    ignore_gsd: False
+[INFO]    matcher_distance: 0
+[INFO]    matcher_neighbors: 8
+[INFO]    matcher_type: flann
+[INFO]    max_concurrency: 1
+[INFO]    merge: all
+[INFO]    mesh_octree_depth: 11
+[INFO]    mesh_size: 200000
+[INFO]    min_num_features: 8000
+[INFO]    name: c7462e02-82ff-440d-b11d-3d46906415e5
+[INFO]    optimize_disk_space: False
+[INFO]    orthophoto_compression: DEFLATE
+[INFO]    orthophoto_cutline: False
+[INFO]    orthophoto_no_tiled: False
+[INFO]    orthophoto_png: False
+[INFO]    orthophoto_resolution: 4.0
+[INFO]    pc_classify: True
+[INFO]    pc_csv: False
+[INFO]    pc_ept: False
+[INFO]    pc_filter: 2.5
+[INFO]    pc_las: False
+[INFO]    pc_quality: medium
+[INFO]    pc_rectify: False
+[INFO]    pc_sample: 0
+[INFO]    primary_band: auto
+[INFO]    project_path: /var/www/data
+[INFO]    radiometric_calibration: none
+[INFO]    rerun: None
+[INFO]    rerun_all: False
+[INFO]    rerun_from: None
+[INFO]    resize_to: 2048
+[INFO]    skip_3dmodel: False
+[INFO]    skip_band_alignment: False
+[INFO]    skip_report: False
+[INFO]    sm_cluster: None
+[INFO]    smrf_scalar: 1.25
+[INFO]    smrf_slope: 0.15
+[INFO]    smrf_threshold: 0.5
+[INFO]    smrf_window: 18.0
+[INFO]    split: 999999
+[INFO]    split_image_groups: None
+[INFO]    split_overlap: 150
+[INFO]    texturing_data_term: gmi
+[INFO]    texturing_outlier_removal_type: gauss_clamping
+[INFO]    texturing_skip_global_seam_leveling: False
+[INFO]    texturing_skip_local_seam_leveling: False
+[INFO]    texturing_tone_mapping: none
+[INFO]    tiles: False
+[INFO]    time: False
+[INFO]    use_3dmesh: False
+[INFO]    use_exif: False
+[INFO]    use_fixed_camera_params: False
+[INFO]    use_hybrid_bundle_adjustment: False
+[INFO]    verbose: False
+[INFO]    ==============
+[INFO]    Running dataset stage
+[INFO]    Loading dataset from: /var/www/data/c7462e02-82ff-440d-b11d-3d46906415e5/images
+[INFO]    Loading 40 images
+[INFO]    Wrote images database: /var/www/data/c7462e02-82ff-440d-b11d-3d46906415e5/images.json
+[INFO]    Found 40 usable images
+[INFO]    Parsing SRS header: WGS84 UTM 16N
+[INFO]    Finished dataset stage
+[INFO]    Running split stage
+[INFO]    Normal dataset, will process all at once.
+[INFO]    Finished split stage
+[INFO]    Running merge stage
+[INFO]    Normal dataset, nothing to merge.
+[INFO]    Finished merge stage
+[INFO]    Running opensfm stage
+[INFO]    Writing exif overrides
+[INFO]    Maximum photo dimensions: 2048px
+[INFO]    Altitude data detected, enabling it for GPS alignment
+[INFO]    ['use_exif_size: no', 'flann_algorithm: KDTREE', 'feature_process_size: 1024', 'feature_min_frames: 8000', 'processes: 1', 'matching_gps_neighbors: 8', 'matching_gps_distance: 0', 'optimize_camera_parameters: yes', 'undistorted_image_format: tif', 'bundle_outlier_filtering_type: AUTO', 'align_orientation_prior: vertical', 'triangulation_type: ROBUST', 'retriangulation_ratio: 2', 'feature_type: SIFT', 'use_altitude_tag: yes', 'align_method: auto', 'local_bundle_radius: 0']
+[INFO]    running /code/SuperBuild/src/opensfm/bin/opensfm extract_metadata "/var/www/data/c7462e02-82ff-440d-b11d-3d46906415e5/opensfm"
+2021-02-21 21:42:08,686 INFO: Extracting EXIF for DJI_0032.JPG
+2021-02-21 21:42:08,735 INFO: Extracting EXIF for DJI_0036.JPG
+2021-02-21 21:42:08,787 INFO: Extracting EXIF for DJI_0060.JPG
+2021-02-21 21:42:08,832 INFO: Extracting EXIF for DJI_0039.JPG
+2021-02-21 21:42:08,884 INFO: Extracting EXIF for DJI_0030.JPG
+2021-02-21 21:42:08,926 INFO: Extracting EXIF for DJI_0056.JPG
+2021-02-21 21:42:08,969 INFO: Extracting EXIF for DJI_0042.JPG
+2021-02-21 21:42:09,018 INFO: Extracting EXIF for DJI_0052.JPG
+2021-02-21 21:42:09,058 INFO: Extracting EXIF for DJI_0057.JPG
+2021-02-21 21:42:09,100 INFO: Extracting EXIF for DJI_0061.JPG
+2021-02-21 21:42:09,139 INFO: Extracting EXIF for DJI_0044.JPG
+2021-02-21 21:42:09,182 INFO: Extracting EXIF for DJI_0034.JPG
+2021-02-21 21:42:09,228 INFO: Extracting EXIF for DJI_0050.JPG
+2021-02-21 21:42:09,292 INFO: Extracting EXIF for DJI_0049.JPG
+2021-02-21 21:42:09,373 INFO: Extracting EXIF for DJI_0026.JPG
+2021-02-21 21:42:09,480 INFO: Extracting EXIF for DJI_0062.JPG
+2021-02-21 21:42:09,576 INFO: Extracting EXIF for DJI_0054.JPG
+2021-02-21 21:42:09,616 INFO: Extracting EXIF for DJI_0024.JPG
+2021-02-21 21:42:09,656 INFO: Extracting EXIF for DJI_0031.JPG
+2021-02-21 21:42:09,700 INFO: Extracting EXIF for DJI_0047.JPG
+2021-02-21 21:42:09,745 INFO: Extracting EXIF for DJI_0045.JPG
+2021-02-21 21:42:09,791 INFO: Extracting EXIF for DJI_0053.JPG
+2021-02-21 21:42:09,849 INFO: Extracting EXIF for DJI_0029.JPG
+2021-02-21 21:42:09,891 INFO: Extracting EXIF for DJI_0027.JPG
+2021-02-21 21:42:09,935 INFO: Extracting EXIF for DJI_0063.JPG
+2021-02-21 21:42:09,977 INFO: Extracting EXIF for DJI_0055.JPG
+2021-02-21 21:42:10,018 INFO: Extracting EXIF for DJI_0035.JPG
+2021-02-21 21:42:10,058 INFO: Extracting EXIF for DJI_0025.JPG
+2021-02-21 21:42:10,108 INFO: Extracting EXIF for DJI_0037.JPG
+2021-02-21 21:42:10,152 INFO: Extracting EXIF for DJI_0040.JPG
+2021-02-21 21:42:10,192 INFO: Extracting EXIF for DJI_0033.JPG
+2021-02-21 21:42:10,231 INFO: Extracting EXIF for DJI_0058.JPG
+2021-02-21 21:42:10,270 INFO: Extracting EXIF for DJI_0046.JPG
+2021-02-21 21:42:10,316 INFO: Extracting EXIF for DJI_0051.JPG
+2021-02-21 21:42:10,356 INFO: Extracting EXIF for DJI_0043.JPG
+2021-02-21 21:42:10,397 INFO: Extracting EXIF for DJI_0048.JPG
+2021-02-21 21:42:10,438 INFO: Extracting EXIF for DJI_0038.JPG
+2021-02-21 21:42:10,480 INFO: Extracting EXIF for DJI_0059.JPG
+2021-02-21 21:42:10,519 INFO: Extracting EXIF for DJI_0028.JPG
+2021-02-21 21:42:10,560 INFO: Extracting EXIF for DJI_0041.JPG
+[INFO]    running /code/SuperBuild/src/opensfm/bin/opensfm detect_features "/var/www/data/c7462e02-82ff-440d-b11d-3d46906415e5/opensfm"
+2021-02-21 21:42:11,814 INFO: Extracting ROOT_SIFT features for image DJI_0032.JPG
+2021-02-21 21:42:11,901 DEBUG: Computing sift with threshold 0.1
+2021-02-21 21:42:12,264 DEBUG: Found 303 points in 0.3622758388519287s
+2021-02-21 21:42:12,264 DEBUG: reducing threshold
+2021-02-21 21:42:12,264 DEBUG: Computing sift with threshold 0.06666666666666667
+2021-02-21 21:42:12,481 DEBUG: Found 660 points in 0.2168741226196289s
+2021-02-21 21:42:12,482 DEBUG: reducing threshold
+2021-02-21 21:42:12,482 DEBUG: Computing sift with threshold 0.044444444444444446
+2021-02-21 21:42:12,722 DEBUG: Found 1377 points in 0.24008822441101074s
+2021-02-21 21:42:12,722 DEBUG: reducing threshold
+2021-02-21 21:42:12,723 DEBUG: Computing sift with threshold 0.02962962962962963
+2021-02-21 21:42:12,974 DEBUG: Found 3752 points in 0.2515418529510498s
+2021-02-21 21:42:12,974 DEBUG: reducing threshold
+2021-02-21 21:42:12,975 DEBUG: Computing sift with threshold 0.019753086419753086
+2021-02-21 21:42:13,329 DEBUG: Found 7993 points in 0.35411787033081055s
+2021-02-21 21:42:13,329 DEBUG: reducing threshold
+2021-02-21 21:42:13,329 DEBUG: Computing sift with threshold 0.01316872427983539
+2021-02-21 21:42:13,755 DEBUG: Found 11829 points in 0.4250633716583252s
+2021-02-21 21:42:13,755 DEBUG: done
+2021-02-21 21:42:14,717 DEBUG: No segmentation for DJI_0032.JPG, no features masked.
+2021-02-21 21:42:15,099 INFO: Extracting ROOT_SIFT features for image DJI_0036.JPG
+2021-02-21 21:42:15,197 DEBUG: Computing sift with threshold 0.1
+2021-02-21 21:42:15,393 DEBUG: Found 252 points in 0.19577264785766602s
+2021-02-21 21:42:15,394 DEBUG: reducing threshold
+2021-02-21 21:42:15,394 DEBUG: Computing sift with threshold 0.06666666666666667
+2021-02-21 21:42:15,605 DEBUG: Found 767 points in 0.211195707321167s
+2021-02-21 21:42:15,605 DEBUG: reducing threshold
+2021-02-21 21:42:15,605 DEBUG: Computing sift with threshold 0.044444444444444446
+2021-02-21 21:42:15,877 DEBUG: Found 1908 points in 0.27165770530700684s
+2021-02-21 21:42:15,878 DEBUG: reducing threshold
+2021-02-21 21:42:15,878 DEBUG: Computing sift with threshold 0.02962962962962963
+2021-02-21 21:42:16,223 DEBUG: Found 5199 points in 0.34450721740722656s
+2021-02-21 21:42:16,223 DEBUG: reducing threshold
+2021-02-21 21:42:16,223 DEBUG: Computing sift with threshold 0.019753086419753086
+2021-02-21 21:42:16,579 DEBUG: Found 9888 points in 0.35578250885009766s
+2021-02-21 21:42:16,579 DEBUG: done
+2021-02-21 21:42:17,231 DEBUG: No segmentation for DJI_0036.JPG, no features masked.
+2021-02-21 21:42:17,498 INFO: Extracting ROOT_SIFT features for image DJI_0060.JPG
+2021-02-21 21:42:17,569 DEBUG: Computing sift with threshold 0.1
+2021-02-21 21:42:17,783 DEBUG: Found 465 points in 0.21349644660949707s
+2021-02-21 21:42:17,783 DEBUG: reducing threshold
+2021-02-21 21:42:17,783 DEBUG: Computing sift with threshold 0.06666666666666667
+2021-02-21 21:42:17,997 DEBUG: Found 1010 points in 0.2132866382598877s
+2021-02-21 21:42:17,997 DEBUG: reducing threshold
+2021-02-21 21:42:17,997 DEBUG: Computing sift with threshold 0.044444444444444446
+2021-02-21 21:42:18,243 DEBUG: Found 1810 points in 0.24538540840148926s
+2021-02-21 21:42:18,243 DEBUG: reducing threshold
+2021-02-21 21:42:18,243 DEBUG: Computing sift with threshold 0.02962962962962963
+2021-02-21 21:42:18,537 DEBUG: Found 3355 points in 0.2935292720794678s
+2021-02-21 21:42:18,537 DEBUG: reducing threshold
+2021-02-21 21:42:18,537 DEBUG: Computing sift with threshold 0.019753086419753086
+2021-02-21 21:42:18,924 DEBUG: Found 6774 points in 0.38684749603271484s
+2021-02-21 21:42:18,925 DEBUG: reducing threshold
+2021-02-21 21:42:18,925 DEBUG: Computing sift with threshold 0.01316872427983539
+2021-02-21 21:42:19,410 DEBUG: Found 9871 points in 0.48485374450683594s
+2021-02-21 21:42:19,410 DEBUG: done
+2021-02-21 21:42:20,135 DEBUG: No segmentation for DJI_0060.JPG, no features masked.
+2021-02-21 21:42:20,403 INFO: Extracting ROOT_SIFT features for image DJI_0039.JPG
+2021-02-21 21:42:20,485 DEBUG: Computing sift with threshold 0.1
+2021-02-21 21:42:20,687 DEBUG: Found 328 points in 0.20211338996887207s
+2021-02-21 21:42:20,688 DEBUG: reducing threshold
+2021-02-21 21:42:20,688 DEBUG: Computing sift with threshold 0.06666666666666667
+2021-02-21 21:42:20,971 DEBUG: Found 1059 points in 0.28284573554992676s
+2021-02-21 21:42:20,971 DEBUG: reducing threshold
+2021-02-21 21:42:20,971 DEBUG: Computing sift with threshold 0.044444444444444446
+2021-02-21 21:42:21,279 DEBUG: Found 2686 points in 0.3073146343231201s
+2021-02-21 21:42:21,279 DEBUG: reducing threshold
+2021-02-21 21:42:21,279 DEBUG: Computing sift with threshold 0.02962962962962963
+2021-02-21 21:42:21,577 DEBUG: Found 6180 points in 0.29770588874816895s
+2021-02-21 21:42:21,578 DEBUG: reducing threshold
+2021-02-21 21:42:21,578 DEBUG: Computing sift with threshold 0.019753086419753086
+2021-02-21 21:42:21,955 DEBUG: Found 10605 points in 0.37764477729797363s
+2021-02-21 21:42:21,956 DEBUG: done
+2021-02-21 21:42:22,627 DEBUG: No segmentation for DJI_0039.JPG, no features masked.
+2021-02-21 21:42:22,938 INFO: Extracting ROOT_SIFT features for image DJI_0030.JPG
+2021-02-21 21:42:23,024 DEBUG: Computing sift with threshold 0.1
+2021-02-21 21:42:23,276 DEBUG: Found 307 points in 0.25073981285095215s
+2021-02-21 21:42:23,276 DEBUG: reducing threshold
+2021-02-21 21:42:23,276 DEBUG: Computing sift with threshold 0.06666666666666667
+2021-02-21 21:42:23,500 DEBUG: Found 570 points in 0.2238316535949707s
+2021-02-21 21:42:23,500 DEBUG: reducing threshold
+2021-02-21 21:42:23,500 DEBUG: Computing sift with threshold 0.044444444444444446
+2021-02-21 21:42:23,747 DEBUG: Found 1225 points in 0.24640369415283203s
+2021-02-21 21:42:23,747 DEBUG: reducing threshold
+2021-02-21 21:42:23,747 DEBUG: Computing sift with threshold 0.02962962962962963
+2021-02-21 21:42:24,002 DEBUG: Found 2871 points in 0.25496888160705566s
+2021-02-21 21:42:24,003 DEBUG: reducing threshold
+2021-02-21 21:42:24,003 DEBUG: Computing sift with threshold 0.019753086419753086
+2021-02-21 21:42:24,406 DEBUG: Found 5943 points in 0.40268564224243164s
+2021-02-21 21:42:24,406 DEBUG: reducing threshold
+2021-02-21 21:42:24,406 DEBUG: Computing sift with threshold 0.01316872427983539
+2021-02-21 21:42:24,828 DEBUG: Found 9306 points in 0.42145586013793945s
+2021-02-21 21:42:24,828 DEBUG: done
+2021-02-21 21:42:25,431 DEBUG: No segmentation for DJI_0030.JPG, no features masked.
+2021-02-21 21:42:25,677 INFO: Extracting ROOT_SIFT features for image DJI_0056.JPG
+2021-02-21 21:42:25,749 DEBUG: Computing sift with threshold 0.1
+2021-02-21 21:42:25,953 DEBUG: Found 361 points in 0.20419549942016602s
+2021-02-21 21:42:25,954 DEBUG: reducing threshold
+2021-02-21 21:42:25,954 DEBUG: Computing sift with threshold 0.06666666666666667
+2021-02-21 21:42:26,188 DEBUG: Found 1160 points in 0.2345409393310547s
+2021-02-21 21:42:26,189 DEBUG: reducing threshold
+2021-02-21 21:42:26,189 DEBUG: Computing sift with threshold 0.044444444444444446
+2021-02-21 21:42:26,448 DEBUG: Found 2332 points in 0.25949740409851074s
+2021-02-21 21:42:26,449 DEBUG: reducing threshold
+2021-02-21 21:42:26,449 DEBUG: Computing sift with threshold 0.02962962962962963
+2021-02-21 21:42:26,731 DEBUG: Found 3689 points in 0.28189659118652344s
+2021-02-21 21:42:26,731 DEBUG: reducing threshold
+2021-02-21 21:42:26,731 DEBUG: Computing sift with threshold 0.019753086419753086
+2021-02-21 21:42:27,190 DEBUG: Found 6911 points in 0.4585723876953125s
+2021-02-21 21:42:27,190 DEBUG: reducing threshold
+2021-02-21 21:42:27,190 DEBUG: Computing sift with threshold 0.01316872427983539
+2021-02-21 21:42:27,566 DEBUG: Found 9116 points in 0.37579774856567383s
+2021-02-21 21:42:27,567 DEBUG: done
+2021-02-21 21:42:28,172 DEBUG: No segmentation for DJI_0056.JPG, no features masked.
+2021-02-21 21:42:28,408 INFO: Extracting ROOT_SIFT features for image DJI_0042.JPG
+2021-02-21 21:42:28,490 DEBUG: Computing sift with threshold 0.1
+2021-02-21 21:42:28,698 DEBUG: Found 318 points in 0.20804762840270996s
+2021-02-21 21:42:28,698 DEBUG: reducing threshold
+2021-02-21 21:42:28,699 DEBUG: Computing sift with threshold 0.06666666666666667
+2021-02-21 21:42:28,915 DEBUG: Found 862 points in 0.21654844284057617s
+2021-02-21 21:42:28,916 DEBUG: reducing threshold
+2021-02-21 21:42:28,916 DEBUG: Computing sift with threshold 0.044444444444444446
+2021-02-21 21:42:29,166 DEBUG: Found 1751 points in 0.24979782104492188s
+2021-02-21 21:42:29,166 DEBUG: reducing threshold
+2021-02-21 21:42:29,166 DEBUG: Computing sift with threshold 0.02962962962962963
+2021-02-21 21:42:29,640 DEBUG: Found 4172 points in 0.4732949733734131s
+2021-02-21 21:42:29,640 DEBUG: reducing threshold
+2021-02-21 21:42:29,640 DEBUG: Computing sift with threshold 0.019753086419753086
+2021-02-21 21:42:30,032 DEBUG: Found 8783 points in 0.3921661376953125s
+2021-02-21 21:42:30,033 DEBUG: done
+2021-02-21 21:42:30,608 DEBUG: No segmentation for DJI_0042.JPG, no features masked.
+2021-02-21 21:42:30,836 INFO: Extracting ROOT_SIFT features for image DJI_0052.JPG
+2021-02-21 21:42:30,909 DEBUG: Computing sift with threshold 0.1
+2021-02-21 21:42:31,117 DEBUG: Found 281 points in 0.20752239227294922s
+2021-02-21 21:42:31,123 DEBUG: reducing threshold
+2021-02-21 21:42:31,123 DEBUG: Computing sift with threshold 0.06666666666666667
+2021-02-21 21:42:31,348 DEBUG: Found 732 points in 0.22470331192016602s
+2021-02-21 21:42:31,348 DEBUG: reducing threshold
+2021-02-21 21:42:31,348 DEBUG: Computing sift with threshold 0.044444444444444446
+2021-02-21 21:42:31,592 DEBUG: Found 1450 points in 0.2434980869293213s
+2021-02-21 21:42:31,592 DEBUG: reducing threshold
+2021-02-21 21:42:31,592 DEBUG: Computing sift with threshold 0.02962962962962963
+2021-02-21 21:42:31,854 DEBUG: Found 3640 points in 0.26143336296081543s
+2021-02-21 21:42:31,854 DEBUG: reducing threshold
+2021-02-21 21:42:31,855 DEBUG: Computing sift with threshold 0.019753086419753086
+2021-02-21 21:42:32,203 DEBUG: Found 7798 points in 0.34871387481689453s
+2021-02-21 21:42:32,204 DEBUG: reducing threshold
+2021-02-21 21:42:32,204 DEBUG: Computing sift with threshold 0.01316872427983539
+2021-02-21 21:42:32,582 DEBUG: Found 11254 points in 0.3783266544342041s
+2021-02-21 21:42:32,583 DEBUG: done
+2021-02-21 21:42:33,274 DEBUG: No segmentation for DJI_0052.JPG, no features masked.
+2021-02-21 21:42:33,569 INFO: Extracting ROOT_SIFT features for image DJI_0057.JPG
+2021-02-21 21:42:33,641 DEBUG: Computing sift with threshold 0.1
+2021-02-21 21:42:33,844 DEBUG: Found 310 points in 0.2034308910369873s
+2021-02-21 21:42:33,845 DEBUG: reducing threshold
+2021-02-21 21:42:33,845 DEBUG: Computing sift with threshold 0.06666666666666667
+2021-02-21 21:42:34,108 DEBUG: Found 947 points in 0.2634875774383545s
+2021-02-21 21:42:34,109 DEBUG: reducing threshold
+2021-02-21 21:42:34,109 DEBUG: Computing sift with threshold 0.044444444444444446
+2021-02-21 21:42:34,540 DEBUG: Found 1920 points in 0.43062829971313477s
+2021-02-21 21:42:34,540 DEBUG: reducing threshold
+2021-02-21 21:42:34,540 DEBUG: Computing sift with threshold 0.02962962962962963
+2021-02-21 21:42:34,820 DEBUG: Found 3206 points in 0.2792625427246094s
+2021-02-21 21:42:34,820 DEBUG: reducing threshold
+2021-02-21 21:42:34,820 DEBUG: Computing sift with threshold 0.019753086419753086
+2021-02-21 21:42:35,195 DEBUG: Found 6628 points in 0.3744044303894043s
+2021-02-21 21:42:35,195 DEBUG: reducing threshold
+2021-02-21 21:42:35,195 DEBUG: Computing sift with threshold 0.01316872427983539
+2021-02-21 21:42:35,564 DEBUG: Found 9354 points in 0.36884355545043945s
+2021-02-21 21:42:35,565 DEBUG: done
+2021-02-21 21:42:36,307 DEBUG: No segmentation for DJI_0057.JPG, no features masked.
+2021-02-21 21:42:36,572 INFO: Extracting ROOT_SIFT features for image DJI_0061.JPG
+2021-02-21 21:42:36,643 DEBUG: Computing sift with threshold 0.1
+2021-02-21 21:42:36,841 DEBUG: Found 469 points in 0.19765853881835938s
+2021-02-21 21:42:36,841 DEBUG: reducing threshold
+2021-02-21 21:42:36,841 DEBUG: Computing sift with threshold 0.06666666666666667
+2021-02-21 21:42:37,100 DEBUG: Found 958 points in 0.258176326751709s
+2021-02-21 21:42:37,100 DEBUG: reducing threshold
+2021-02-21 21:42:37,100 DEBUG: Computing sift with threshold 0.044444444444444446
+2021-02-21 21:42:37,345 DEBUG: Found 1781 points in 0.2448873519897461s
+2021-02-21 21:42:37,346 DEBUG: reducing threshold
+2021-02-21 21:42:37,346 DEBUG: Computing sift with threshold 0.02962962962962963
+2021-02-21 21:42:37,614 DEBUG: Found 3664 points in 0.26764655113220215s
+2021-02-21 21:42:37,614 DEBUG: reducing threshold
+2021-02-21 21:42:37,614 DEBUG: Computing sift with threshold 0.019753086419753086
+2021-02-21 21:42:37,963 DEBUG: Found 7276 points in 0.3491199016571045s
+2021-02-21 21:42:37,964 DEBUG: reducing threshold
+2021-02-21 21:42:37,964 DEBUG: Computing sift with threshold 0.01316872427983539
+2021-02-21 21:42:38,345 DEBUG: Found 10432 points in 0.38054776191711426s
+2021-02-21 21:42:38,345 DEBUG: done
+2021-02-21 21:42:39,038 DEBUG: No segmentation for DJI_0061.JPG, no features masked.
+2021-02-21 21:42:39,451 INFO: Extracting ROOT_SIFT features for image DJI_0044.JPG
+2021-02-21 21:42:39,575 DEBUG: Computing sift with threshold 0.1
+2021-02-21 21:42:39,789 DEBUG: Found 304 points in 0.21380996704101562s
+2021-02-21 21:42:39,790 DEBUG: reducing threshold
+2021-02-21 21:42:39,790 DEBUG: Computing sift with threshold 0.06666666666666667
+2021-02-21 21:42:40,056 DEBUG: Found 732 points in 0.2650928497314453s
+2021-02-21 21:42:40,056 DEBUG: reducing threshold
+2021-02-21 21:42:40,056 DEBUG: Computing sift with threshold 0.044444444444444446
+2021-02-21 21:42:40,316 DEBUG: Found 1398 points in 0.2597389221191406s
+2021-02-21 21:42:40,316 DEBUG: reducing threshold
+2021-02-21 21:42:40,317 DEBUG: Computing sift with threshold 0.02962962962962963
+2021-02-21 21:42:40,612 DEBUG: Found 3510 points in 0.2949979305267334s
+2021-02-21 21:42:40,613 DEBUG: reducing threshold
+2021-02-21 21:42:40,613 DEBUG: Computing sift with threshold 0.019753086419753086
+2021-02-21 21:42:41,064 DEBUG: Found 7828 points in 0.4507882595062256s
+2021-02-21 21:42:41,064 DEBUG: reducing threshold
+2021-02-21 21:42:41,064 DEBUG: Computing sift with threshold 0.01316872427983539
+2021-02-21 21:42:41,454 DEBUG: Found 10982 points in 0.389204740524292s
+2021-02-21 21:42:41,454 DEBUG: done
+2021-02-21 21:42:42,161 DEBUG: No segmentation for DJI_0044.JPG, no features masked.
+2021-02-21 21:42:42,533 INFO: Extracting ROOT_SIFT features for image DJI_0034.JPG
+2021-02-21 21:42:42,606 DEBUG: Computing sift with threshold 0.1
+2021-02-21 21:42:42,858 DEBUG: Found 276 points in 0.2517566680908203s
+2021-02-21 21:42:42,859 DEBUG: reducing threshold
+2021-02-21 21:42:42,859 DEBUG: Computing sift with threshold 0.06666666666666667
+2021-02-21 21:42:43,246 DEBUG: Found 615 points in 0.3870837688446045s
+2021-02-21 21:42:43,246 DEBUG: reducing threshold
+2021-02-21 21:42:43,246 DEBUG: Computing sift with threshold 0.044444444444444446
+2021-02-21 21:42:43,549 DEBUG: Found 1266 points in 0.30249857902526855s
+2021-02-21 21:42:43,549 DEBUG: reducing threshold
+2021-02-21 21:42:43,549 DEBUG: Computing sift with threshold 0.02962962962962963
+2021-02-21 21:42:43,882 DEBUG: Found 3556 points in 0.33261895179748535s
+2021-02-21 21:42:43,883 DEBUG: reducing threshold
+2021-02-21 21:42:43,883 DEBUG: Computing sift with threshold 0.019753086419753086
+2021-02-21 21:42:44,292 DEBUG: Found 7603 points in 0.4083278179168701s
+2021-02-21 21:42:44,302 DEBUG: reducing threshold
+2021-02-21 21:42:44,302 DEBUG: Computing sift with threshold 0.01316872427983539
+2021-02-21 21:42:44,918 DEBUG: Found 11015 points in 0.6165447235107422s
+2021-02-21 21:42:44,919 DEBUG: done
+2021-02-21 21:42:45,815 DEBUG: No segmentation for DJI_0034.JPG, no features masked.
+2021-02-21 21:42:46,123 INFO: Extracting ROOT_SIFT features for image DJI_0050.JPG
+2021-02-21 21:42:46,195 DEBUG: Computing sift with threshold 0.1
+2021-02-21 21:42:46,408 DEBUG: Found 237 points in 0.21200942993164062s
+2021-02-21 21:42:46,408 DEBUG: reducing threshold
+2021-02-21 21:42:46,408 DEBUG: Computing sift with threshold 0.06666666666666667
+2021-02-21 21:42:46,640 DEBUG: Found 540 points in 0.23209857940673828s
+2021-02-21 21:42:46,640 DEBUG: reducing threshold
+2021-02-21 21:42:46,641 DEBUG: Computing sift with threshold 0.044444444444444446
+2021-02-21 21:42:46,902 DEBUG: Found 1162 points in 0.2615041732788086s
+2021-02-21 21:42:46,902 DEBUG: reducing threshold
+2021-02-21 21:42:46,903 DEBUG: Computing sift with threshold 0.02962962962962963
+2021-02-21 21:42:47,207 DEBUG: Found 3535 points in 0.3047313690185547s
+2021-02-21 21:42:47,208 DEBUG: reducing threshold
+2021-02-21 21:42:47,208 DEBUG: Computing sift with threshold 0.019753086419753086
+2021-02-21 21:42:47,559 DEBUG: Found 7906 points in 0.35079264640808105s
+2021-02-21 21:42:47,559 DEBUG: reducing threshold
+2021-02-21 21:42:47,559 DEBUG: Computing sift with threshold 0.01316872427983539
+2021-02-21 21:42:47,950 DEBUG: Found 11376 points in 0.39098596572875977s
+2021-02-21 21:42:47,951 DEBUG: done
+2021-02-21 21:42:48,712 DEBUG: No segmentation for DJI_0050.JPG, no features masked.
+2021-02-21 21:42:49,019 INFO: Extracting ROOT_SIFT features for image DJI_0049.JPG
+2021-02-21 21:42:49,100 DEBUG: Computing sift with threshold 0.1
+2021-02-21 21:42:49,352 DEBUG: Found 86 points in 0.25212550163269043s
+2021-02-21 21:42:49,354 DEBUG: reducing threshold
+2021-02-21 21:42:49,357 DEBUG: Computing sift with threshold 0.06666666666666667
+2021-02-21 21:42:49,684 DEBUG: Found 220 points in 0.3259718418121338s
+2021-02-21 21:42:49,684 DEBUG: reducing threshold
+2021-02-21 21:42:49,684 DEBUG: Computing sift with threshold 0.044444444444444446
+2021-02-21 21:42:49,930 DEBUG: Found 740 points in 0.24600982666015625s
+2021-02-21 21:42:49,931 DEBUG: reducing threshold
+2021-02-21 21:42:49,931 DEBUG: Computing sift with threshold 0.02962962962962963
+2021-02-21 21:42:50,203 DEBUG: Found 3096 points in 0.27201271057128906s
+2021-02-21 21:42:50,203 DEBUG: reducing threshold
+2021-02-21 21:42:50,203 DEBUG: Computing sift with threshold 0.019753086419753086
+2021-02-21 21:42:50,555 DEBUG: Found 7479 points in 0.3515636920928955s
+2021-02-21 21:42:50,555 DEBUG: reducing threshold
+2021-02-21 21:42:50,556 DEBUG: Computing sift with threshold 0.01316872427983539
+2021-02-21 21:42:50,939 DEBUG: Found 10937 points in 0.38356471061706543s
+2021-02-21 21:42:50,940 DEBUG: done
+2021-02-21 21:42:51,673 DEBUG: No segmentation for DJI_0049.JPG, no features masked.
+2021-02-21 21:42:51,973 INFO: Extracting ROOT_SIFT features for image DJI_0026.JPG
+2021-02-21 21:42:52,047 DEBUG: Computing sift with threshold 0.1
+2021-02-21 21:42:52,255 DEBUG: Found 384 points in 0.20767474174499512s
+2021-02-21 21:42:52,255 DEBUG: reducing threshold
+2021-02-21 21:42:52,256 DEBUG: Computing sift with threshold 0.06666666666666667
+2021-02-21 21:42:52,494 DEBUG: Found 1107 points in 0.23806118965148926s
+2021-02-21 21:42:52,494 DEBUG: reducing threshold
+2021-02-21 21:42:52,494 DEBUG: Computing sift with threshold 0.044444444444444446
+2021-02-21 21:42:52,770 DEBUG: Found 2640 points in 0.27489447593688965s
+2021-02-21 21:42:52,770 DEBUG: reducing threshold
+2021-02-21 21:42:52,770 DEBUG: Computing sift with threshold 0.02962962962962963
+2021-02-21 21:42:53,100 DEBUG: Found 6523 points in 0.33019518852233887s
+2021-02-21 21:42:53,101 DEBUG: reducing threshold
+2021-02-21 21:42:53,101 DEBUG: Computing sift with threshold 0.019753086419753086
+2021-02-21 21:42:53,521 DEBUG: Found 11175 points in 0.41959285736083984s
+2021-02-21 21:42:53,521 DEBUG: done
+2021-02-21 21:42:54,416 DEBUG: No segmentation for DJI_0026.JPG, no features masked.
+2021-02-21 21:42:54,812 INFO: Extracting ROOT_SIFT features for image DJI_0062.JPG
+2021-02-21 21:42:54,884 DEBUG: Computing sift with threshold 0.1
+2021-02-21 21:42:55,103 DEBUG: Found 427 points in 0.21862030029296875s
+2021-02-21 21:42:55,103 DEBUG: reducing threshold
+2021-02-21 21:42:55,103 DEBUG: Computing sift with threshold 0.06666666666666667
+2021-02-21 21:42:55,378 DEBUG: Found 843 points in 0.2744269371032715s
+2021-02-21 21:42:55,379 DEBUG: reducing threshold
+2021-02-21 21:42:55,379 DEBUG: Computing sift with threshold 0.044444444444444446
+2021-02-21 21:42:55,639 DEBUG: Found 1601 points in 0.2598907947540283s
+2021-02-21 21:42:55,640 DEBUG: reducing threshold
+2021-02-21 21:42:55,640 DEBUG: Computing sift with threshold 0.02962962962962963
+2021-02-21 21:42:55,918 DEBUG: Found 3542 points in 0.27784156799316406s
+2021-02-21 21:42:55,918 DEBUG: reducing threshold
+2021-02-21 21:42:55,918 DEBUG: Computing sift with threshold 0.019753086419753086
+2021-02-21 21:42:56,262 DEBUG: Found 7248 points in 0.34325718879699707s
+2021-02-21 21:42:56,262 DEBUG: reducing threshold
+2021-02-21 21:42:56,262 DEBUG: Computing sift with threshold 0.01316872427983539
+2021-02-21 21:42:56,640 DEBUG: Found 10468 points in 0.37769579887390137s
+2021-02-21 21:42:56,640 DEBUG: done
+2021-02-21 21:42:57,400 DEBUG: No segmentation for DJI_0062.JPG, no features masked.
+2021-02-21 21:42:57,690 INFO: Extracting ROOT_SIFT features for image DJI_0054.JPG
+2021-02-21 21:42:57,772 DEBUG: Computing sift with threshold 0.1
+2021-02-21 21:42:58,018 DEBUG: Found 362 points in 0.24562644958496094s
+2021-02-21 21:42:58,018 DEBUG: reducing threshold
+2021-02-21 21:42:58,018 DEBUG: Computing sift with threshold 0.06666666666666667
+2021-02-21 21:42:58,275 DEBUG: Found 1012 points in 0.25673413276672363s
+2021-02-21 21:42:58,275 DEBUG: reducing threshold
+2021-02-21 21:42:58,275 DEBUG: Computing sift with threshold 0.044444444444444446
+2021-02-21 21:42:58,558 DEBUG: Found 1927 points in 0.28256797790527344s
+2021-02-21 21:42:58,558 DEBUG: reducing threshold
+2021-02-21 21:42:58,559 DEBUG: Computing sift with threshold 0.02962962962962963
+2021-02-21 21:42:58,834 DEBUG: Found 3746 points in 0.27503180503845215s
+2021-02-21 21:42:58,834 DEBUG: reducing threshold
+2021-02-21 21:42:58,834 DEBUG: Computing sift with threshold 0.019753086419753086
+2021-02-21 21:42:59,228 DEBUG: Found 8294 points in 0.3934056758880615s
+2021-02-21 21:42:59,228 DEBUG: done
+2021-02-21 21:42:59,946 DEBUG: No segmentation for DJI_0054.JPG, no features masked.
+2021-02-21 21:43:00,170 INFO: Extracting ROOT_SIFT features for image DJI_0024.JPG
+2021-02-21 21:43:00,242 DEBUG: Computing sift with threshold 0.1
+2021-02-21 21:43:00,455 DEBUG: Found 468 points in 0.21280217170715332s
+2021-02-21 21:43:00,455 DEBUG: reducing threshold
+2021-02-21 21:43:00,456 DEBUG: Computing sift with threshold 0.06666666666666667
+2021-02-21 21:43:00,690 DEBUG: Found 1156 points in 0.23398447036743164s
+2021-02-21 21:43:00,690 DEBUG: reducing threshold
+2021-02-21 21:43:00,690 DEBUG: Computing sift with threshold 0.044444444444444446
+2021-02-21 21:43:00,976 DEBUG: Found 2662 points in 0.28546619415283203s
+2021-02-21 21:43:00,976 DEBUG: reducing threshold
+2021-02-21 21:43:00,976 DEBUG: Computing sift with threshold 0.02962962962962963
+2021-02-21 21:43:01,280 DEBUG: Found 6234 points in 0.3041229248046875s
+2021-02-21 21:43:01,281 DEBUG: reducing threshold
+2021-02-21 21:43:01,281 DEBUG: Computing sift with threshold 0.019753086419753086
+2021-02-21 21:43:01,661 DEBUG: Found 11008 points in 0.38004612922668457s
+2021-02-21 21:43:01,662 DEBUG: done
+2021-02-21 21:43:02,378 DEBUG: No segmentation for DJI_0024.JPG, no features masked.
+2021-02-21 21:43:02,688 INFO: Extracting ROOT_SIFT features for image DJI_0031.JPG
+2021-02-21 21:43:02,763 DEBUG: Computing sift with threshold 0.1
+2021-02-21 21:43:02,983 DEBUG: Found 310 points in 0.21955037117004395s
+2021-02-21 21:43:02,983 DEBUG: reducing threshold
+2021-02-21 21:43:02,983 DEBUG: Computing sift with threshold 0.06666666666666667
+2021-02-21 21:43:03,239 DEBUG: Found 580 points in 0.2558321952819824s
+2021-02-21 21:43:03,240 DEBUG: reducing threshold
+2021-02-21 21:43:03,240 DEBUG: Computing sift with threshold 0.044444444444444446
+2021-02-21 21:43:03,492 DEBUG: Found 1100 points in 0.25117063522338867s
+2021-02-21 21:43:03,492 DEBUG: reducing threshold
+2021-02-21 21:43:03,492 DEBUG: Computing sift with threshold 0.02962962962962963
+2021-02-21 21:43:03,756 DEBUG: Found 2468 points in 0.2639200687408447s
+2021-02-21 21:43:03,756 DEBUG: reducing threshold
+2021-02-21 21:43:03,756 DEBUG: Computing sift with threshold 0.019753086419753086
+2021-02-21 21:43:04,174 DEBUG: Found 5606 points in 0.41727137565612793s
+2021-02-21 21:43:04,174 DEBUG: reducing threshold
+2021-02-21 21:43:04,174 DEBUG: Computing sift with threshold 0.01316872427983539
+2021-02-21 21:43:04,745 DEBUG: Found 8875 points in 0.5709688663482666s
+2021-02-21 21:43:04,746 DEBUG: done
+2021-02-21 21:43:05,375 DEBUG: No segmentation for DJI_0031.JPG, no features masked.
+2021-02-21 21:43:05,622 INFO: Extracting ROOT_SIFT features for image DJI_0047.JPG
+2021-02-21 21:43:05,695 DEBUG: Computing sift with threshold 0.1
+2021-02-21 21:43:05,902 DEBUG: Found 107 points in 0.2069377899169922s
+2021-02-21 21:43:05,902 DEBUG: reducing threshold
+2021-02-21 21:43:05,903 DEBUG: Computing sift with threshold 0.06666666666666667
+2021-02-21 21:43:06,152 DEBUG: Found 279 points in 0.2492995262145996s
+2021-02-21 21:43:06,152 DEBUG: reducing threshold
+2021-02-21 21:43:06,152 DEBUG: Computing sift with threshold 0.044444444444444446
+2021-02-21 21:43:06,517 DEBUG: Found 990 points in 0.36494898796081543s
+2021-02-21 21:43:06,518 DEBUG: reducing threshold
+2021-02-21 21:43:06,518 DEBUG: Computing sift with threshold 0.02962962962962963
+2021-02-21 21:43:06,855 DEBUG: Found 3699 points in 0.33692002296447754s
+2021-02-21 21:43:06,855 DEBUG: reducing threshold
+2021-02-21 21:43:06,856 DEBUG: Computing sift with threshold 0.019753086419753086
+2021-02-21 21:43:07,309 DEBUG: Found 7995 points in 0.45340991020202637s
+2021-02-21 21:43:07,309 DEBUG: reducing threshold
+2021-02-21 21:43:07,310 DEBUG: Computing sift with threshold 0.01316872427983539
+2021-02-21 21:43:07,770 DEBUG: Found 11049 points in 0.4597616195678711s
+2021-02-21 21:43:07,770 DEBUG: done
+2021-02-21 21:43:08,547 DEBUG: No segmentation for DJI_0047.JPG, no features masked.
+2021-02-21 21:43:08,873 INFO: Extracting ROOT_SIFT features for image DJI_0045.JPG
+2021-02-21 21:43:08,955 DEBUG: Computing sift with threshold 0.1
+2021-02-21 21:43:09,203 DEBUG: Found 253 points in 0.24791502952575684s
+2021-02-21 21:43:09,204 DEBUG: reducing threshold
+2021-02-21 21:43:09,204 DEBUG: Computing sift with threshold 0.06666666666666667
+2021-02-21 21:43:09,596 DEBUG: Found 588 points in 0.392531156539917s
+2021-02-21 21:43:09,597 DEBUG: reducing threshold
+2021-02-21 21:43:09,597 DEBUG: Computing sift with threshold 0.044444444444444446
+2021-02-21 21:43:09,888 DEBUG: Found 1124 points in 0.29027748107910156s
+2021-02-21 21:43:09,888 DEBUG: reducing threshold
+2021-02-21 21:43:09,888 DEBUG: Computing sift with threshold 0.02962962962962963
+2021-02-21 21:43:10,195 DEBUG: Found 3230 points in 0.30640459060668945s
+2021-02-21 21:43:10,195 DEBUG: reducing threshold
+2021-02-21 21:43:10,195 DEBUG: Computing sift with threshold 0.019753086419753086
+2021-02-21 21:43:10,562 DEBUG: Found 7318 points in 0.3668100833892822s
+2021-02-21 21:43:10,562 DEBUG: reducing threshold
+2021-02-21 21:43:10,563 DEBUG: Computing sift with threshold 0.01316872427983539
+2021-02-21 21:43:10,941 DEBUG: Found 10635 points in 0.37825870513916016s
+2021-02-21 21:43:10,941 DEBUG: done
+2021-02-21 21:43:11,671 DEBUG: No segmentation for DJI_0045.JPG, no features masked.
+2021-02-21 21:43:11,962 INFO: Extracting ROOT_SIFT features for image DJI_0053.JPG
+2021-02-21 21:43:12,039 DEBUG: Computing sift with threshold 0.1
+2021-02-21 21:43:12,252 DEBUG: Found 347 points in 0.21274542808532715s
+2021-02-21 21:43:12,252 DEBUG: reducing threshold
+2021-02-21 21:43:12,253 DEBUG: Computing sift with threshold 0.06666666666666667
+2021-02-21 21:43:12,492 DEBUG: Found 910 points in 0.2395327091217041s
+2021-02-21 21:43:12,493 DEBUG: reducing threshold
+2021-02-21 21:43:12,493 DEBUG: Computing sift with threshold 0.044444444444444446
+2021-02-21 21:43:12,761 DEBUG: Found 1680 points in 0.2676236629486084s
+2021-02-21 21:43:12,761 DEBUG: reducing threshold
+2021-02-21 21:43:12,761 DEBUG: Computing sift with threshold 0.02962962962962963
+2021-02-21 21:43:13,052 DEBUG: Found 3712 points in 0.291184663772583s
+2021-02-21 21:43:13,053 DEBUG: reducing threshold
+2021-02-21 21:43:13,054 DEBUG: Computing sift with threshold 0.019753086419753086
+2021-02-21 21:43:13,437 DEBUG: Found 8089 points in 0.38286566734313965s
+2021-02-21 21:43:13,437 DEBUG: done
+2021-02-21 21:43:14,004 DEBUG: No segmentation for DJI_0053.JPG, no features masked.
+2021-02-21 21:43:14,230 INFO: Extracting ROOT_SIFT features for image DJI_0029.JPG
+2021-02-21 21:43:14,361 DEBUG: Computing sift with threshold 0.1
+2021-02-21 21:43:14,722 DEBUG: Found 231 points in 0.35663890838623047s
+2021-02-21 21:43:14,723 DEBUG: reducing threshold
+2021-02-21 21:43:14,723 DEBUG: Computing sift with threshold 0.06666666666666667
+2021-02-21 21:43:14,966 DEBUG: Found 584 points in 0.24259042739868164s
+2021-02-21 21:43:14,966 DEBUG: reducing threshold
+2021-02-21 21:43:14,966 DEBUG: Computing sift with threshold 0.044444444444444446
+2021-02-21 21:43:15,263 DEBUG: Found 1262 points in 0.29677438735961914s
+2021-02-21 21:43:15,263 DEBUG: reducing threshold
+2021-02-21 21:43:15,263 DEBUG: Computing sift with threshold 0.02962962962962963
+2021-02-21 21:43:15,554 DEBUG: Found 3307 points in 0.2907702922821045s
+2021-02-21 21:43:15,555 DEBUG: reducing threshold
+2021-02-21 21:43:15,555 DEBUG: Computing sift with threshold 0.019753086419753086
+2021-02-21 21:43:15,941 DEBUG: Found 7094 points in 0.38564252853393555s
+2021-02-21 21:43:15,951 DEBUG: reducing threshold
+2021-02-21 21:43:15,951 DEBUG: Computing sift with threshold 0.01316872427983539
+2021-02-21 21:43:16,365 DEBUG: Found 10406 points in 0.41376304626464844s
+2021-02-21 21:43:16,366 DEBUG: done
+2021-02-21 21:43:17,086 DEBUG: No segmentation for DJI_0029.JPG, no features masked.
+2021-02-21 21:43:17,377 INFO: Extracting ROOT_SIFT features for image DJI_0027.JPG
+2021-02-21 21:43:17,459 DEBUG: Computing sift with threshold 0.1
+2021-02-21 21:43:17,678 DEBUG: Found 385 points in 0.2184760570526123s
+2021-02-21 21:43:17,678 DEBUG: reducing threshold
+2021-02-21 21:43:17,679 DEBUG: Computing sift with threshold 0.06666666666666667
+2021-02-21 21:43:17,923 DEBUG: Found 1032 points in 0.24395346641540527s
+2021-02-21 21:43:17,923 DEBUG: reducing threshold
+2021-02-21 21:43:17,924 DEBUG: Computing sift with threshold 0.044444444444444446
+2021-02-21 21:43:18,201 DEBUG: Found 2308 points in 0.2774770259857178s
+2021-02-21 21:43:18,202 DEBUG: reducing threshold
+2021-02-21 21:43:18,202 DEBUG: Computing sift with threshold 0.02962962962962963
+2021-02-21 21:43:18,512 DEBUG: Found 5900 points in 0.30980706214904785s
+2021-02-21 21:43:18,512 DEBUG: reducing threshold
+2021-02-21 21:43:18,512 DEBUG: Computing sift with threshold 0.019753086419753086
+2021-02-21 21:43:18,908 DEBUG: Found 10431 points in 0.3954486846923828s
+2021-02-21 21:43:18,908 DEBUG: done
+2021-02-21 21:43:19,799 DEBUG: No segmentation for DJI_0027.JPG, no features masked.
+2021-02-21 21:43:20,093 INFO: Extracting ROOT_SIFT features for image DJI_0063.JPG
+2021-02-21 21:43:20,167 DEBUG: Computing sift with threshold 0.1
+2021-02-21 21:43:20,374 DEBUG: Found 439 points in 0.20630931854248047s
+2021-02-21 21:43:20,374 DEBUG: reducing threshold
+2021-02-21 21:43:20,374 DEBUG: Computing sift with threshold 0.06666666666666667
+2021-02-21 21:43:20,617 DEBUG: Found 849 points in 0.24314475059509277s
+2021-02-21 21:43:20,618 DEBUG: reducing threshold
+2021-02-21 21:43:20,618 DEBUG: Computing sift with threshold 0.044444444444444446
+2021-02-21 21:43:20,889 DEBUG: Found 1562 points in 0.27123570442199707s
+2021-02-21 21:43:20,889 DEBUG: reducing threshold
+2021-02-21 21:43:20,890 DEBUG: Computing sift with threshold 0.02962962962962963
+2021-02-21 21:43:21,171 DEBUG: Found 3277 points in 0.2815556526184082s
+2021-02-21 21:43:21,172 DEBUG: reducing threshold
+2021-02-21 21:43:21,172 DEBUG: Computing sift with threshold 0.019753086419753086
+2021-02-21 21:43:21,537 DEBUG: Found 6618 points in 0.36467576026916504s
+2021-02-21 21:43:21,537 DEBUG: reducing threshold
+2021-02-21 21:43:21,537 DEBUG: Computing sift with threshold 0.01316872427983539
+2021-02-21 21:43:21,928 DEBUG: Found 9567 points in 0.39037251472473145s
+2021-02-21 21:43:21,928 DEBUG: done
+2021-02-21 21:43:22,608 DEBUG: No segmentation for DJI_0063.JPG, no features masked.
+2021-02-21 21:43:22,868 INFO: Extracting ROOT_SIFT features for image DJI_0055.JPG
+2021-02-21 21:43:22,944 DEBUG: Computing sift with threshold 0.1
+2021-02-21 21:43:23,202 DEBUG: Found 426 points in 0.2574284076690674s
+2021-02-21 21:43:23,202 DEBUG: reducing threshold
+2021-02-21 21:43:23,202 DEBUG: Computing sift with threshold 0.06666666666666667
+2021-02-21 21:43:23,458 DEBUG: Found 1223 points in 0.25571107864379883s
+2021-02-21 21:43:23,458 DEBUG: reducing threshold
+2021-02-21 21:43:23,458 DEBUG: Computing sift with threshold 0.044444444444444446
+2021-02-21 21:43:23,736 DEBUG: Found 2325 points in 0.27756714820861816s
+2021-02-21 21:43:23,736 DEBUG: reducing threshold
+2021-02-21 21:43:23,737 DEBUG: Computing sift with threshold 0.02962962962962963
+2021-02-21 21:43:24,031 DEBUG: Found 3919 points in 0.29413342475891113s
+2021-02-21 21:43:24,031 DEBUG: reducing threshold
+2021-02-21 21:43:24,031 DEBUG: Computing sift with threshold 0.019753086419753086
+2021-02-21 21:43:24,574 DEBUG: Found 7858 points in 0.5423707962036133s
+2021-02-21 21:43:24,574 DEBUG: reducing threshold
+2021-02-21 21:43:24,574 DEBUG: Computing sift with threshold 0.01316872427983539
+2021-02-21 21:43:24,982 DEBUG: Found 10724 points in 0.40769100189208984s
+2021-02-21 21:43:24,982 DEBUG: done
+2021-02-21 21:43:25,681 DEBUG: No segmentation for DJI_0055.JPG, no features masked.
+2021-02-21 21:43:25,985 INFO: Extracting ROOT_SIFT features for image DJI_0035.JPG
+2021-02-21 21:43:26,061 DEBUG: Computing sift with threshold 0.1
+2021-02-21 21:43:26,270 DEBUG: Found 262 points in 0.20938634872436523s
+2021-02-21 21:43:26,271 DEBUG: reducing threshold
+2021-02-21 21:43:26,271 DEBUG: Computing sift with threshold 0.06666666666666667
+2021-02-21 21:43:26,524 DEBUG: Found 621 points in 0.2528645992279053s
+2021-02-21 21:43:26,524 DEBUG: reducing threshold
+2021-02-21 21:43:26,524 DEBUG: Computing sift with threshold 0.044444444444444446
+2021-02-21 21:43:26,797 DEBUG: Found 1307 points in 0.27191758155822754s
+2021-02-21 21:43:26,797 DEBUG: reducing threshold
+2021-02-21 21:43:26,797 DEBUG: Computing sift with threshold 0.02962962962962963
+2021-02-21 21:43:27,087 DEBUG: Found 3812 points in 0.28969836235046387s
+2021-02-21 21:43:27,087 DEBUG: reducing threshold
+2021-02-21 21:43:27,087 DEBUG: Computing sift with threshold 0.019753086419753086
+2021-02-21 21:43:27,513 DEBUG: Found 8466 points in 0.425675630569458s
+2021-02-21 21:43:27,514 DEBUG: done
+2021-02-21 21:43:28,142 DEBUG: No segmentation for DJI_0035.JPG, no features masked.
+2021-02-21 21:43:28,377 INFO: Extracting ROOT_SIFT features for image DJI_0025.JPG
+2021-02-21 21:43:28,456 DEBUG: Computing sift with threshold 0.1
+2021-02-21 21:43:28,702 DEBUG: Found 405 points in 0.24611616134643555s
+2021-02-21 21:43:28,703 DEBUG: reducing threshold
+2021-02-21 21:43:28,703 DEBUG: Computing sift with threshold 0.06666666666666667
+2021-02-21 21:43:28,966 DEBUG: Found 1170 points in 0.26221728324890137s
+2021-02-21 21:43:28,966 DEBUG: reducing threshold
+2021-02-21 21:43:28,966 DEBUG: Computing sift with threshold 0.044444444444444446
+2021-02-21 21:43:29,261 DEBUG: Found 2738 points in 0.2942662239074707s
+2021-02-21 21:43:29,261 DEBUG: reducing threshold
+2021-02-21 21:43:29,261 DEBUG: Computing sift with threshold 0.02962962962962963
+2021-02-21 21:43:29,787 DEBUG: Found 6464 points in 0.5259392261505127s
+2021-02-21 21:43:29,787 DEBUG: reducing threshold
+2021-02-21 21:43:29,788 DEBUG: Computing sift with threshold 0.019753086419753086
+2021-02-21 21:43:30,303 DEBUG: Found 11188 points in 0.5154509544372559s
+2021-02-21 21:43:30,303 DEBUG: done
+2021-02-21 21:43:31,061 DEBUG: No segmentation for DJI_0025.JPG, no features masked.
+2021-02-21 21:43:31,394 INFO: Extracting ROOT_SIFT features for image DJI_0037.JPG
+2021-02-21 21:43:31,484 DEBUG: Computing sift with threshold 0.1
+2021-02-21 21:43:31,711 DEBUG: Found 246 points in 0.2267763614654541s
+2021-02-21 21:43:31,711 DEBUG: reducing threshold
+2021-02-21 21:43:31,712 DEBUG: Computing sift with threshold 0.06666666666666667
+2021-02-21 21:43:31,970 DEBUG: Found 825 points in 0.25776028633117676s
+2021-02-21 21:43:31,970 DEBUG: reducing threshold
+2021-02-21 21:43:31,970 DEBUG: Computing sift with threshold 0.044444444444444446
+2021-02-21 21:43:32,269 DEBUG: Found 2225 points in 0.2989332675933838s
+2021-02-21 21:43:32,269 DEBUG: reducing threshold
+2021-02-21 21:43:32,269 DEBUG: Computing sift with threshold 0.02962962962962963
+2021-02-21 21:43:32,620 DEBUG: Found 6106 points in 0.35013294219970703s
+2021-02-21 21:43:32,620 DEBUG: reducing threshold
+2021-02-21 21:43:32,620 DEBUG: Computing sift with threshold 0.019753086419753086
+2021-02-21 21:43:33,037 DEBUG: Found 11031 points in 0.41675567626953125s
+2021-02-21 21:43:33,037 DEBUG: done
+2021-02-21 21:43:33,795 DEBUG: No segmentation for DJI_0037.JPG, no features masked.
+2021-02-21 21:43:34,151 INFO: Extracting ROOT_SIFT features for image DJI_0040.JPG
+2021-02-21 21:43:34,230 DEBUG: Computing sift with threshold 0.1
+2021-02-21 21:43:34,634 DEBUG: Found 368 points in 0.40413856506347656s
+2021-02-21 21:43:34,634 DEBUG: reducing threshold
+2021-02-21 21:43:34,635 DEBUG: Computing sift with threshold 0.06666666666666667
+2021-02-21 21:43:34,882 DEBUG: Found 1034 points in 0.24712514877319336s
+2021-02-21 21:43:34,882 DEBUG: reducing threshold
+2021-02-21 21:43:34,882 DEBUG: Computing sift with threshold 0.044444444444444446
+2021-02-21 21:43:35,199 DEBUG: Found 2112 points in 0.3164811134338379s
+2021-02-21 21:43:35,199 DEBUG: reducing threshold
+2021-02-21 21:43:35,199 DEBUG: Computing sift with threshold 0.02962962962962963
+2021-02-21 21:43:35,502 DEBUG: Found 4288 points in 0.30234718322753906s
+2021-02-21 21:43:35,502 DEBUG: reducing threshold
+2021-02-21 21:43:35,502 DEBUG: Computing sift with threshold 0.019753086419753086
+2021-02-21 21:43:35,871 DEBUG: Found 8931 points in 0.3687093257904053s
+2021-02-21 21:43:35,871 DEBUG: done
+2021-02-21 21:43:36,502 DEBUG: No segmentation for DJI_0040.JPG, no features masked.
+2021-02-21 21:43:36,752 INFO: Extracting ROOT_SIFT features for image DJI_0033.JPG
+2021-02-21 21:43:36,825 DEBUG: Computing sift with threshold 0.1
+2021-02-21 21:43:37,032 DEBUG: Found 363 points in 0.20687127113342285s
+2021-02-21 21:43:37,033 DEBUG: reducing threshold
+2021-02-21 21:43:37,033 DEBUG: Computing sift with threshold 0.06666666666666667
+2021-02-21 21:43:37,257 DEBUG: Found 734 points in 0.2243351936340332s
+2021-02-21 21:43:37,258 DEBUG: reducing threshold
+2021-02-21 21:43:37,258 DEBUG: Computing sift with threshold 0.044444444444444446
+2021-02-21 21:43:37,524 DEBUG: Found 1396 points in 0.2664368152618408s
+2021-02-21 21:43:37,525 DEBUG: reducing threshold
+2021-02-21 21:43:37,525 DEBUG: Computing sift with threshold 0.02962962962962963
+2021-02-21 21:43:37,804 DEBUG: Found 3548 points in 0.2788071632385254s
+2021-02-21 21:43:37,804 DEBUG: reducing threshold
+2021-02-21 21:43:37,804 DEBUG: Computing sift with threshold 0.019753086419753086
+2021-02-21 21:43:38,157 DEBUG: Found 7499 points in 0.3524355888366699s
+2021-02-21 21:43:38,157 DEBUG: reducing threshold
+2021-02-21 21:43:38,157 DEBUG: Computing sift with threshold 0.01316872427983539
+2021-02-21 21:43:38,550 DEBUG: Found 11039 points in 0.3924691677093506s
+2021-02-21 21:43:38,550 DEBUG: done
+2021-02-21 21:43:39,508 DEBUG: No segmentation for DJI_0033.JPG, no features masked.
+2021-02-21 21:43:39,850 INFO: Extracting ROOT_SIFT features for image DJI_0058.JPG
+2021-02-21 21:43:39,935 DEBUG: Computing sift with threshold 0.1
+2021-02-21 21:43:40,185 DEBUG: Found 352 points in 0.2498798370361328s
+2021-02-21 21:43:40,185 DEBUG: reducing threshold
+2021-02-21 21:43:40,185 DEBUG: Computing sift with threshold 0.06666666666666667
+2021-02-21 21:43:40,438 DEBUG: Found 960 points in 0.2527740001678467s
+2021-02-21 21:43:40,439 DEBUG: reducing threshold
+2021-02-21 21:43:40,439 DEBUG: Computing sift with threshold 0.044444444444444446
+2021-02-21 21:43:40,725 DEBUG: Found 1813 points in 0.2860426902770996s
+2021-02-21 21:43:40,725 DEBUG: reducing threshold
+2021-02-21 21:43:40,725 DEBUG: Computing sift with threshold 0.02962962962962963
+2021-02-21 21:43:41,031 DEBUG: Found 3248 points in 0.30568599700927734s
+2021-02-21 21:43:41,032 DEBUG: reducing threshold
+2021-02-21 21:43:41,032 DEBUG: Computing sift with threshold 0.019753086419753086
+2021-02-21 21:43:41,409 DEBUG: Found 6746 points in 0.37737226486206055s
+2021-02-21 21:43:41,410 DEBUG: reducing threshold
+2021-02-21 21:43:41,410 DEBUG: Computing sift with threshold 0.01316872427983539
+2021-02-21 21:43:41,840 DEBUG: Found 9562 points in 0.42975807189941406s
+2021-02-21 21:43:41,840 DEBUG: done
+2021-02-21 21:43:42,661 DEBUG: No segmentation for DJI_0058.JPG, no features masked.
+2021-02-21 21:43:42,929 INFO: Extracting ROOT_SIFT features for image DJI_0046.JPG
+2021-02-21 21:43:43,006 DEBUG: Computing sift with threshold 0.1
+2021-02-21 21:43:43,353 DEBUG: Found 162 points in 0.3471381664276123s
+2021-02-21 21:43:43,353 DEBUG: reducing threshold
+2021-02-21 21:43:43,353 DEBUG: Computing sift with threshold 0.06666666666666667
+2021-02-21 21:43:43,635 DEBUG: Found 386 points in 0.2810783386230469s
+2021-02-21 21:43:43,635 DEBUG: reducing threshold
+2021-02-21 21:43:43,635 DEBUG: Computing sift with threshold 0.044444444444444446
+2021-02-21 21:43:43,933 DEBUG: Found 981 points in 0.29744458198547363s
+2021-02-21 21:43:43,933 DEBUG: reducing threshold
+2021-02-21 21:43:43,933 DEBUG: Computing sift with threshold 0.02962962962962963
+2021-02-21 21:43:44,231 DEBUG: Found 3256 points in 0.2977335453033447s
+2021-02-21 21:43:44,231 DEBUG: reducing threshold
+2021-02-21 21:43:44,231 DEBUG: Computing sift with threshold 0.019753086419753086
+2021-02-21 21:43:44,807 DEBUG: Found 7503 points in 0.5754127502441406s
+2021-02-21 21:43:44,807 DEBUG: reducing threshold
+2021-02-21 21:43:44,807 DEBUG: Computing sift with threshold 0.01316872427983539
+2021-02-21 21:43:45,230 DEBUG: Found 10970 points in 0.4225170612335205s
+2021-02-21 21:43:45,230 DEBUG: done
+2021-02-21 21:43:45,982 DEBUG: No segmentation for DJI_0046.JPG, no features masked.
+2021-02-21 21:43:46,276 INFO: Extracting ROOT_SIFT features for image DJI_0051.JPG
+2021-02-21 21:43:46,353 DEBUG: Computing sift with threshold 0.1
+2021-02-21 21:43:46,560 DEBUG: Found 242 points in 0.20714449882507324s
+2021-02-21 21:43:46,560 DEBUG: reducing threshold
+2021-02-21 21:43:46,561 DEBUG: Computing sift with threshold 0.06666666666666667
+2021-02-21 21:43:46,781 DEBUG: Found 580 points in 0.2202591896057129s
+2021-02-21 21:43:46,781 DEBUG: reducing threshold
+2021-02-21 21:43:46,782 DEBUG: Computing sift with threshold 0.044444444444444446
+2021-02-21 21:43:47,032 DEBUG: Found 1233 points in 0.2501804828643799s
+2021-02-21 21:43:47,032 DEBUG: reducing threshold
+2021-02-21 21:43:47,032 DEBUG: Computing sift with threshold 0.02962962962962963
+2021-02-21 21:43:47,337 DEBUG: Found 3477 points in 0.30417895317077637s
+2021-02-21 21:43:47,337 DEBUG: reducing threshold
+2021-02-21 21:43:47,337 DEBUG: Computing sift with threshold 0.019753086419753086
+2021-02-21 21:43:47,718 DEBUG: Found 7725 points in 0.3807094097137451s
+2021-02-21 21:43:47,718 DEBUG: reducing threshold
+2021-02-21 21:43:47,718 DEBUG: Computing sift with threshold 0.01316872427983539
+2021-02-21 21:43:48,110 DEBUG: Found 11392 points in 0.3912997245788574s
+2021-02-21 21:43:48,110 DEBUG: done
+2021-02-21 21:43:48,892 DEBUG: No segmentation for DJI_0051.JPG, no features masked.
+2021-02-21 21:43:49,227 INFO: Extracting ROOT_SIFT features for image DJI_0043.JPG
+2021-02-21 21:43:49,357 DEBUG: Computing sift with threshold 0.1
+2021-02-21 21:43:49,700 DEBUG: Found 309 points in 0.3424110412597656s
+2021-02-21 21:43:49,700 DEBUG: reducing threshold
+2021-02-21 21:43:49,700 DEBUG: Computing sift with threshold 0.06666666666666667
+2021-02-21 21:43:49,940 DEBUG: Found 815 points in 0.23957490921020508s
+2021-02-21 21:43:49,940 DEBUG: reducing threshold
+2021-02-21 21:43:49,940 DEBUG: Computing sift with threshold 0.044444444444444446
+2021-02-21 21:43:50,218 DEBUG: Found 1588 points in 0.2769625186920166s
+2021-02-21 21:43:50,218 DEBUG: reducing threshold
+2021-02-21 21:43:50,218 DEBUG: Computing sift with threshold 0.02962962962962963
+2021-02-21 21:43:50,511 DEBUG: Found 3905 points in 0.29293131828308105s
+2021-02-21 21:43:50,511 DEBUG: reducing threshold
+2021-02-21 21:43:50,512 DEBUG: Computing sift with threshold 0.019753086419753086
+2021-02-21 21:43:50,871 DEBUG: Found 8409 points in 0.35878944396972656s
+2021-02-21 21:43:50,871 DEBUG: done
+2021-02-21 21:43:51,499 DEBUG: No segmentation for DJI_0043.JPG, no features masked.
+2021-02-21 21:43:51,733 INFO: Extracting ROOT_SIFT features for image DJI_0048.JPG
+2021-02-21 21:43:51,810 DEBUG: Computing sift with threshold 0.1
+2021-02-21 21:43:52,014 DEBUG: Found 135 points in 0.2034742832183838s
+2021-02-21 21:43:52,014 DEBUG: reducing threshold
+2021-02-21 21:43:52,015 DEBUG: Computing sift with threshold 0.06666666666666667
+2021-02-21 21:43:52,239 DEBUG: Found 340 points in 0.22450566291809082s
+2021-02-21 21:43:52,240 DEBUG: reducing threshold
+2021-02-21 21:43:52,240 DEBUG: Computing sift with threshold 0.044444444444444446
+2021-02-21 21:43:52,496 DEBUG: Found 939 points in 0.25597119331359863s
+2021-02-21 21:43:52,496 DEBUG: reducing threshold
+2021-02-21 21:43:52,496 DEBUG: Computing sift with threshold 0.02962962962962963
+2021-02-21 21:43:52,779 DEBUG: Found 3230 points in 0.2823832035064697s
+2021-02-21 21:43:52,779 DEBUG: reducing threshold
+2021-02-21 21:43:52,780 DEBUG: Computing sift with threshold 0.019753086419753086
+2021-02-21 21:43:53,151 DEBUG: Found 7654 points in 0.3709375858306885s
+2021-02-21 21:43:53,151 DEBUG: reducing threshold
+2021-02-21 21:43:53,151 DEBUG: Computing sift with threshold 0.01316872427983539
+2021-02-21 21:43:53,559 DEBUG: Found 11154 points in 0.40810084342956543s
+2021-02-21 21:43:53,560 DEBUG: done
+2021-02-21 21:43:54,365 DEBUG: No segmentation for DJI_0048.JPG, no features masked.
+2021-02-21 21:43:54,798 INFO: Extracting ROOT_SIFT features for image DJI_0038.JPG
+2021-02-21 21:43:54,877 DEBUG: Computing sift with threshold 0.1
+2021-02-21 21:43:55,099 DEBUG: Found 301 points in 0.22156524658203125s
+2021-02-21 21:43:55,100 DEBUG: reducing threshold
+2021-02-21 21:43:55,100 DEBUG: Computing sift with threshold 0.06666666666666667
+2021-02-21 21:43:55,378 DEBUG: Found 1060 points in 0.27768754959106445s
+2021-02-21 21:43:55,378 DEBUG: reducing threshold
+2021-02-21 21:43:55,378 DEBUG: Computing sift with threshold 0.044444444444444446
+2021-02-21 21:43:55,670 DEBUG: Found 2692 points in 0.2918667793273926s
+2021-02-21 21:43:55,670 DEBUG: reducing threshold
+2021-02-21 21:43:55,670 DEBUG: Computing sift with threshold 0.02962962962962963
+2021-02-21 21:43:55,995 DEBUG: Found 6713 points in 0.32475852966308594s
+2021-02-21 21:43:55,996 DEBUG: reducing threshold
+2021-02-21 21:43:55,996 DEBUG: Computing sift with threshold 0.019753086419753086
+2021-02-21 21:43:56,394 DEBUG: Found 11420 points in 0.3976786136627197s
+2021-02-21 21:43:56,394 DEBUG: done
+2021-02-21 21:43:57,166 DEBUG: No segmentation for DJI_0038.JPG, no features masked.
+2021-02-21 21:43:57,484 INFO: Extracting ROOT_SIFT features for image DJI_0059.JPG
+2021-02-21 21:43:57,559 DEBUG: Computing sift with threshold 0.1
+2021-02-21 21:43:57,787 DEBUG: Found 431 points in 0.22756338119506836s
+2021-02-21 21:43:57,788 DEBUG: reducing threshold
+2021-02-21 21:43:57,788 DEBUG: Computing sift with threshold 0.06666666666666667
+2021-02-21 21:43:58,031 DEBUG: Found 1053 points in 0.24236416816711426s
+2021-02-21 21:43:58,031 DEBUG: reducing threshold
+2021-02-21 21:43:58,031 DEBUG: Computing sift with threshold 0.044444444444444446
+2021-02-21 21:43:58,303 DEBUG: Found 1855 points in 0.271801233291626s
+2021-02-21 21:43:58,303 DEBUG: reducing threshold
+2021-02-21 21:43:58,304 DEBUG: Computing sift with threshold 0.02962962962962963
+2021-02-21 21:43:58,604 DEBUG: Found 3326 points in 0.3004460334777832s
+2021-02-21 21:43:58,604 DEBUG: reducing threshold
+2021-02-21 21:43:58,605 DEBUG: Computing sift with threshold 0.019753086419753086
+2021-02-21 21:43:58,977 DEBUG: Found 6746 points in 0.37203240394592285s
+2021-02-21 21:43:58,977 DEBUG: reducing threshold
+2021-02-21 21:43:58,977 DEBUG: Computing sift with threshold 0.01316872427983539
+2021-02-21 21:43:59,566 DEBUG: Found 9603 points in 0.5883839130401611s
+2021-02-21 21:43:59,566 DEBUG: done
+2021-02-21 21:44:00,241 DEBUG: No segmentation for DJI_0059.JPG, no features masked.
+2021-02-21 21:44:00,511 INFO: Extracting ROOT_SIFT features for image DJI_0028.JPG
+2021-02-21 21:44:00,590 DEBUG: Computing sift with threshold 0.1
+2021-02-21 21:44:00,812 DEBUG: Found 315 points in 0.22170066833496094s
+2021-02-21 21:44:00,812 DEBUG: reducing threshold
+2021-02-21 21:44:00,813 DEBUG: Computing sift with threshold 0.06666666666666667
+2021-02-21 21:44:01,058 DEBUG: Found 789 points in 0.24512386322021484s
+2021-02-21 21:44:01,058 DEBUG: reducing threshold
+2021-02-21 21:44:01,059 DEBUG: Computing sift with threshold 0.044444444444444446
+2021-02-21 21:44:01,343 DEBUG: Found 1680 points in 0.2842438220977783s
+2021-02-21 21:44:01,343 DEBUG: reducing threshold
+2021-02-21 21:44:01,343 DEBUG: Computing sift with threshold 0.02962962962962963
+2021-02-21 21:44:01,650 DEBUG: Found 4494 points in 0.3065223693847656s
+2021-02-21 21:44:01,650 DEBUG: reducing threshold
+2021-02-21 21:44:01,651 DEBUG: Computing sift with threshold 0.019753086419753086
+2021-02-21 21:44:02,031 DEBUG: Found 8732 points in 0.37979865074157715s
+2021-02-21 21:44:02,031 DEBUG: done
+2021-02-21 21:44:02,667 DEBUG: No segmentation for DJI_0028.JPG, no features masked.
+2021-02-21 21:44:02,910 INFO: Extracting ROOT_SIFT features for image DJI_0041.JPG
+2021-02-21 21:44:02,989 DEBUG: Computing sift with threshold 0.1
+2021-02-21 21:44:03,241 DEBUG: Found 275 points in 0.25187087059020996s
+2021-02-21 21:44:03,242 DEBUG: reducing threshold
+2021-02-21 21:44:03,242 DEBUG: Computing sift with threshold 0.06666666666666667
+2021-02-21 21:44:03,480 DEBUG: Found 910 points in 0.23836016654968262s
+2021-02-21 21:44:03,481 DEBUG: reducing threshold
+2021-02-21 21:44:03,481 DEBUG: Computing sift with threshold 0.044444444444444446
+2021-02-21 21:44:03,769 DEBUG: Found 1936 points in 0.2873096466064453s
+2021-02-21 21:44:03,769 DEBUG: reducing threshold
+2021-02-21 21:44:03,769 DEBUG: Computing sift with threshold 0.02962962962962963
+2021-02-21 21:44:04,140 DEBUG: Found 4463 points in 0.37078070640563965s
+2021-02-21 21:44:04,140 DEBUG: reducing threshold
+2021-02-21 21:44:04,140 DEBUG: Computing sift with threshold 0.019753086419753086
+2021-02-21 21:44:04,698 DEBUG: Found 9469 points in 0.5578477382659912s
+2021-02-21 21:44:04,699 DEBUG: done
+2021-02-21 21:44:05,356 DEBUG: No segmentation for DJI_0041.JPG, no features masked.
+[INFO]    running /code/SuperBuild/src/opensfm/bin/opensfm match_features "/var/www/data/c7462e02-82ff-440d-b11d-3d46906415e5/opensfm"
+2021-02-21 21:44:06,978 INFO: Matching 189 image pairs
+2021-02-21 21:44:06,989 INFO: Computing pair matching with 1 processes
+2021-02-21 21:44:07,039 DEBUG: No segmentation for DJI_0040.JPG, no features masked.
+2021-02-21 21:44:07,085 DEBUG: No segmentation for DJI_0041.JPG, no features masked.
+2021-02-21 21:44:07,542 DEBUG: Matching DJI_0040.JPG and DJI_0041.JPG.  Matcher: FLANN (symmetric) T-desc: 0.534 T-robust: 0.014 T-total: 0.548 Matches: 2320 Robust: 2292 Success: True
+2021-02-21 21:44:07,579 DEBUG: No segmentation for DJI_0053.JPG, no features masked.
+2021-02-21 21:44:07,874 DEBUG: Matching DJI_0040.JPG and DJI_0053.JPG.  Matcher: FLANN (symmetric) T-desc: 0.327 T-robust: 0.003 T-total: 0.330 Matches: 861 Robust: 825 Success: True
+2021-02-21 21:44:07,919 DEBUG: No segmentation for DJI_0055.JPG, no features masked.
+2021-02-21 21:44:08,345 DEBUG: Matching DJI_0040.JPG and DJI_0055.JPG.  Matcher: FLANN (symmetric) T-desc: 0.459 T-robust: 0.007 T-total: 0.466 Matches: 1910 Robust: 1864 Success: True
+2021-02-21 21:44:08,391 DEBUG: No segmentation for DJI_0039.JPG, no features masked.
+2021-02-21 21:44:08,775 DEBUG: Matching DJI_0040.JPG and DJI_0039.JPG.  Matcher: FLANN (symmetric) T-desc: 0.423 T-robust: 0.004 T-total: 0.427 Matches: 1302 Robust: 1278 Success: True
+2021-02-21 21:44:08,811 DEBUG: No segmentation for DJI_0054.JPG, no features masked.
+2021-02-21 21:44:09,151 DEBUG: Matching DJI_0040.JPG and DJI_0054.JPG.  Matcher: FLANN (symmetric) T-desc: 0.367 T-robust: 0.005 T-total: 0.372 Matches: 1448 Robust: 1414 Success: True
+2021-02-21 21:44:09,197 DEBUG: No segmentation for DJI_0024.JPG, no features masked.
+2021-02-21 21:44:09,713 DEBUG: Matching DJI_0040.JPG and DJI_0024.JPG.  Matcher: FLANN (symmetric) T-desc: 0.556 T-robust: 0.005 T-total: 0.561 Matches: 390 Robust: 358 Success: True
+2021-02-21 21:44:09,753 DEBUG: No segmentation for DJI_0056.JPG, no features masked.
+2021-02-21 21:44:10,103 DEBUG: Matching DJI_0040.JPG and DJI_0056.JPG.  Matcher: FLANN (symmetric) T-desc: 0.382 T-robust: 0.003 T-total: 0.385 Matches: 1039 Robust: 991 Success: True
+2021-02-21 21:44:10,151 DEBUG: No segmentation for DJI_0037.JPG, no features masked.
+2021-02-21 21:44:10,516 DEBUG: Matching DJI_0040.JPG and DJI_0037.JPG.  Matcher: FLANN (symmetric) T-desc: 0.409 T-robust: 0.002 T-total: 0.411 Matches: 642 Robust: 618 Success: True
+2021-02-21 21:44:10,564 DEBUG: No segmentation for DJI_0038.JPG, no features masked.
+2021-02-21 21:44:10,934 DEBUG: Matching DJI_0040.JPG and DJI_0038.JPG.  Matcher: FLANN (symmetric) T-desc: 0.412 T-robust: 0.003 T-total: 0.415 Matches: 1066 Robust: 1038 Success: True
+2021-02-21 21:44:10,934 DEBUG: Image DJI_0040.JPG matches: 9 out of 9
+2021-02-21 21:44:10,970 DEBUG: No segmentation for DJI_0042.JPG, no features masked.
+2021-02-21 21:44:11,347 DEBUG: Matching DJI_0042.JPG and DJI_0041.JPG.  Matcher: FLANN (symmetric) T-desc: 0.401 T-robust: 0.007 T-total: 0.408 Matches: 2541 Robust: 2501 Success: True
+2021-02-21 21:44:11,640 DEBUG: Matching DJI_0042.JPG and DJI_0037.JPG.  Matcher: FLANN (symmetric) T-desc: 0.287 T-robust: 0.004 T-total: 0.290 Matches: 1336 Robust: 1300 Success: True
+2021-02-21 21:44:11,945 DEBUG: Matching DJI_0042.JPG and DJI_0038.JPG.  Matcher: FLANN (symmetric) T-desc: 0.299 T-robust: 0.003 T-total: 0.302 Matches: 975 Robust: 948 Success: True
+2021-02-21 21:44:12,191 DEBUG: Matching DJI_0042.JPG and DJI_0053.JPG.  Matcher: FLANN (symmetric) T-desc: 0.237 T-robust: 0.005 T-total: 0.242 Matches: 1578 Robust: 1542 Success: True
+2021-02-21 21:44:12,235 DEBUG: No segmentation for DJI_0052.JPG, no features masked.
+2021-02-21 21:44:12,613 DEBUG: Matching DJI_0042.JPG and DJI_0052.JPG.  Matcher: FLANN (symmetric) T-desc: 0.414 T-robust: 0.004 T-total: 0.418 Matches: 1225 Robust: 1186 Success: True
+2021-02-21 21:44:12,899 DEBUG: Matching DJI_0042.JPG and DJI_0055.JPG.  Matcher: FLANN (symmetric) T-desc: 0.281 T-robust: 0.003 T-total: 0.284 Matches: 938 Robust: 903 Success: True
+2021-02-21 21:44:13,174 DEBUG: Matching DJI_0042.JPG and DJI_0039.JPG.  Matcher: FLANN (symmetric) T-desc: 0.271 T-robust: 0.002 T-total: 0.273 Matches: 665 Robust: 636 Success: True
+2021-02-21 21:44:13,424 DEBUG: Matching DJI_0042.JPG and DJI_0054.JPG.  Matcher: FLANN (symmetric) T-desc: 0.242 T-robust: 0.005 T-total: 0.247 Matches: 1295 Robust: 1261 Success: True
+2021-02-21 21:44:13,685 DEBUG: Matching DJI_0042.JPG and DJI_0040.JPG.  Matcher: FLANN (symmetric) T-desc: 0.253 T-robust: 0.004 T-total: 0.257 Matches: 1233 Robust: 1191 Success: True
+2021-02-21 21:44:13,686 DEBUG: Image DJI_0042.JPG matches: 9 out of 9
+2021-02-21 21:44:13,732 DEBUG: No segmentation for DJI_0047.JPG, no features masked.
+2021-02-21 21:44:13,787 DEBUG: No segmentation for DJI_0032.JPG, no features masked.
+2021-02-21 21:44:14,332 DEBUG: Matching DJI_0047.JPG and DJI_0032.JPG.  Matcher: FLANN (symmetric) T-desc: 0.626 T-robust: 0.013 T-total: 0.639 Matches: 1487 Robust: 1467 Success: True
+2021-02-21 21:44:14,436 DEBUG: No segmentation for DJI_0033.JPG, no features masked.
+2021-02-21 21:44:14,942 DEBUG: Matching DJI_0047.JPG and DJI_0033.JPG.  Matcher: FLANN (symmetric) T-desc: 0.599 T-robust: 0.004 T-total: 0.603 Matches: 1200 Robust: 1166 Success: True
+2021-02-21 21:44:14,989 DEBUG: No segmentation for DJI_0049.JPG, no features masked.
+2021-02-21 21:44:15,445 DEBUG: Matching DJI_0047.JPG and DJI_0049.JPG.  Matcher: FLANN (symmetric) T-desc: 0.496 T-robust: 0.003 T-total: 0.499 Matches: 1245 Robust: 1225 Success: True
+2021-02-21 21:44:15,490 DEBUG: No segmentation for DJI_0045.JPG, no features masked.
+2021-02-21 21:44:15,895 DEBUG: Matching DJI_0047.JPG and DJI_0045.JPG.  Matcher: FLANN (symmetric) T-desc: 0.443 T-robust: 0.004 T-total: 0.448 Matches: 1422 Robust: 1402 Success: True
+2021-02-21 21:44:15,934 DEBUG: No segmentation for DJI_0063.JPG, no features masked.
+2021-02-21 21:44:16,298 DEBUG: Matching DJI_0047.JPG and DJI_0063.JPG.  Matcher: FLANN (symmetric) T-desc: 0.400 T-robust: 0.002 T-total: 0.402 Matches: 468 Robust: 449 Success: True
+2021-02-21 21:44:16,343 DEBUG: No segmentation for DJI_0046.JPG, no features masked.
+2021-02-21 21:44:16,788 DEBUG: Matching DJI_0047.JPG and DJI_0046.JPG.  Matcher: FLANN (symmetric) T-desc: 0.475 T-robust: 0.008 T-total: 0.483 Matches: 2915 Robust: 2898 Success: True
+2021-02-21 21:44:16,834 DEBUG: No segmentation for DJI_0048.JPG, no features masked.
+2021-02-21 21:44:17,263 DEBUG: Matching DJI_0047.JPG and DJI_0048.JPG.  Matcher: FLANN (symmetric) T-desc: 0.468 T-robust: 0.004 T-total: 0.472 Matches: 1406 Robust: 1379 Success: True
+2021-02-21 21:44:17,308 DEBUG: No segmentation for DJI_0034.JPG, no features masked.
+2021-02-21 21:44:17,709 DEBUG: Matching DJI_0047.JPG and DJI_0034.JPG.  Matcher: FLANN (symmetric) T-desc: 0.442 T-robust: 0.003 T-total: 0.445 Matches: 668 Robust: 603 Success: True
+2021-02-21 21:44:17,758 DEBUG: No segmentation for DJI_0050.JPG, no features masked.
+2021-02-21 21:44:18,210 DEBUG: Matching DJI_0047.JPG and DJI_0050.JPG.  Matcher: FLANN (symmetric) T-desc: 0.498 T-robust: 0.002 T-total: 0.500 Matches: 632 Robust: 609 Success: True
+2021-02-21 21:44:18,210 DEBUG: Image DJI_0047.JPG matches: 9 out of 9
+2021-02-21 21:44:18,255 DEBUG: No segmentation for DJI_0060.JPG, no features masked.
+2021-02-21 21:44:18,297 DEBUG: No segmentation for DJI_0058.JPG, no features masked.
+2021-02-21 21:44:18,741 DEBUG: Matching DJI_0060.JPG and DJI_0058.JPG.  Matcher: FLANN (symmetric) T-desc: 0.523 T-robust: 0.004 T-total: 0.527 Matches: 1570 Robust: 1534 Success: True
+2021-02-21 21:44:18,785 DEBUG: No segmentation for DJI_0059.JPG, no features masked.
+2021-02-21 21:44:19,207 DEBUG: Matching DJI_0060.JPG and DJI_0059.JPG.  Matcher: FLANN (symmetric) T-desc: 0.452 T-robust: 0.007 T-total: 0.460 Matches: 2666 Robust: 2633 Success: True
+2021-02-21 21:44:19,729 DEBUG: Matching DJI_0060.JPG and DJI_0050.JPG.  Matcher: FLANN (symmetric) T-desc: 0.515 T-robust: 0.004 T-total: 0.519 Matches: 1517 Robust: 1472 Success: True
+2021-02-21 21:44:19,768 DEBUG: No segmentation for DJI_0057.JPG, no features masked.
+2021-02-21 21:44:20,124 DEBUG: Matching DJI_0060.JPG and DJI_0057.JPG.  Matcher: FLANN (symmetric) T-desc: 0.382 T-robust: 0.009 T-total: 0.391 Matches: 782 Robust: 729 Success: True
+2021-02-21 21:44:20,503 DEBUG: Matching DJI_0060.JPG and DJI_0049.JPG.  Matcher: FLANN (symmetric) T-desc: 0.372 T-robust: 0.003 T-total: 0.376 Matches: 945 Robust: 923 Success: True
+2021-02-21 21:44:20,555 DEBUG: No segmentation for DJI_0051.JPG, no features masked.
+2021-02-21 21:44:20,984 DEBUG: Matching DJI_0060.JPG and DJI_0051.JPG.  Matcher: FLANN (symmetric) T-desc: 0.470 T-robust: 0.005 T-total: 0.475 Matches: 1717 Robust: 1684 Success: True
+2021-02-21 21:44:21,028 DEBUG: No segmentation for DJI_0061.JPG, no features masked.
+2021-02-21 21:44:21,427 DEBUG: Matching DJI_0060.JPG and DJI_0061.JPG.  Matcher: FLANN (symmetric) T-desc: 0.426 T-robust: 0.011 T-total: 0.437 Matches: 2390 Robust: 2367 Success: True
+2021-02-21 21:44:21,725 DEBUG: Matching DJI_0060.JPG and DJI_0063.JPG.  Matcher: FLANN (symmetric) T-desc: 0.293 T-robust: 0.003 T-total: 0.296 Matches: 898 Robust: 874 Success: True
+2021-02-21 21:44:21,769 DEBUG: No segmentation for DJI_0062.JPG, no features masked.
+2021-02-21 21:44:22,155 DEBUG: Matching DJI_0060.JPG and DJI_0062.JPG.  Matcher: FLANN (symmetric) T-desc: 0.422 T-robust: 0.005 T-total: 0.427 Matches: 1510 Robust: 1493 Success: True
+2021-02-21 21:44:22,156 DEBUG: Image DJI_0060.JPG matches: 9 out of 9
+2021-02-21 21:44:22,200 DEBUG: No segmentation for DJI_0029.JPG, no features masked.
+2021-02-21 21:44:22,246 DEBUG: No segmentation for DJI_0027.JPG, no features masked.
+2021-02-21 21:44:22,702 DEBUG: Matching DJI_0029.JPG and DJI_0027.JPG.  Matcher: FLANN (symmetric) T-desc: 0.542 T-robust: 0.003 T-total: 0.545 Matches: 861 Robust: 843 Success: True
+2021-02-21 21:44:22,739 DEBUG: No segmentation for DJI_0031.JPG, no features masked.
+2021-02-21 21:44:23,092 DEBUG: Matching DJI_0029.JPG and DJI_0031.JPG.  Matcher: FLANN (symmetric) T-desc: 0.382 T-robust: 0.004 T-total: 0.386 Matches: 1508 Robust: 1477 Success: True
+2021-02-21 21:44:23,192 DEBUG: No segmentation for DJI_0035.JPG, no features masked.
+2021-02-21 21:44:23,558 DEBUG: Matching DJI_0029.JPG and DJI_0035.JPG.  Matcher: FLANN (symmetric) T-desc: 0.462 T-robust: 0.002 T-total: 0.464 Matches: 755 Robust: 719 Success: True
+2021-02-21 21:44:23,899 DEBUG: Matching DJI_0029.JPG and DJI_0034.JPG.  Matcher: FLANN (symmetric) T-desc: 0.331 T-robust: 0.006 T-total: 0.337 Matches: 1808 Robust: 1782 Success: True
+2021-02-21 21:44:23,937 DEBUG: No segmentation for DJI_0030.JPG, no features masked.
+2021-02-21 21:44:24,402 DEBUG: Matching DJI_0029.JPG and DJI_0030.JPG.  Matcher: FLANN (symmetric) T-desc: 0.469 T-robust: 0.016 T-total: 0.484 Matches: 2661 Robust: 2543 Success: True
+2021-02-21 21:44:24,845 DEBUG: Matching DJI_0029.JPG and DJI_0032.JPG.  Matcher: FLANN (symmetric) T-desc: 0.439 T-robust: 0.003 T-total: 0.441 Matches: 996 Robust: 960 Success: True
+2021-02-21 21:44:25,181 DEBUG: Matching DJI_0029.JPG and DJI_0033.JPG.  Matcher: FLANN (symmetric) T-desc: 0.328 T-robust: 0.004 T-total: 0.332 Matches: 1476 Robust: 1454 Success: True
+2021-02-21 21:44:25,222 DEBUG: No segmentation for DJI_0028.JPG, no features masked.
+2021-02-21 21:44:25,591 DEBUG: Matching DJI_0029.JPG and DJI_0028.JPG.  Matcher: FLANN (symmetric) T-desc: 0.397 T-robust: 0.007 T-total: 0.405 Matches: 1863 Robust: 1833 Success: True
+2021-02-21 21:44:25,591 DEBUG: Image DJI_0029.JPG matches: 8 out of 8
+2021-02-21 21:44:25,637 DEBUG: No segmentation for DJI_0044.JPG, no features masked.
+2021-02-21 21:44:26,063 DEBUG: Matching DJI_0034.JPG and DJI_0044.JPG.  Matcher: FLANN (symmetric) T-desc: 0.467 T-robust: 0.003 T-total: 0.470 Matches: 985 Robust: 965 Success: True
+2021-02-21 21:44:26,426 DEBUG: Matching DJI_0034.JPG and DJI_0045.JPG.  Matcher: FLANN (symmetric) T-desc: 0.355 T-robust: 0.004 T-total: 0.359 Matches: 1443 Robust: 1400 Success: True
+2021-02-21 21:44:26,761 DEBUG: Matching DJI_0034.JPG and DJI_0027.JPG.  Matcher: FLANN (symmetric) T-desc: 0.332 T-robust: 0.002 T-total: 0.334 Matches: 524 Robust: 506 Success: True
+2021-02-21 21:44:27,066 DEBUG: Matching DJI_0034.JPG and DJI_0035.JPG.  Matcher: FLANN (symmetric) T-desc: 0.294 T-robust: 0.005 T-total: 0.300 Matches: 1906 Robust: 1888 Success: True
+2021-02-21 21:44:27,106 DEBUG: No segmentation for DJI_0036.JPG, no features masked.
+2021-02-21 21:44:27,530 DEBUG: Matching DJI_0034.JPG and DJI_0036.JPG.  Matcher: FLANN (symmetric) T-desc: 0.459 T-robust: 0.003 T-total: 0.462 Matches: 871 Robust: 849 Success: True
+2021-02-21 21:44:27,881 DEBUG: Matching DJI_0034.JPG and DJI_0046.JPG.  Matcher: FLANN (symmetric) T-desc: 0.345 T-robust: 0.003 T-total: 0.348 Matches: 998 Robust: 979 Success: True
+2021-02-21 21:44:28,204 DEBUG: Matching DJI_0034.JPG and DJI_0030.JPG.  Matcher: FLANN (symmetric) T-desc: 0.316 T-robust: 0.004 T-total: 0.320 Matches: 1383 Robust: 1363 Success: True
+2021-02-21 21:44:28,583 DEBUG: Matching DJI_0034.JPG and DJI_0032.JPG.  Matcher: FLANN (symmetric) T-desc: 0.372 T-robust: 0.004 T-total: 0.375 Matches: 1366 Robust: 1345 Success: True
+2021-02-21 21:44:28,584 DEBUG: Image DJI_0034.JPG matches: 8 out of 8
+2021-02-21 21:44:28,897 DEBUG: Matching DJI_0044.JPG and DJI_0035.JPG.  Matcher: FLANN (symmetric) T-desc: 0.307 T-robust: 0.003 T-total: 0.310 Matches: 1119 Robust: 1104 Success: True
+2021-02-21 21:44:29,262 DEBUG: Matching DJI_0044.JPG and DJI_0052.JPG.  Matcher: FLANN (symmetric) T-desc: 0.355 T-robust: 0.007 T-total: 0.362 Matches: 1303 Robust: 1271 Success: True
+2021-02-21 21:44:29,796 DEBUG: Matching DJI_0044.JPG and DJI_0045.JPG.  Matcher: FLANN (symmetric) T-desc: 0.518 T-robust: 0.011 T-total: 0.529 Matches: 2328 Robust: 2233 Success: True
+2021-02-21 21:44:30,174 DEBUG: Matching DJI_0044.JPG and DJI_0051.JPG.  Matcher: FLANN (symmetric) T-desc: 0.369 T-robust: 0.005 T-total: 0.374 Matches: 1720 Robust: 1679 Success: True
+2021-02-21 21:44:30,501 DEBUG: Matching DJI_0044.JPG and DJI_0036.JPG.  Matcher: FLANN (symmetric) T-desc: 0.322 T-robust: 0.003 T-total: 0.325 Matches: 771 Robust: 748 Success: True
+2021-02-21 21:44:30,537 DEBUG: No segmentation for DJI_0043.JPG, no features masked.
+2021-02-21 21:44:30,910 DEBUG: Matching DJI_0044.JPG and DJI_0043.JPG.  Matcher: FLANN (symmetric) T-desc: 0.399 T-robust: 0.006 T-total: 0.404 Matches: 2113 Robust: 2089 Success: True
+2021-02-21 21:44:31,300 DEBUG: Matching DJI_0044.JPG and DJI_0046.JPG.  Matcher: FLANN (symmetric) T-desc: 0.384 T-robust: 0.003 T-total: 0.387 Matches: 1031 Robust: 1011 Success: True
+2021-02-21 21:44:31,671 DEBUG: Matching DJI_0044.JPG and DJI_0050.JPG.  Matcher: FLANN (symmetric) T-desc: 0.364 T-robust: 0.004 T-total: 0.368 Matches: 1550 Robust: 1534 Success: True
+2021-02-21 21:44:31,671 DEBUG: Image DJI_0044.JPG matches: 8 out of 8
+2021-02-21 21:44:32,022 DEBUG: Matching DJI_0050.JPG and DJI_0048.JPG.  Matcher: FLANN (symmetric) T-desc: 0.345 T-robust: 0.003 T-total: 0.348 Matches: 937 Robust: 915 Success: True
+2021-02-21 21:44:32,342 DEBUG: Matching DJI_0050.JPG and DJI_0059.JPG.  Matcher: FLANN (symmetric) T-desc: 0.315 T-robust: 0.003 T-total: 0.318 Matches: 1045 Robust: 1024 Success: True
+2021-02-21 21:44:32,692 DEBUG: Matching DJI_0050.JPG and DJI_0045.JPG.  Matcher: FLANN (symmetric) T-desc: 0.337 T-robust: 0.009 T-total: 0.346 Matches: 1580 Robust: 1561 Success: True
+2021-02-21 21:44:33,030 DEBUG: Matching DJI_0050.JPG and DJI_0061.JPG.  Matcher: FLANN (symmetric) T-desc: 0.330 T-robust: 0.004 T-total: 0.334 Matches: 1610 Robust: 1586 Success: True
+2021-02-21 21:44:33,347 DEBUG: Matching DJI_0050.JPG and DJI_0063.JPG.  Matcher: FLANN (symmetric) T-desc: 0.312 T-robust: 0.002 T-total: 0.314 Matches: 701 Robust: 655 Success: True
+2021-02-21 21:44:33,702 DEBUG: Matching DJI_0050.JPG and DJI_0062.JPG.  Matcher: FLANN (symmetric) T-desc: 0.350 T-robust: 0.003 T-total: 0.353 Matches: 1091 Robust: 1064 Success: True
+2021-02-21 21:44:34,113 DEBUG: Matching DJI_0050.JPG and DJI_0049.JPG.  Matcher: FLANN (symmetric) T-desc: 0.402 T-robust: 0.005 T-total: 0.407 Matches: 1944 Robust: 1913 Success: True
+2021-02-21 21:44:34,689 DEBUG: Matching DJI_0050.JPG and DJI_0051.JPG.  Matcher: FLANN (symmetric) T-desc: 0.555 T-robust: 0.010 T-total: 0.565 Matches: 3958 Robust: 3908 Success: True
+2021-02-21 21:44:34,689 DEBUG: Image DJI_0050.JPG matches: 8 out of 8
+2021-02-21 21:44:35,027 DEBUG: Matching DJI_0052.JPG and DJI_0060.JPG.  Matcher: FLANN (symmetric) T-desc: 0.331 T-robust: 0.004 T-total: 0.335 Matches: 1286 Robust: 1252 Success: True
+2021-02-21 21:44:35,407 DEBUG: Matching DJI_0052.JPG and DJI_0059.JPG.  Matcher: FLANN (symmetric) T-desc: 0.371 T-robust: 0.005 T-total: 0.376 Matches: 1768 Robust: 1738 Success: True
+2021-02-21 21:44:35,790 DEBUG: Matching DJI_0052.JPG and DJI_0050.JPG.  Matcher: FLANN (symmetric) T-desc: 0.372 T-robust: 0.006 T-total: 0.379 Matches: 1959 Robust: 1942 Success: True
+2021-02-21 21:44:36,098 DEBUG: Matching DJI_0052.JPG and DJI_0056.JPG.  Matcher: FLANN (symmetric) T-desc: 0.305 T-robust: 0.002 T-total: 0.307 Matches: 552 Robust: 506 Success: True
+2021-02-21 21:44:36,415 DEBUG: Matching DJI_0052.JPG and DJI_0057.JPG.  Matcher: FLANN (symmetric) T-desc: 0.311 T-robust: 0.003 T-total: 0.314 Matches: 954 Robust: 927 Success: True
+2021-02-21 21:44:36,764 DEBUG: Matching DJI_0052.JPG and DJI_0058.JPG.  Matcher: FLANN (symmetric) T-desc: 0.342 T-robust: 0.004 T-total: 0.346 Matches: 1506 Robust: 1475 Success: True
+2021-02-21 21:44:37,082 DEBUG: Matching DJI_0052.JPG and DJI_0053.JPG.  Matcher: FLANN (symmetric) T-desc: 0.307 T-robust: 0.006 T-total: 0.313 Matches: 2287 Robust: 2242 Success: True
+2021-02-21 21:44:37,492 DEBUG: Matching DJI_0052.JPG and DJI_0051.JPG.  Matcher: FLANN (symmetric) T-desc: 0.391 T-robust: 0.010 T-total: 0.402 Matches: 2983 Robust: 2950 Success: True
+2021-02-21 21:44:37,492 DEBUG: Image DJI_0052.JPG matches: 8 out of 8
+2021-02-21 21:44:37,539 DEBUG: No segmentation for DJI_0026.JPG, no features masked.
+2021-02-21 21:44:37,975 DEBUG: Matching DJI_0026.JPG and DJI_0036.JPG.  Matcher: FLANN (symmetric) T-desc: 0.478 T-robust: 0.003 T-total: 0.481 Matches: 994 Robust: 962 Success: True
+2021-02-21 21:44:38,347 DEBUG: Matching DJI_0026.JPG and DJI_0039.JPG.  Matcher: FLANN (symmetric) T-desc: 0.368 T-robust: 0.002 T-total: 0.370 Matches: 620 Robust: 590 Success: True
+2021-02-21 21:44:38,398 DEBUG: No segmentation for DJI_0025.JPG, no features masked.
+2021-02-21 21:44:38,889 DEBUG: Matching DJI_0026.JPG and DJI_0025.JPG.  Matcher: FLANN (symmetric) T-desc: 0.529 T-robust: 0.007 T-total: 0.536 Matches: 2398 Robust: 2378 Success: True
+2021-02-21 21:44:39,293 DEBUG: Matching DJI_0026.JPG and DJI_0024.JPG.  Matcher: FLANN (symmetric) T-desc: 0.388 T-robust: 0.002 T-total: 0.390 Matches: 846 Robust: 826 Success: True
+2021-02-21 21:44:39,832 DEBUG: Matching DJI_0026.JPG and DJI_0038.JPG.  Matcher: FLANN (symmetric) T-desc: 0.534 T-robust: 0.003 T-total: 0.537 Matches: 1027 Robust: 1001 Success: True
+2021-02-21 21:44:40,200 DEBUG: Matching DJI_0026.JPG and DJI_0037.JPG.  Matcher: FLANN (symmetric) T-desc: 0.361 T-robust: 0.004 T-total: 0.364 Matches: 1441 Robust: 1417 Success: True
+2021-02-21 21:44:40,569 DEBUG: Matching DJI_0026.JPG and DJI_0027.JPG.  Matcher: FLANN (symmetric) T-desc: 0.355 T-robust: 0.006 T-total: 0.361 Matches: 2351 Robust: 2276 Success: True
+2021-02-21 21:44:40,569 DEBUG: Image DJI_0026.JPG matches: 7 out of 7
+2021-02-21 21:44:40,908 DEBUG: Matching DJI_0028.JPG and DJI_0034.JPG.  Matcher: FLANN (symmetric) T-desc: 0.334 T-robust: 0.003 T-total: 0.337 Matches: 879 Robust: 855 Success: True
+2021-02-21 21:44:41,264 DEBUG: Matching DJI_0028.JPG and DJI_0026.JPG.  Matcher: FLANN (symmetric) T-desc: 0.350 T-robust: 0.003 T-total: 0.353 Matches: 926 Robust: 911 Success: True
+2021-02-21 21:44:41,592 DEBUG: Matching DJI_0028.JPG and DJI_0027.JPG.  Matcher: FLANN (symmetric) T-desc: 0.315 T-robust: 0.007 T-total: 0.323 Matches: 2242 Robust: 2191 Success: True
+2021-02-21 21:44:41,866 DEBUG: Matching DJI_0028.JPG and DJI_0035.JPG.  Matcher: FLANN (symmetric) T-desc: 0.268 T-robust: 0.003 T-total: 0.272 Matches: 1172 Robust: 1147 Success: True
+2021-02-21 21:44:42,161 DEBUG: Matching DJI_0028.JPG and DJI_0036.JPG.  Matcher: FLANN (symmetric) T-desc: 0.290 T-robust: 0.002 T-total: 0.293 Matches: 834 Robust: 796 Success: True
+2021-02-21 21:44:42,445 DEBUG: Matching DJI_0028.JPG and DJI_0030.JPG.  Matcher: FLANN (symmetric) T-desc: 0.279 T-robust: 0.003 T-total: 0.281 Matches: 879 Robust: 847 Success: True
+2021-02-21 21:44:42,759 DEBUG: Matching DJI_0028.JPG and DJI_0025.JPG.  Matcher: FLANN (symmetric) T-desc: 0.312 T-robust: 0.001 T-total: 0.314 Matches: 360 Robust: 342 Success: True
+2021-02-21 21:44:42,760 DEBUG: Image DJI_0028.JPG matches: 7 out of 7
+2021-02-21 21:44:43,058 DEBUG: Matching DJI_0031.JPG and DJI_0030.JPG.  Matcher: FLANN (symmetric) T-desc: 0.286 T-robust: 0.007 T-total: 0.293 Matches: 2563 Robust: 2537 Success: True
+2021-02-21 21:44:43,386 DEBUG: Matching DJI_0031.JPG and DJI_0047.JPG.  Matcher: FLANN (symmetric) T-desc: 0.324 T-robust: 0.003 T-total: 0.327 Matches: 524 Robust: 489 Success: True
+2021-02-21 21:44:43,692 DEBUG: Matching DJI_0031.JPG and DJI_0034.JPG.  Matcher: FLANN (symmetric) T-desc: 0.301 T-robust: 0.003 T-total: 0.304 Matches: 905 Robust: 857 Success: True
+2021-02-21 21:44:44,023 DEBUG: Matching DJI_0031.JPG and DJI_0032.JPG.  Matcher: FLANN (symmetric) T-desc: 0.317 T-robust: 0.006 T-total: 0.323 Matches: 1814 Robust: 1754 Success: True
+2021-02-21 21:44:44,419 DEBUG: Matching DJI_0031.JPG and DJI_0033.JPG.  Matcher: FLANN (symmetric) T-desc: 0.376 T-robust: 0.013 T-total: 0.388 Matches: 1538 Robust: 1516 Success: True
+2021-02-21 21:44:44,765 DEBUG: Matching DJI_0031.JPG and DJI_0028.JPG.  Matcher: FLANN (symmetric) T-desc: 0.342 T-robust: 0.001 T-total: 0.344 Matches: 437 Robust: 416 Success: True
+2021-02-21 21:44:45,014 DEBUG: Matching DJI_0031.JPG and DJI_0035.JPG.  Matcher: FLANN (symmetric) T-desc: 0.246 T-robust: 0.001 T-total: 0.247 Matches: 243 Robust: 226 Success: True
+2021-02-21 21:44:45,014 DEBUG: Image DJI_0031.JPG matches: 7 out of 7
+2021-02-21 21:44:45,344 DEBUG: Matching DJI_0033.JPG and DJI_0030.JPG.  Matcher: FLANN (symmetric) T-desc: 0.320 T-robust: 0.006 T-total: 0.325 Matches: 2032 Robust: 2003 Success: True
+2021-02-21 21:44:45,709 DEBUG: Matching DJI_0033.JPG and DJI_0034.JPG.  Matcher: FLANN (symmetric) T-desc: 0.353 T-robust: 0.007 T-total: 0.360 Matches: 2658 Robust: 2643 Success: True
+2021-02-21 21:44:46,087 DEBUG: Matching DJI_0033.JPG and DJI_0032.JPG.  Matcher: FLANN (symmetric) T-desc: 0.364 T-robust: 0.007 T-total: 0.371 Matches: 2710 Robust: 2596 Success: True
+2021-02-21 21:44:46,386 DEBUG: Matching DJI_0033.JPG and DJI_0028.JPG.  Matcher: FLANN (symmetric) T-desc: 0.294 T-robust: 0.003 T-total: 0.296 Matches: 591 Robust: 571 Success: True
+2021-02-21 21:44:46,732 DEBUG: Matching DJI_0033.JPG and DJI_0045.JPG.  Matcher: FLANN (symmetric) T-desc: 0.341 T-robust: 0.003 T-total: 0.344 Matches: 1129 Robust: 1048 Success: True
+2021-02-21 21:44:47,025 DEBUG: Matching DJI_0033.JPG and DJI_0035.JPG.  Matcher: FLANN (symmetric) T-desc: 0.288 T-robust: 0.002 T-total: 0.290 Matches: 766 Robust: 753 Success: True
+2021-02-21 21:44:47,411 DEBUG: Matching DJI_0033.JPG and DJI_0046.JPG.  Matcher: FLANN (symmetric) T-desc: 0.379 T-robust: 0.004 T-total: 0.383 Matches: 1536 Robust: 1514 Success: True
+2021-02-21 21:44:47,412 DEBUG: Image DJI_0033.JPG matches: 7 out of 7
+2021-02-21 21:44:47,741 DEBUG: Matching DJI_0059.JPG and DJI_0062.JPG.  Matcher: FLANN (symmetric) T-desc: 0.325 T-robust: 0.003 T-total: 0.328 Matches: 769 Robust: 747 Success: True
+2021-02-21 21:44:48,103 DEBUG: Matching DJI_0059.JPG and DJI_0051.JPG.  Matcher: FLANN (symmetric) T-desc: 0.355 T-robust: 0.004 T-total: 0.358 Matches: 1367 Robust: 1335 Success: True
+2021-02-21 21:44:48,395 DEBUG: Matching DJI_0059.JPG and DJI_0056.JPG.  Matcher: FLANN (symmetric) T-desc: 0.286 T-robust: 0.003 T-total: 0.289 Matches: 891 Robust: 842 Success: True
+2021-02-21 21:44:48,732 DEBUG: Matching DJI_0059.JPG and DJI_0057.JPG.  Matcher: FLANN (symmetric) T-desc: 0.329 T-robust: 0.005 T-total: 0.334 Matches: 1466 Robust: 1406 Success: True
+2021-02-21 21:44:49,068 DEBUG: Matching DJI_0059.JPG and DJI_0058.JPG.  Matcher: FLANN (symmetric) T-desc: 0.321 T-robust: 0.009 T-total: 0.330 Matches: 2878 Robust: 2835 Success: True
+2021-02-21 21:44:49,418 DEBUG: Matching DJI_0059.JPG and DJI_0053.JPG.  Matcher: FLANN (symmetric) T-desc: 0.332 T-robust: 0.011 T-total: 0.343 Matches: 1028 Robust: 989 Success: True
+2021-02-21 21:44:49,812 DEBUG: Matching DJI_0059.JPG and DJI_0061.JPG.  Matcher: FLANN (symmetric) T-desc: 0.387 T-robust: 0.003 T-total: 0.391 Matches: 1237 Robust: 1227 Success: True
+2021-02-21 21:44:49,813 DEBUG: Image DJI_0059.JPG matches: 7 out of 7
+2021-02-21 21:44:50,123 DEBUG: Matching DJI_0035.JPG and DJI_0037.JPG.  Matcher: FLANN (symmetric) T-desc: 0.305 T-robust: 0.003 T-total: 0.308 Matches: 850 Robust: 816 Success: True
+2021-02-21 21:44:50,417 DEBUG: Matching DJI_0035.JPG and DJI_0027.JPG.  Matcher: FLANN (symmetric) T-desc: 0.287 T-robust: 0.003 T-total: 0.291 Matches: 907 Robust: 880 Success: True
+2021-02-21 21:44:50,717 DEBUG: Matching DJI_0035.JPG and DJI_0036.JPG.  Matcher: FLANN (symmetric) T-desc: 0.288 T-robust: 0.006 T-total: 0.294 Matches: 2080 Robust: 2060 Success: True
+2021-02-21 21:44:50,968 DEBUG: Matching DJI_0035.JPG and DJI_0043.JPG.  Matcher: FLANN (symmetric) T-desc: 0.246 T-robust: 0.003 T-total: 0.248 Matches: 963 Robust: 944 Success: True
+2021-02-21 21:44:51,272 DEBUG: Matching DJI_0035.JPG and DJI_0030.JPG.  Matcher: FLANN (symmetric) T-desc: 0.302 T-robust: 0.002 T-total: 0.303 Matches: 488 Robust: 447 Success: True
+2021-02-21 21:44:51,556 DEBUG: Matching DJI_0035.JPG and DJI_0026.JPG.  Matcher: FLANN (symmetric) T-desc: 0.280 T-robust: 0.002 T-total: 0.282 Matches: 494 Robust: 471 Success: True
+2021-02-21 21:44:51,556 DEBUG: Image DJI_0035.JPG matches: 6 out of 6
+2021-02-21 21:44:51,825 DEBUG: Matching DJI_0036.JPG and DJI_0043.JPG.  Matcher: FLANN (symmetric) T-desc: 0.262 T-robust: 0.004 T-total: 0.266 Matches: 1202 Robust: 1167 Success: True
+2021-02-21 21:44:52,152 DEBUG: Matching DJI_0036.JPG and DJI_0025.JPG.  Matcher: FLANN (symmetric) T-desc: 0.322 T-robust: 0.003 T-total: 0.325 Matches: 554 Robust: 533 Success: True
+2021-02-21 21:44:52,475 DEBUG: Matching DJI_0036.JPG and DJI_0024.JPG.  Matcher: FLANN (symmetric) T-desc: 0.321 T-robust: 0.001 T-total: 0.322 Matches: 252 Robust: 225 Success: True
+2021-02-21 21:44:52,825 DEBUG: Matching DJI_0036.JPG and DJI_0038.JPG.  Matcher: FLANN (symmetric) T-desc: 0.345 T-robust: 0.003 T-total: 0.348 Matches: 1127 Robust: 1101 Success: True
+2021-02-21 21:44:53,132 DEBUG: Matching DJI_0036.JPG and DJI_0027.JPG.  Matcher: FLANN (symmetric) T-desc: 0.300 T-robust: 0.004 T-total: 0.303 Matches: 1295 Robust: 1276 Success: True
+2021-02-21 21:44:53,469 DEBUG: Matching DJI_0036.JPG and DJI_0037.JPG.  Matcher: FLANN (symmetric) T-desc: 0.324 T-robust: 0.007 T-total: 0.331 Matches: 2609 Robust: 2576 Success: True
+2021-02-21 21:44:53,469 DEBUG: Image DJI_0036.JPG matches: 6 out of 6
+2021-02-21 21:44:53,831 DEBUG: Matching DJI_0041.JPG and DJI_0039.JPG.  Matcher: FLANN (symmetric) T-desc: 0.356 T-robust: 0.003 T-total: 0.360 Matches: 1124 Robust: 1097 Success: True
+2021-02-21 21:44:54,120 DEBUG: Matching DJI_0041.JPG and DJI_0054.JPG.  Matcher: FLANN (symmetric) T-desc: 0.278 T-robust: 0.005 T-total: 0.284 Matches: 1925 Robust: 1895 Success: True
+2021-02-21 21:44:54,623 DEBUG: Matching DJI_0041.JPG and DJI_0037.JPG.  Matcher: FLANN (symmetric) T-desc: 0.495 T-robust: 0.004 T-total: 0.499 Matches: 1118 Robust: 1084 Success: True
+2021-02-21 21:44:54,965 DEBUG: Matching DJI_0041.JPG and DJI_0038.JPG.  Matcher: FLANN (symmetric) T-desc: 0.335 T-robust: 0.004 T-total: 0.339 Matches: 1535 Robust: 1497 Success: True
+2021-02-21 21:44:55,265 DEBUG: Matching DJI_0041.JPG and DJI_0053.JPG.  Matcher: FLANN (symmetric) T-desc: 0.293 T-robust: 0.004 T-total: 0.297 Matches: 1377 Robust: 1344 Success: True
+2021-02-21 21:44:55,572 DEBUG: Matching DJI_0041.JPG and DJI_0055.JPG.  Matcher: FLANN (symmetric) T-desc: 0.299 T-robust: 0.004 T-total: 0.303 Matches: 1510 Robust: 1473 Success: True
+2021-02-21 21:44:55,572 DEBUG: Image DJI_0041.JPG matches: 6 out of 6
+2021-02-21 21:44:55,861 DEBUG: Matching DJI_0043.JPG and DJI_0037.JPG.  Matcher: FLANN (symmetric) T-desc: 0.284 T-robust: 0.003 T-total: 0.287 Matches: 808 Robust: 782 Success: True
+2021-02-21 21:44:56,128 DEBUG: Matching DJI_0043.JPG and DJI_0041.JPG.  Matcher: FLANN (symmetric) T-desc: 0.261 T-robust: 0.004 T-total: 0.265 Matches: 1204 Robust: 1174 Success: True
+2021-02-21 21:44:56,379 DEBUG: Matching DJI_0043.JPG and DJI_0053.JPG.  Matcher: FLANN (symmetric) T-desc: 0.245 T-robust: 0.003 T-total: 0.248 Matches: 1051 Robust: 1015 Success: True
+2021-02-21 21:44:56,679 DEBUG: Matching DJI_0043.JPG and DJI_0051.JPG.  Matcher: FLANN (symmetric) T-desc: 0.294 T-robust: 0.003 T-total: 0.297 Matches: 1059 Robust: 1022 Success: True
+2021-02-21 21:44:56,949 DEBUG: Matching DJI_0043.JPG and DJI_0042.JPG.  Matcher: FLANN (symmetric) T-desc: 0.259 T-robust: 0.006 T-total: 0.266 Matches: 2303 Robust: 2277 Success: True
+2021-02-21 21:44:57,251 DEBUG: Matching DJI_0043.JPG and DJI_0052.JPG.  Matcher: FLANN (symmetric) T-desc: 0.294 T-robust: 0.004 T-total: 0.298 Matches: 1432 Robust: 1400 Success: True
+2021-02-21 21:44:57,252 DEBUG: Image DJI_0043.JPG matches: 6 out of 6
+2021-02-21 21:44:57,511 DEBUG: Matching DJI_0054.JPG and DJI_0056.JPG.  Matcher: FLANN (symmetric) T-desc: 0.253 T-robust: 0.003 T-total: 0.257 Matches: 1245 Robust: 1210 Success: True
+2021-02-21 21:44:57,771 DEBUG: Matching DJI_0054.JPG and DJI_0057.JPG.  Matcher: FLANN (symmetric) T-desc: 0.251 T-robust: 0.005 T-total: 0.256 Matches: 1701 Robust: 1684 Success: True
+2021-02-21 21:44:58,033 DEBUG: Matching DJI_0054.JPG and DJI_0058.JPG.  Matcher: FLANN (symmetric) T-desc: 0.257 T-robust: 0.003 T-total: 0.260 Matches: 1177 Robust: 1140 Success: True
+2021-02-21 21:44:58,333 DEBUG: Matching DJI_0054.JPG and DJI_0052.JPG.  Matcher: FLANN (symmetric) T-desc: 0.293 T-robust: 0.004 T-total: 0.297 Matches: 1325 Robust: 1276 Success: True
+2021-02-21 21:44:58,596 DEBUG: Matching DJI_0054.JPG and DJI_0053.JPG.  Matcher: FLANN (symmetric) T-desc: 0.252 T-robust: 0.007 T-total: 0.259 Matches: 2509 Robust: 2328 Success: True
+2021-02-21 21:44:58,902 DEBUG: Matching DJI_0054.JPG and DJI_0055.JPG.  Matcher: FLANN (symmetric) T-desc: 0.291 T-robust: 0.009 T-total: 0.300 Matches: 2643 Robust: 2472 Success: True
+2021-02-21 21:44:58,902 DEBUG: Image DJI_0054.JPG matches: 6 out of 6
+2021-02-21 21:44:59,261 DEBUG: Matching DJI_0062.JPG and DJI_0063.JPG.  Matcher: FLANN (symmetric) T-desc: 0.341 T-robust: 0.011 T-total: 0.352 Matches: 2904 Robust: 2857 Success: True
+2021-02-21 21:44:59,861 DEBUG: Matching DJI_0062.JPG and DJI_0049.JPG.  Matcher: FLANN (symmetric) T-desc: 0.584 T-robust: 0.009 T-total: 0.593 Matches: 1757 Robust: 1739 Success: True
+2021-02-21 21:45:00,253 DEBUG: Matching DJI_0062.JPG and DJI_0051.JPG.  Matcher: FLANN (symmetric) T-desc: 0.387 T-robust: 0.003 T-total: 0.389 Matches: 807 Robust: 780 Success: True
+2021-02-21 21:45:00,613 DEBUG: Matching DJI_0062.JPG and DJI_0061.JPG.  Matcher: FLANN (symmetric) T-desc: 0.341 T-robust: 0.009 T-total: 0.351 Matches: 3244 Robust: 3233 Success: True
+2021-02-21 21:45:00,987 DEBUG: Matching DJI_0062.JPG and DJI_0048.JPG.  Matcher: FLANN (symmetric) T-desc: 0.364 T-robust: 0.004 T-total: 0.368 Matches: 1398 Robust: 1370 Success: True
+2021-02-21 21:45:00,988 DEBUG: Image DJI_0062.JPG matches: 5 out of 5
+2021-02-21 21:45:01,327 DEBUG: Matching DJI_0024.JPG and DJI_0037.JPG.  Matcher: FLANN (symmetric) T-desc: 0.336 T-robust: 0.002 T-total: 0.338 Matches: 557 Robust: 535 Success: True
+2021-02-21 21:45:01,665 DEBUG: Matching DJI_0024.JPG and DJI_0039.JPG.  Matcher: FLANN (symmetric) T-desc: 0.331 T-robust: 0.003 T-total: 0.334 Matches: 1285 Robust: 1264 Success: True
+2021-02-21 21:45:02,040 DEBUG: Matching DJI_0024.JPG and DJI_0025.JPG.  Matcher: FLANN (symmetric) T-desc: 0.365 T-robust: 0.006 T-total: 0.371 Matches: 2087 Robust: 2072 Success: True
+2021-02-21 21:45:02,403 DEBUG: Matching DJI_0024.JPG and DJI_0038.JPG.  Matcher: FLANN (symmetric) T-desc: 0.357 T-robust: 0.003 T-total: 0.360 Matches: 1041 Robust: 1019 Success: True
+2021-02-21 21:45:02,403 DEBUG: Image DJI_0024.JPG matches: 4 out of 4
+2021-02-21 21:45:02,777 DEBUG: Matching DJI_0045.JPG and DJI_0046.JPG.  Matcher: FLANN (symmetric) T-desc: 0.363 T-robust: 0.007 T-total: 0.369 Matches: 2529 Robust: 2456 Success: True
+2021-02-21 21:45:03,177 DEBUG: Matching DJI_0045.JPG and DJI_0032.JPG.  Matcher: FLANN (symmetric) T-desc: 0.395 T-robust: 0.002 T-total: 0.397 Matches: 730 Robust: 704 Success: True
+2021-02-21 21:45:03,520 DEBUG: Matching DJI_0045.JPG and DJI_0049.JPG.  Matcher: FLANN (symmetric) T-desc: 0.334 T-robust: 0.004 T-total: 0.338 Matches: 1257 Robust: 1242 Success: True
+2021-02-21 21:45:03,882 DEBUG: Matching DJI_0045.JPG and DJI_0051.JPG.  Matcher: FLANN (symmetric) T-desc: 0.354 T-robust: 0.004 T-total: 0.358 Matches: 1173 Robust: 1150 Success: True
+2021-02-21 21:45:03,882 DEBUG: Image DJI_0045.JPG matches: 4 out of 4
+2021-02-21 21:45:04,378 DEBUG: Matching DJI_0048.JPG and DJI_0046.JPG.  Matcher: FLANN (symmetric) T-desc: 0.481 T-robust: 0.007 T-total: 0.489 Matches: 1145 Robust: 1128 Success: True
+2021-02-21 21:45:04,880 DEBUG: Matching DJI_0048.JPG and DJI_0049.JPG.  Matcher: FLANN (symmetric) T-desc: 0.490 T-robust: 0.007 T-total: 0.497 Matches: 2457 Robust: 2444 Success: True
+2021-02-21 21:45:05,229 DEBUG: Matching DJI_0048.JPG and DJI_0045.JPG.  Matcher: FLANN (symmetric) T-desc: 0.344 T-robust: 0.002 T-total: 0.346 Matches: 684 Robust: 663 Success: True
+2021-02-21 21:45:05,582 DEBUG: Matching DJI_0048.JPG and DJI_0061.JPG.  Matcher: FLANN (symmetric) T-desc: 0.347 T-robust: 0.003 T-total: 0.350 Matches: 1119 Robust: 1096 Success: True
+2021-02-21 21:45:05,583 DEBUG: Image DJI_0048.JPG matches: 4 out of 4
+2021-02-21 21:45:05,931 DEBUG: Matching DJI_0056.JPG and DJI_0055.JPG.  Matcher: FLANN (symmetric) T-desc: 0.340 T-robust: 0.005 T-total: 0.345 Matches: 1766 Robust: 1717 Success: True
+2021-02-21 21:45:06,238 DEBUG: Matching DJI_0056.JPG and DJI_0057.JPG.  Matcher: FLANN (symmetric) T-desc: 0.294 T-robust: 0.007 T-total: 0.302 Matches: 2465 Robust: 2436 Success: True
+2021-02-21 21:45:06,517 DEBUG: Matching DJI_0056.JPG and DJI_0058.JPG.  Matcher: FLANN (symmetric) T-desc: 0.272 T-robust: 0.004 T-total: 0.276 Matches: 1389 Robust: 1339 Success: True
+2021-02-21 21:45:06,772 DEBUG: Matching DJI_0056.JPG and DJI_0053.JPG.  Matcher: FLANN (symmetric) T-desc: 0.250 T-robust: 0.003 T-total: 0.253 Matches: 817 Robust: 787 Success: True
+2021-02-21 21:45:06,772 DEBUG: Image DJI_0056.JPG matches: 4 out of 4
+2021-02-21 21:45:07,092 DEBUG: Matching DJI_0063.JPG and DJI_0048.JPG.  Matcher: FLANN (symmetric) T-desc: 0.311 T-robust: 0.005 T-total: 0.316 Matches: 1538 Robust: 1522 Success: True
+2021-02-21 21:45:07,438 DEBUG: Matching DJI_0063.JPG and DJI_0049.JPG.  Matcher: FLANN (symmetric) T-desc: 0.340 T-robust: 0.004 T-total: 0.343 Matches: 1264 Robust: 1247 Success: True
+2021-02-21 21:45:07,756 DEBUG: Matching DJI_0063.JPG and DJI_0051.JPG.  Matcher: FLANN (symmetric) T-desc: 0.315 T-robust: 0.001 T-total: 0.317 Matches: 443 Robust: 423 Success: True
+2021-02-21 21:45:08,096 DEBUG: Matching DJI_0063.JPG and DJI_0061.JPG.  Matcher: FLANN (symmetric) T-desc: 0.328 T-robust: 0.006 T-total: 0.334 Matches: 1897 Robust: 1886 Success: True
+2021-02-21 21:45:08,096 DEBUG: Image DJI_0063.JPG matches: 4 out of 4
+2021-02-21 21:45:08,444 DEBUG: Matching DJI_0027.JPG and DJI_0037.JPG.  Matcher: FLANN (symmetric) T-desc: 0.343 T-robust: 0.003 T-total: 0.346 Matches: 865 Robust: 840 Success: True
+2021-02-21 21:45:08,792 DEBUG: Matching DJI_0027.JPG and DJI_0025.JPG.  Matcher: FLANN (symmetric) T-desc: 0.339 T-robust: 0.006 T-total: 0.346 Matches: 868 Robust: 847 Success: True
+2021-02-21 21:45:09,106 DEBUG: Matching DJI_0027.JPG and DJI_0024.JPG.  Matcher: FLANN (symmetric) T-desc: 0.312 T-robust: 0.001 T-total: 0.313 Matches: 332 Robust: 307 Success: True
+2021-02-21 21:45:09,106 DEBUG: Image DJI_0027.JPG matches: 3 out of 3
+2021-02-21 21:45:09,628 DEBUG: Matching DJI_0037.JPG and DJI_0039.JPG.  Matcher: FLANN (symmetric) T-desc: 0.514 T-robust: 0.004 T-total: 0.519 Matches: 1388 Robust: 1353 Success: True
+2021-02-21 21:45:09,996 DEBUG: Matching DJI_0037.JPG and DJI_0025.JPG.  Matcher: FLANN (symmetric) T-desc: 0.362 T-robust: 0.003 T-total: 0.366 Matches: 1071 Robust: 1045 Success: True
+2021-02-21 21:45:10,392 DEBUG: Matching DJI_0037.JPG and DJI_0038.JPG.  Matcher: FLANN (symmetric) T-desc: 0.379 T-robust: 0.010 T-total: 0.390 Matches: 2844 Robust: 2823 Success: True
+2021-02-21 21:45:10,393 DEBUG: Image DJI_0037.JPG matches: 3 out of 3
+2021-02-21 21:45:10,728 DEBUG: Matching DJI_0055.JPG and DJI_0058.JPG.  Matcher: FLANN (symmetric) T-desc: 0.330 T-robust: 0.003 T-total: 0.333 Matches: 996 Robust: 966 Success: True
+2021-02-21 21:45:11,065 DEBUG: Matching DJI_0055.JPG and DJI_0057.JPG.  Matcher: FLANN (symmetric) T-desc: 0.329 T-robust: 0.005 T-total: 0.334 Matches: 1599 Robust: 1544 Success: True
+2021-02-21 21:45:11,412 DEBUG: Matching DJI_0055.JPG and DJI_0053.JPG.  Matcher: FLANN (symmetric) T-desc: 0.340 T-robust: 0.004 T-total: 0.344 Matches: 1435 Robust: 1386 Success: True
+2021-02-21 21:45:11,413 DEBUG: Image DJI_0055.JPG matches: 3 out of 3
+2021-02-21 21:45:11,721 DEBUG: Matching DJI_0058.JPG and DJI_0057.JPG.  Matcher: FLANN (symmetric) T-desc: 0.293 T-robust: 0.007 T-total: 0.300 Matches: 2537 Robust: 2497 Success: True
+2021-02-21 21:45:12,005 DEBUG: Matching DJI_0058.JPG and DJI_0053.JPG.  Matcher: FLANN (symmetric) T-desc: 0.276 T-robust: 0.004 T-total: 0.281 Matches: 1532 Robust: 1509 Success: True
+2021-02-21 21:45:12,384 DEBUG: Matching DJI_0058.JPG and DJI_0051.JPG.  Matcher: FLANN (symmetric) T-desc: 0.371 T-robust: 0.004 T-total: 0.375 Matches: 926 Robust: 884 Success: True
+2021-02-21 21:45:12,385 DEBUG: Image DJI_0058.JPG matches: 3 out of 3
+2021-02-21 21:45:12,836 DEBUG: Matching DJI_0039.JPG and DJI_0038.JPG.  Matcher: FLANN (symmetric) T-desc: 0.426 T-robust: 0.015 T-total: 0.442 Matches: 2906 Robust: 2829 Success: True
+2021-02-21 21:45:13,195 DEBUG: Matching DJI_0039.JPG and DJI_0025.JPG.  Matcher: FLANN (symmetric) T-desc: 0.349 T-robust: 0.007 T-total: 0.356 Matches: 1068 Robust: 1027 Success: True
+2021-02-21 21:45:13,195 DEBUG: Image DJI_0039.JPG matches: 2 out of 2
+2021-02-21 21:45:13,585 DEBUG: Matching DJI_0046.JPG and DJI_0049.JPG.  Matcher: FLANN (symmetric) T-desc: 0.381 T-robust: 0.005 T-total: 0.386 Matches: 1661 Robust: 1647 Success: True
+2021-02-21 21:45:13,970 DEBUG: Matching DJI_0046.JPG and DJI_0032.JPG.  Matcher: FLANN (symmetric) T-desc: 0.377 T-robust: 0.004 T-total: 0.381 Matches: 1293 Robust: 1269 Success: True
+2021-02-21 21:45:13,970 DEBUG: Image DJI_0046.JPG matches: 2 out of 2
+2021-02-21 21:45:14,448 DEBUG: Matching DJI_0025.JPG and DJI_0038.JPG.  Matcher: FLANN (symmetric) T-desc: 0.461 T-robust: 0.009 T-total: 0.470 Matches: 1447 Robust: 1430 Success: True
+2021-02-21 21:45:14,448 DEBUG: Image DJI_0025.JPG matches: 1 out of 1
+2021-02-21 21:45:14,836 DEBUG: Matching DJI_0030.JPG and DJI_0027.JPG.  Matcher: FLANN (symmetric) T-desc: 0.380 T-robust: 0.001 T-total: 0.381 Matches: 450 Robust: 433 Success: True
+2021-02-21 21:45:14,836 DEBUG: Image DJI_0030.JPG matches: 1 out of 1
+2021-02-21 21:45:15,229 DEBUG: Matching DJI_0032.JPG and DJI_0030.JPG.  Matcher: FLANN (symmetric) T-desc: 0.384 T-robust: 0.006 T-total: 0.390 Matches: 1605 Robust: 1574 Success: True
+2021-02-21 21:45:15,230 DEBUG: Image DJI_0032.JPG matches: 1 out of 1
+2021-02-21 21:45:15,579 DEBUG: Matching DJI_0051.JPG and DJI_0061.JPG.  Matcher: FLANN (symmetric) T-desc: 0.343 T-robust: 0.004 T-total: 0.346 Matches: 1234 Robust: 1214 Success: True
+2021-02-21 21:45:15,579 DEBUG: Image DJI_0051.JPG matches: 1 out of 1
+2021-02-21 21:45:15,875 DEBUG: Matching DJI_0053.JPG and DJI_0051.JPG.  Matcher: FLANN (symmetric) T-desc: 0.291 T-robust: 0.003 T-total: 0.294 Matches: 1119 Robust: 1091 Success: True
+2021-02-21 21:45:15,876 DEBUG: Image DJI_0053.JPG matches: 1 out of 1
+2021-02-21 21:45:16,139 DEBUG: Matching DJI_0057.JPG and DJI_0053.JPG.  Matcher: FLANN (symmetric) T-desc: 0.258 T-robust: 0.003 T-total: 0.261 Matches: 1271 Robust: 1232 Success: True
+2021-02-21 21:45:16,139 DEBUG: Image DJI_0057.JPG matches: 1 out of 1
+2021-02-21 21:45:16,490 DEBUG: Matching DJI_0061.JPG and DJI_0049.JPG.  Matcher: FLANN (symmetric) T-desc: 0.339 T-robust: 0.004 T-total: 0.343 Matches: 1620 Robust: 1607 Success: True
+2021-02-21 21:45:16,490 DEBUG: Image DJI_0061.JPG matches: 1 out of 1
+2021-02-21 21:45:16,490 DEBUG: Image DJI_0038.JPG matches: 0 out of 0
+2021-02-21 21:45:16,490 DEBUG: Image DJI_0049.JPG matches: 0 out of 0
+2021-02-21 21:45:16,491 INFO: Matched 189 pairs for 40 ref_images (brown-brown: 189) in 69.51291879899964 seconds (0.3677932243333315 seconds/pair).
+[INFO]    running /code/SuperBuild/src/opensfm/bin/opensfm create_tracks "/var/www/data/c7462e02-82ff-440d-b11d-3d46906415e5/opensfm"
+2021-02-21 21:45:22,266 INFO: reading features
+2021-02-21 21:45:24,015 DEBUG: Merging features onto tracks
+2021-02-21 21:45:27,301 DEBUG: Good tracks: 48704
+[INFO]    running /code/SuperBuild/src/opensfm/bin/opensfm reconstruct "/var/www/data/c7462e02-82ff-440d-b11d-3d46906415e5/opensfm"
+2021-02-21 21:45:33,497 INFO: Starting incremental reconstruction
+2021-02-21 21:45:39,745 INFO: Starting reconstruction with DJI_0037.JPG and DJI_0038.JPG
+2021-02-21 21:45:39,861 INFO: Two-view reconstruction inliers: 2954 / 2954
+2021-02-21 21:45:40,316 INFO: Triangulated: 2954
+2021-02-21 21:45:40,393 DEBUG: Ceres Solver Report: Iterations: 2, Initial cost: 6.678388e+03, Final cost: 6.678244e+03, Termination: CONVERGENCE
+2021-02-21 21:45:41,376 DEBUG: Ceres Solver Report: Iterations: 2, Initial cost: 6.678276e+03, Final cost: 6.678222e+03, Termination: CONVERGENCE
+2021-02-21 21:45:41,661 DEBUG: Ceres Solver Report: Iterations: 10, Initial cost: 8.294140e+00, Final cost: 6.560239e+00, Termination: CONVERGENCE
+2021-02-21 21:45:41,718 INFO: Removed outliers: 114
+2021-02-21 21:45:41,737 INFO: -------------------------------------------------------
+2021-02-21 21:45:41,776 INFO: DJI_0039.JPG resection inliers: 1368 / 1371
+2021-02-21 21:45:41,823 DEBUG: Ceres Solver Report: Iterations: 3, Initial cost: 1.707160e+01, Final cost: 1.274746e+01, Termination: CONVERGENCE
+2021-02-21 21:45:41,824 INFO: Adding DJI_0039.JPG to the reconstruction
+2021-02-21 21:45:42,087 WARNING: Shots and/or GCPs are aligned on a single-line. Using vertical prior
+2021-02-21 21:45:42,612 DEBUG: Ceres Solver Report: Iterations: 12, Initial cost: 3.235216e+01, Final cost: 1.517431e+01, Termination: CONVERGENCE
+2021-02-21 21:45:42,713 INFO: Removed outliers: 148
+2021-02-21 21:45:42,738 INFO: -------------------------------------------------------
+2021-02-21 21:45:42,795 INFO: DJI_0041.JPG resection inliers: 647 / 1539
+2021-02-21 21:45:42,816 DEBUG: Ceres Solver Report: Iterations: 4, Initial cost: 1.264355e+02, Final cost: 1.247185e+02, Termination: CONVERGENCE
+2021-02-21 21:45:42,816 INFO: Adding DJI_0041.JPG to the reconstruction
+2021-02-21 21:45:43,033 INFO: -------------------------------------------------------
+2021-02-21 21:45:43,083 INFO: DJI_0025.JPG resection inliers: 916 / 1616
+2021-02-21 21:45:43,139 DEBUG: Ceres Solver Report: Iterations: 5, Initial cost: 1.704234e+02, Final cost: 1.554894e+02, Termination: CONVERGENCE
+2021-02-21 21:45:43,139 INFO: Adding DJI_0025.JPG to the reconstruction
+2021-02-21 21:45:43,303 INFO: Re-triangulating
+2021-02-21 21:45:43,304 INFO: Shots and/or GCPs are well-conditioned. Using naive 3D-3D alignment.
+2021-02-21 21:45:43,964 DEBUG: Ceres Solver Report: Iterations: 9, Initial cost: 7.001028e+02, Final cost: 2.627751e+01, Termination: CONVERGENCE
+2021-02-21 21:45:46,978 DEBUG: Ceres Solver Report: Iterations: 13, Initial cost: 7.000748e+01, Final cost: 3.980835e+01, Termination: CONVERGENCE
+2021-02-21 21:45:47,153 INFO: Removed outliers: 318
+2021-02-21 21:45:47,179 INFO: -------------------------------------------------------
+2021-02-21 21:45:47,228 INFO: DJI_0036.JPG resection inliers: 1753 / 1759
+2021-02-21 21:45:47,287 DEBUG: Ceres Solver Report: Iterations: 3, Initial cost: 2.546615e+01, Final cost: 2.026639e+01, Termination: CONVERGENCE
+2021-02-21 21:45:47,288 INFO: Adding DJI_0036.JPG to the reconstruction
+2021-02-21 21:45:47,538 INFO: Shots and/or GCPs are well-conditioned. Using naive 3D-3D alignment.
+2021-02-21 21:45:48,240 DEBUG: Ceres Solver Report: Iterations: 6, Initial cost: 5.733282e+01, Final cost: 4.644277e+01, Termination: CONVERGENCE
+2021-02-21 21:45:48,414 INFO: Removed outliers: 158
+2021-02-21 21:45:48,441 INFO: -------------------------------------------------------
+2021-02-21 21:45:48,497 INFO: DJI_0026.JPG resection inliers: 1964 / 1972
+2021-02-21 21:45:48,564 DEBUG: Ceres Solver Report: Iterations: 3, Initial cost: 4.122584e+01, Final cost: 2.260683e+01, Termination: CONVERGENCE
+2021-02-21 21:45:48,564 INFO: Adding DJI_0026.JPG to the reconstruction
+2021-02-21 21:45:48,795 INFO: Shots and/or GCPs are well-conditioned. Using naive 3D-3D alignment.
+2021-02-21 21:45:49,758 DEBUG: Ceres Solver Report: Iterations: 5, Initial cost: 7.015787e+01, Final cost: 5.729034e+01, Termination: CONVERGENCE
+2021-02-21 21:45:49,976 INFO: Removed outliers: 160
+2021-02-21 21:45:50,002 INFO: -------------------------------------------------------
+2021-02-21 21:45:50,049 INFO: DJI_0042.JPG resection inliers: 1889 / 1893
+2021-02-21 21:45:50,117 DEBUG: Ceres Solver Report: Iterations: 3, Initial cost: 2.035673e+01, Final cost: 1.840886e+01, Termination: CONVERGENCE
+2021-02-21 21:45:50,119 INFO: Adding DJI_0042.JPG to the reconstruction
+2021-02-21 21:45:50,398 INFO: -------------------------------------------------------
+2021-02-21 21:45:50,448 INFO: DJI_0040.JPG resection inliers: 2105 / 2129
+2021-02-21 21:45:50,532 DEBUG: Ceres Solver Report: Iterations: 4, Initial cost: 7.008873e+01, Final cost: 5.439693e+01, Termination: CONVERGENCE
+2021-02-21 21:45:50,534 INFO: Adding DJI_0040.JPG to the reconstruction
+2021-02-21 21:45:50,704 INFO: Shots and/or GCPs are well-conditioned. Using naive 3D-3D alignment.
+2021-02-21 21:45:52,648 DEBUG: Ceres Solver Report: Iterations: 12, Initial cost: 1.771298e+02, Final cost: 1.276734e+02, Termination: CONVERGENCE
+2021-02-21 21:45:52,959 INFO: Removed outliers: 252
+2021-02-21 21:45:52,987 INFO: -------------------------------------------------------
+2021-02-21 21:45:53,039 INFO: DJI_0054.JPG resection inliers: 2079 / 2101
+2021-02-21 21:45:53,109 DEBUG: Ceres Solver Report: Iterations: 4, Initial cost: 6.749516e+01, Final cost: 5.360413e+01, Termination: CONVERGENCE
+2021-02-21 21:45:53,110 INFO: Adding DJI_0054.JPG to the reconstruction
+2021-02-21 21:45:53,274 INFO: Re-triangulating
+2021-02-21 21:45:53,275 INFO: Shots and/or GCPs are well-conditioned. Using naive 3D-3D alignment.
+2021-02-21 21:45:54,663 DEBUG: Ceres Solver Report: Iterations: 5, Initial cost: 1.637644e+02, Final cost: 1.252526e+02, Termination: CONVERGENCE
+2021-02-21 21:46:00,631 DEBUG: Ceres Solver Report: Iterations: 10, Initial cost: 3.430532e+02, Final cost: 1.718569e+02, Termination: CONVERGENCE
+2021-02-21 21:46:00,963 INFO: Removed outliers: 590
+2021-02-21 21:46:00,993 INFO: -------------------------------------------------------
+2021-02-21 21:46:01,044 INFO: DJI_0055.JPG resection inliers: 2232 / 2249
+2021-02-21 21:46:01,125 DEBUG: Ceres Solver Report: Iterations: 3, Initial cost: 5.597038e+01, Final cost: 4.965390e+01, Termination: CONVERGENCE
+2021-02-21 21:46:01,126 INFO: Adding DJI_0055.JPG to the reconstruction
+2021-02-21 21:46:01,368 INFO: -------------------------------------------------------
+2021-02-21 21:46:01,428 INFO: DJI_0053.JPG resection inliers: 2479 / 2499
+2021-02-21 21:46:01,525 DEBUG: Ceres Solver Report: Iterations: 3, Initial cost: 7.076833e+01, Final cost: 3.076233e+01, Termination: CONVERGENCE
+2021-02-21 21:46:01,527 INFO: Adding DJI_0053.JPG to the reconstruction
+2021-02-21 21:46:01,706 INFO: Shots and/or GCPs are well-conditioned. Using naive 3D-3D alignment.
+2021-02-21 21:46:03,596 DEBUG: Ceres Solver Report: Iterations: 7, Initial cost: 2.283158e+02, Final cost: 1.765201e+02, Termination: CONVERGENCE
+2021-02-21 21:46:04,027 INFO: Removed outliers: 315
+2021-02-21 21:46:04,084 INFO: -------------------------------------------------------
+2021-02-21 21:46:04,145 INFO: DJI_0043.JPG resection inliers: 2388 / 2399
+2021-02-21 21:46:04,226 DEBUG: Ceres Solver Report: Iterations: 3, Initial cost: 5.194714e+01, Final cost: 2.818429e+01, Termination: CONVERGENCE
+2021-02-21 21:46:04,227 INFO: Adding DJI_0043.JPG to the reconstruction
+2021-02-21 21:46:04,585 INFO: -------------------------------------------------------
+2021-02-21 21:46:04,644 INFO: DJI_0052.JPG resection inliers: 2382 / 2410
+2021-02-21 21:46:04,727 DEBUG: Ceres Solver Report: Iterations: 3, Initial cost: 3.733072e+01, Final cost: 2.854165e+01, Termination: CONVERGENCE
+2021-02-21 21:46:04,728 INFO: Adding DJI_0052.JPG to the reconstruction
+2021-02-21 21:46:04,980 INFO: -------------------------------------------------------
+2021-02-21 21:46:05,037 INFO: DJI_0057.JPG resection inliers: 2294 / 2338
+2021-02-21 21:46:05,112 DEBUG: Ceres Solver Report: Iterations: 3, Initial cost: 7.666585e+01, Final cost: 4.912185e+01, Termination: CONVERGENCE
+2021-02-21 21:46:05,113 INFO: Adding DJI_0057.JPG to the reconstruction
+2021-02-21 21:46:05,300 INFO: -------------------------------------------------------
+2021-02-21 21:46:05,356 INFO: DJI_0058.JPG resection inliers: 2347 / 2402
+2021-02-21 21:46:05,433 DEBUG: Ceres Solver Report: Iterations: 3, Initial cost: 4.710955e+01, Final cost: 4.046882e+01, Termination: CONVERGENCE
+2021-02-21 21:46:05,434 INFO: Adding DJI_0058.JPG to the reconstruction
+2021-02-21 21:46:05,661 INFO: Shots and/or GCPs are well-conditioned. Using naive 3D-3D alignment.
+2021-02-21 21:46:08,177 DEBUG: Ceres Solver Report: Iterations: 7, Initial cost: 3.332783e+02, Final cost: 2.421509e+02, Termination: CONVERGENCE
+2021-02-21 21:46:08,706 INFO: Removed outliers: 562
+2021-02-21 21:46:08,744 INFO: -------------------------------------------------------
+2021-02-21 21:46:08,806 INFO: DJI_0056.JPG resection inliers: 2506 / 2563
+2021-02-21 21:46:08,908 DEBUG: Ceres Solver Report: Iterations: 3, Initial cost: 9.692865e+01, Final cost: 8.847865e+01, Termination: CONVERGENCE
+2021-02-21 21:46:08,910 INFO: Adding DJI_0056.JPG to the reconstruction
+2021-02-21 21:46:09,097 INFO: -------------------------------------------------------
+2021-02-21 21:46:09,164 INFO: DJI_0059.JPG resection inliers: 2608 / 2655
+2021-02-21 21:46:09,250 DEBUG: Ceres Solver Report: Iterations: 3, Initial cost: 4.507745e+01, Final cost: 3.154559e+01, Termination: CONVERGENCE
+2021-02-21 21:46:09,251 INFO: Adding DJI_0059.JPG to the reconstruction
+2021-02-21 21:46:09,689 INFO: -------------------------------------------------------
+2021-02-21 21:46:09,761 INFO: DJI_0051.JPG resection inliers: 2713 / 2746
+2021-02-21 21:46:09,853 DEBUG: Ceres Solver Report: Iterations: 3, Initial cost: 5.859371e+01, Final cost: 3.536288e+01, Termination: CONVERGENCE
+2021-02-21 21:46:09,855 INFO: Adding DJI_0051.JPG to the reconstruction
+2021-02-21 21:46:10,094 INFO: Shots and/or GCPs are well-conditioned. Using naive 3D-3D alignment.
+2021-02-21 21:46:13,530 DEBUG: Ceres Solver Report: Iterations: 8, Initial cost: 4.170157e+02, Final cost: 3.293031e+02, Termination: CONVERGENCE
+2021-02-21 21:46:14,177 INFO: Removed outliers: 477
+2021-02-21 21:46:14,208 INFO: -------------------------------------------------------
+2021-02-21 21:46:14,278 INFO: DJI_0050.JPG resection inliers: 2730 / 2753
+2021-02-21 21:46:14,485 DEBUG: Ceres Solver Report: Iterations: 3, Initial cost: 3.357492e+01, Final cost: 3.003387e+01, Termination: CONVERGENCE
+2021-02-21 21:46:14,491 INFO: Adding DJI_0050.JPG to the reconstruction
+2021-02-21 21:46:14,868 INFO: -------------------------------------------------------
+2021-02-21 21:46:14,940 INFO: DJI_0060.JPG resection inliers: 2993 / 3047
+2021-02-21 21:46:15,041 DEBUG: Ceres Solver Report: Iterations: 3, Initial cost: 4.668654e+01, Final cost: 4.338544e+01, Termination: CONVERGENCE
+2021-02-21 21:46:15,042 INFO: Adding DJI_0060.JPG to the reconstruction
+2021-02-21 21:46:15,249 INFO: Re-triangulating
+2021-02-21 21:46:15,250 INFO: Shots and/or GCPs are well-conditioned. Using naive 3D-3D alignment.
+2021-02-21 21:46:18,504 DEBUG: Ceres Solver Report: Iterations: 6, Initial cost: 3.753552e+02, Final cost: 3.351275e+02, Termination: CONVERGENCE
+2021-02-21 21:46:32,389 DEBUG: Ceres Solver Report: Iterations: 10, Initial cost: 1.003742e+03, Final cost: 4.736386e+02, Termination: CONVERGENCE
+2021-02-21 21:46:33,153 INFO: Removed outliers: 1829
+2021-02-21 21:46:33,197 INFO: -------------------------------------------------------
+2021-02-21 21:46:33,273 INFO: DJI_0044.JPG resection inliers: 2993 / 3012
+2021-02-21 21:46:33,376 DEBUG: Ceres Solver Report: Iterations: 3, Initial cost: 4.832482e+01, Final cost: 4.406218e+01, Termination: CONVERGENCE
+2021-02-21 21:46:33,378 INFO: Adding DJI_0044.JPG to the reconstruction
+2021-02-21 21:46:33,578 INFO: -------------------------------------------------------
+2021-02-21 21:46:33,641 INFO: DJI_0061.JPG resection inliers: 2443 / 2467
+2021-02-21 21:46:33,726 DEBUG: Ceres Solver Report: Iterations: 3, Initial cost: 4.752000e+01, Final cost: 4.065214e+01, Termination: CONVERGENCE
+2021-02-21 21:46:33,727 INFO: Adding DJI_0061.JPG to the reconstruction
+2021-02-21 21:46:33,970 INFO: -------------------------------------------------------
+2021-02-21 21:46:34,076 INFO: DJI_0062.JPG resection inliers: 2377 / 2413
+2021-02-21 21:46:34,164 DEBUG: Ceres Solver Report: Iterations: 3, Initial cost: 5.489660e+01, Final cost: 4.473161e+01, Termination: CONVERGENCE
+2021-02-21 21:46:34,165 INFO: Adding DJI_0062.JPG to the reconstruction
+2021-02-21 21:46:34,607 INFO: -------------------------------------------------------
+2021-02-21 21:46:34,674 INFO: DJI_0049.JPG resection inliers: 2594 / 2619
+2021-02-21 21:46:34,765 DEBUG: Ceres Solver Report: Iterations: 3, Initial cost: 7.323917e+01, Final cost: 4.849444e+01, Termination: CONVERGENCE
+2021-02-21 21:46:34,766 INFO: Adding DJI_0049.JPG to the reconstruction
+2021-02-21 21:46:34,963 INFO: -------------------------------------------------------
+2021-02-21 21:46:35,025 INFO: DJI_0045.JPG resection inliers: 2531 / 2555
+2021-02-21 21:46:35,110 DEBUG: Ceres Solver Report: Iterations: 3, Initial cost: 5.955761e+01, Final cost: 5.036424e+01, Termination: CONVERGENCE
+2021-02-21 21:46:35,111 INFO: Adding DJI_0045.JPG to the reconstruction
+2021-02-21 21:46:35,351 INFO: Shots and/or GCPs are well-conditioned. Using naive 3D-3D alignment.
+2021-02-21 21:46:39,734 DEBUG: Ceres Solver Report: Iterations: 6, Initial cost: 5.843484e+02, Final cost: 4.409009e+02, Termination: CONVERGENCE
+2021-02-21 21:46:40,662 INFO: Removed outliers: 729
+2021-02-21 21:46:40,701 INFO: -------------------------------------------------------
+2021-02-21 21:46:40,762 INFO: DJI_0063.JPG resection inliers: 2534 / 2564
+2021-02-21 21:46:40,848 DEBUG: Ceres Solver Report: Iterations: 3, Initial cost: 5.162604e+01, Final cost: 4.206309e+01, Termination: CONVERGENCE
+2021-02-21 21:46:40,849 INFO: Adding DJI_0063.JPG to the reconstruction
+2021-02-21 21:46:41,039 INFO: -------------------------------------------------------
+2021-02-21 21:46:41,094 INFO: DJI_0048.JPG resection inliers: 2454 / 2473
+2021-02-21 21:46:41,179 DEBUG: Ceres Solver Report: Iterations: 4, Initial cost: 1.328854e+02, Final cost: 8.507581e+01, Termination: CONVERGENCE
+2021-02-21 21:46:41,180 INFO: Adding DJI_0048.JPG to the reconstruction
+2021-02-21 21:46:41,377 INFO: -------------------------------------------------------
+2021-02-21 21:46:41,437 INFO: DJI_0046.JPG resection inliers: 2537 / 2569
+2021-02-21 21:46:41,527 DEBUG: Ceres Solver Report: Iterations: 4, Initial cost: 1.129951e+02, Final cost: 8.089573e+01, Termination: CONVERGENCE
+2021-02-21 21:46:41,528 INFO: Adding DJI_0046.JPG to the reconstruction
+2021-02-21 21:46:41,773 INFO: -------------------------------------------------------
+2021-02-21 21:46:41,830 INFO: DJI_0047.JPG resection inliers: 2534 / 2620
+2021-02-21 21:46:41,917 DEBUG: Ceres Solver Report: Iterations: 3, Initial cost: 1.089221e+02, Final cost: 9.406948e+01, Termination: CONVERGENCE
+2021-02-21 21:46:41,918 INFO: Adding DJI_0047.JPG to the reconstruction
+2021-02-21 21:46:42,139 INFO: -------------------------------------------------------
+2021-02-21 21:46:42,193 INFO: DJI_0035.JPG resection inliers: 2355 / 2375
+2021-02-21 21:46:42,275 DEBUG: Ceres Solver Report: Iterations: 3, Initial cost: 4.795813e+01, Final cost: 3.336800e+01, Termination: CONVERGENCE
+2021-02-21 21:46:42,276 INFO: Adding DJI_0035.JPG to the reconstruction
+2021-02-21 21:46:42,467 INFO: -------------------------------------------------------
+2021-02-21 21:46:42,535 INFO: DJI_0034.JPG resection inliers: 2657 / 2697
+2021-02-21 21:46:42,627 DEBUG: Ceres Solver Report: Iterations: 3, Initial cost: 7.614093e+01, Final cost: 5.755398e+01, Termination: CONVERGENCE
+2021-02-21 21:46:42,628 INFO: Adding DJI_0034.JPG to the reconstruction
+2021-02-21 21:46:42,818 INFO: Shots and/or GCPs are well-conditioned. Using naive 3D-3D alignment.
+2021-02-21 21:46:48,660 DEBUG: Ceres Solver Report: Iterations: 6, Initial cost: 8.384441e+02, Final cost: 5.894119e+02, Termination: CONVERGENCE
+2021-02-21 21:46:50,022 INFO: Removed outliers: 595
+2021-02-21 21:46:50,062 INFO: -------------------------------------------------------
+2021-02-21 21:46:50,136 INFO: DJI_0033.JPG resection inliers: 2579 / 2600
+2021-02-21 21:46:50,248 DEBUG: Ceres Solver Report: Iterations: 3, Initial cost: 1.191121e+02, Final cost: 3.544217e+01, Termination: CONVERGENCE
+2021-02-21 21:46:50,250 INFO: Adding DJI_0033.JPG to the reconstruction
+2021-02-21 21:46:50,583 INFO: -------------------------------------------------------
+2021-02-21 21:46:50,650 INFO: DJI_0032.JPG resection inliers: 2539 / 2584
+2021-02-21 21:46:50,741 DEBUG: Ceres Solver Report: Iterations: 4, Initial cost: 2.563068e+02, Final cost: 1.149384e+02, Termination: CONVERGENCE
+2021-02-21 21:46:50,742 INFO: Adding DJI_0032.JPG to the reconstruction
+2021-02-21 21:46:50,960 INFO: -------------------------------------------------------
+2021-02-21 21:46:51,023 INFO: DJI_0027.JPG resection inliers: 2381 / 2406
+2021-02-21 21:46:51,103 DEBUG: Ceres Solver Report: Iterations: 3, Initial cost: 1.552697e+02, Final cost: 3.168776e+01, Termination: CONVERGENCE
+2021-02-21 21:46:51,104 INFO: Adding DJI_0027.JPG to the reconstruction
+2021-02-21 21:46:51,347 INFO: -------------------------------------------------------
+2021-02-21 21:46:51,408 INFO: DJI_0029.JPG resection inliers: 2517 / 2556
+2021-02-21 21:46:51,500 DEBUG: Ceres Solver Report: Iterations: 3, Initial cost: 7.510625e+01, Final cost: 6.573724e+01, Termination: CONVERGENCE
+2021-02-21 21:46:51,501 INFO: Adding DJI_0029.JPG to the reconstruction
+2021-02-21 21:46:51,700 INFO: -------------------------------------------------------
+2021-02-21 21:46:51,768 INFO: DJI_0030.JPG resection inliers: 2657 / 2813
+2021-02-21 21:46:51,866 DEBUG: Ceres Solver Report: Iterations: 4, Initial cost: 2.083716e+02, Final cost: 8.942970e+01, Termination: CONVERGENCE
+2021-02-21 21:46:51,867 INFO: Adding DJI_0030.JPG to the reconstruction
+2021-02-21 21:46:52,107 INFO: -------------------------------------------------------
+2021-02-21 21:46:52,172 INFO: DJI_0028.JPG resection inliers: 2828 / 2867
+2021-02-21 21:46:52,276 DEBUG: Ceres Solver Report: Iterations: 3, Initial cost: 5.363970e+01, Final cost: 4.424809e+01, Termination: CONVERGENCE
+2021-02-21 21:46:52,278 INFO: Adding DJI_0028.JPG to the reconstruction
+2021-02-21 21:46:52,468 INFO: -------------------------------------------------------
+2021-02-21 21:46:52,540 INFO: DJI_0031.JPG resection inliers: 2686 / 2789
+2021-02-21 21:46:52,647 DEBUG: Ceres Solver Report: Iterations: 4, Initial cost: 1.944495e+02, Final cost: 1.041643e+02, Termination: CONVERGENCE
+2021-02-21 21:46:52,648 INFO: Adding DJI_0031.JPG to the reconstruction
+2021-02-21 21:46:52,783 INFO: Shots and/or GCPs are well-conditioned. Using naive 3D-3D alignment.
+2021-02-21 21:47:01,411 DEBUG: Ceres Solver Report: Iterations: 7, Initial cost: 1.130289e+03, Final cost: 8.045413e+02, Termination: CONVERGENCE
+2021-02-21 21:47:02,997 INFO: Removed outliers: 670
+2021-02-21 21:47:03,044 INFO: -------------------------------------------------------
+2021-02-21 21:47:03,098 INFO: DJI_0024.JPG resection inliers: 1914 / 1958
+2021-02-21 21:47:03,210 DEBUG: Ceres Solver Report: Iterations: 5, Initial cost: 2.601078e+02, Final cost: 1.828727e+02, Termination: CONVERGENCE
+2021-02-21 21:47:03,211 INFO: Adding DJI_0024.JPG to the reconstruction
+2021-02-21 21:47:03,386 INFO: -------------------------------------------------------
+2021-02-21 21:47:03,388 INFO: Shots and/or GCPs are well-conditioned. Using naive 3D-3D alignment.
+2021-02-21 21:47:12,346 DEBUG: Ceres Solver Report: Iterations: 8, Initial cost: 9.621246e+02, Final cost: 8.821401e+02, Termination: CONVERGENCE
+2021-02-21 21:47:13,746 INFO: Removed outliers: 461
+2021-02-21 21:47:15,324 INFO: Reconstruction 0: 40 images, 48091 points
+2021-02-21 21:47:15,325 INFO: 1 partial reconstructions in total.
+[INFO]    Updating /var/www/data/c7462e02-82ff-440d-b11d-3d46906415e5/opensfm/config.yaml
+[INFO]    undistorted_image_max_size: 2048
+[INFO]    Undistorting /var/www/data/c7462e02-82ff-440d-b11d-3d46906415e5/opensfm ...
+2021-02-21 21:47:26,703 DEBUG: Undistorting image DJI_0048.JPG
+2021-02-21 21:47:27,535 DEBUG: Undistorting image DJI_0037.JPG
+2021-02-21 21:47:28,333 DEBUG: Undistorting image DJI_0041.JPG
+2021-02-21 21:47:29,364 DEBUG: Undistorting image DJI_0063.JPG
+2021-02-21 21:47:30,320 DEBUG: Undistorting image DJI_0046.JPG
+2021-02-21 21:47:31,236 DEBUG: Undistorting image DJI_0045.JPG
+2021-02-21 21:47:32,119 DEBUG: Undistorting image DJI_0061.JPG
+2021-02-21 21:47:32,979 DEBUG: Undistorting image DJI_0060.JPG
+2021-02-21 21:47:33,899 DEBUG: Undistorting image DJI_0025.JPG
+2021-02-21 21:47:35,028 DEBUG: Undistorting image DJI_0059.JPG
+2021-02-21 21:47:35,930 DEBUG: Undistorting image DJI_0053.JPG
+2021-02-21 21:47:36,786 DEBUG: Undistorting image DJI_0049.JPG
+2021-02-21 21:47:37,603 DEBUG: Undistorting image DJI_0035.JPG
+2021-02-21 21:47:38,432 DEBUG: Undistorting image DJI_0055.JPG
+2021-02-21 21:47:39,323 DEBUG: Undistorting image DJI_0027.JPG
+2021-02-21 21:47:40,270 DEBUG: Undistorting image DJI_0047.JPG
+2021-02-21 21:47:41,182 DEBUG: Undistorting image DJI_0034.JPG
+2021-02-21 21:47:42,042 DEBUG: Undistorting image DJI_0054.JPG
+2021-02-21 21:47:42,876 DEBUG: Undistorting image DJI_0030.JPG
+2021-02-21 21:47:43,763 DEBUG: Undistorting image DJI_0031.JPG
+2021-02-21 21:47:44,793 DEBUG: Undistorting image DJI_0029.JPG
+2021-02-21 21:47:45,669 DEBUG: Undistorting image DJI_0040.JPG
+2021-02-21 21:47:46,504 DEBUG: Undistorting image DJI_0028.JPG
+2021-02-21 21:47:47,378 DEBUG: Undistorting image DJI_0043.JPG
+2021-02-21 21:47:48,239 DEBUG: Undistorting image DJI_0051.JPG
+2021-02-21 21:47:49,227 DEBUG: Undistorting image DJI_0038.JPG
+2021-02-21 21:47:50,380 DEBUG: Undistorting image DJI_0058.JPG
+2021-02-21 21:47:51,275 DEBUG: Undistorting image DJI_0024.JPG
+2021-02-21 21:47:52,118 DEBUG: Undistorting image DJI_0042.JPG
+2021-02-21 21:47:52,936 DEBUG: Undistorting image DJI_0032.JPG
+2021-02-21 21:47:53,745 DEBUG: Undistorting image DJI_0036.JPG
+2021-02-21 21:47:54,768 DEBUG: Undistorting image DJI_0050.JPG
+2021-02-21 21:47:55,720 DEBUG: Undistorting image DJI_0056.JPG
+2021-02-21 21:47:56,692 DEBUG: Undistorting image DJI_0033.JPG
+2021-02-21 21:47:57,516 DEBUG: Undistorting image DJI_0039.JPG
+2021-02-21 21:47:58,356 DEBUG: Undistorting image DJI_0062.JPG
+2021-02-21 21:47:59,296 DEBUG: Undistorting image DJI_0026.JPG
+2021-02-21 21:48:00,299 DEBUG: Undistorting image DJI_0052.JPG
+2021-02-21 21:48:01,238 DEBUG: Undistorting image DJI_0044.JPG
+2021-02-21 21:48:02,077 DEBUG: Undistorting image DJI_0057.JPG
+[INFO]    running /code/SuperBuild/src/opensfm/bin/opensfm export_visualsfm --points "/var/www/data/c7462e02-82ff-440d-b11d-3d46906415e5/opensfm"
+[INFO]    running /code/SuperBuild/src/opensfm/bin/opensfm export_geocoords --transformation --proj '+proj=utm +zone=16 +datum=WGS84 +units=m +no_defs +type=crs' "/var/www/data/c7462e02-82ff-440d-b11d-3d46906415e5/opensfm"
+[INFO]    Export reconstruction stats
+[INFO]    running /code/SuperBuild/src/opensfm/bin/opensfm compute_statistics --diagram_max_points 100000 "/var/www/data/c7462e02-82ff-440d-b11d-3d46906415e5/opensfm"
+2021-02-21 21:48:39,685 DEBUG: locator: <matplotlib.colorbar._ColorbarAutoLocator object at 0x7f0693468580>
+2021-02-21 21:48:39,685 DEBUG: Using auto colorbar locator <matplotlib.colorbar._ColorbarAutoLocator object at 0x7f0693468580> on colorbar
+2021-02-21 21:48:39,686 DEBUG: Setting pcolormesh
+2021-02-21 21:48:39,702 DEBUG: findfont: Matching sans\-serif:style=normal:variant=normal:weight=normal:stretch=normal:size=12.0.
+2021-02-21 21:48:39,703 DEBUG: findfont: score(<Font 'cmb10' (cmb10.ttf) normal normal 400 normal>) = 10.05
+2021-02-21 21:48:39,703 DEBUG: findfont: score(<Font 'STIXSizeTwoSym' (STIXSizTwoSymReg.ttf) normal normal 400 normal>) = 10.05
+2021-02-21 21:48:39,703 DEBUG: findfont: score(<Font 'cmsy10' (cmsy10.ttf) normal normal 400 normal>) = 10.05
+2021-02-21 21:48:39,704 DEBUG: findfont: score(<Font 'STIXSizeFourSym' (STIXSizFourSymBol.ttf) normal normal 700 normal>) = 10.335
+2021-02-21 21:48:39,704 DEBUG: findfont: score(<Font 'STIXNonUnicode' (STIXNonUniBolIta.ttf) italic normal 700 normal>) = 11.335
+2021-02-21 21:48:39,704 DEBUG: findfont: score(<Font 'DejaVu Sans Mono' (DejaVuSansMono-BoldOblique.ttf) oblique normal 700 normal>) = 11.335
+2021-02-21 21:48:39,704 DEBUG: findfont: score(<Font 'cmss10' (cmss10.ttf) normal normal 400 normal>) = 10.05
+2021-02-21 21:48:39,704 DEBUG: findfont: score(<Font 'DejaVu Sans' (DejaVuSans-Bold.ttf) normal normal 700 normal>) = 0.33499999999999996
+2021-02-21 21:48:39,704 DEBUG: findfont: score(<Font 'STIXGeneral' (STIXGeneral.ttf) normal normal 400 normal>) = 10.05
+2021-02-21 21:48:39,704 DEBUG: findfont: score(<Font 'DejaVu Serif' (DejaVuSerif.ttf) normal normal 400 normal>) = 10.05
+2021-02-21 21:48:39,705 DEBUG: findfont: score(<Font 'STIXSizeThreeSym' (STIXSizThreeSymBol.ttf) normal normal 700 normal>) = 10.335
+2021-02-21 21:48:39,705 DEBUG: findfont: score(<Font 'DejaVu Serif' (DejaVuSerif-Bold.ttf) normal normal 700 normal>) = 10.335
+2021-02-21 21:48:39,705 DEBUG: findfont: score(<Font 'DejaVu Sans Mono' (DejaVuSansMono-Bold.ttf) normal normal 700 normal>) = 10.335
+2021-02-21 21:48:39,705 DEBUG: findfont: score(<Font 'DejaVu Serif Display' (DejaVuSerifDisplay.ttf) normal normal 400 normal>) = 10.05
+2021-02-21 21:48:39,705 DEBUG: findfont: score(<Font 'cmex10' (cmex10.ttf) normal normal 400 normal>) = 10.05
+2021-02-21 21:48:39,705 DEBUG: findfont: score(<Font 'STIXNonUnicode' (STIXNonUniIta.ttf) italic normal 400 normal>) = 11.05
+2021-02-21 21:48:39,705 DEBUG: findfont: score(<Font 'STIXSizeFourSym' (STIXSizFourSymReg.ttf) normal normal 400 normal>) = 10.05
+2021-02-21 21:48:39,706 DEBUG: findfont: score(<Font 'DejaVu Sans Mono' (DejaVuSansMono.ttf) normal normal 400 normal>) = 10.05
+2021-02-21 21:48:39,706 DEBUG: findfont: score(<Font 'cmr10' (cmr10.ttf) normal normal 400 normal>) = 10.05
+2021-02-21 21:48:39,706 DEBUG: findfont: score(<Font 'STIXSizeFiveSym' (STIXSizFiveSymReg.ttf) normal normal 400 normal>) = 10.05
+2021-02-21 21:48:39,706 DEBUG: findfont: score(<Font 'DejaVu Sans' (DejaVuSans-BoldOblique.ttf) oblique normal 700 normal>) = 1.335
+2021-02-21 21:48:39,706 DEBUG: findfont: score(<Font 'STIXGeneral' (STIXGeneralBolIta.ttf) italic normal 700 normal>) = 11.335
+2021-02-21 21:48:39,706 DEBUG: findfont: score(<Font 'STIXNonUnicode' (STIXNonUniBol.ttf) normal normal 700 normal>) = 10.335
+2021-02-21 21:48:39,706 DEBUG: findfont: score(<Font 'DejaVu Serif' (DejaVuSerif-Italic.ttf) italic normal 400 normal>) = 11.05
+2021-02-21 21:48:39,706 DEBUG: findfont: score(<Font 'DejaVu Sans Mono' (DejaVuSansMono-Oblique.ttf) oblique normal 400 normal>) = 11.05
+2021-02-21 21:48:39,707 DEBUG: findfont: score(<Font 'STIXSizeOneSym' (STIXSizOneSymBol.ttf) normal normal 700 normal>) = 10.335
+2021-02-21 21:48:39,707 DEBUG: findfont: score(<Font 'DejaVu Sans' (DejaVuSans-Oblique.ttf) oblique normal 400 normal>) = 1.05
+2021-02-21 21:48:39,707 DEBUG: findfont: score(<Font 'STIXGeneral' (STIXGeneralItalic.ttf) italic normal 400 normal>) = 11.05
+2021-02-21 21:48:39,707 DEBUG: findfont: score(<Font 'cmtt10' (cmtt10.ttf) normal normal 400 normal>) = 10.05
+2021-02-21 21:48:39,707 DEBUG: findfont: score(<Font 'STIXGeneral' (STIXGeneralBol.ttf) normal normal 700 normal>) = 10.335
+2021-02-21 21:48:39,707 DEBUG: findfont: score(<Font 'STIXSizeTwoSym' (STIXSizTwoSymBol.ttf) normal normal 700 normal>) = 10.335
+2021-02-21 21:48:39,707 DEBUG: findfont: score(<Font 'STIXNonUnicode' (STIXNonUni.ttf) normal normal 400 normal>) = 10.05
+2021-02-21 21:48:39,708 DEBUG: findfont: score(<Font 'DejaVu Sans' (DejaVuSans.ttf) normal normal 400 normal>) = 0.05
+2021-02-21 21:48:39,708 DEBUG: findfont: score(<Font 'DejaVu Sans Display' (DejaVuSansDisplay.ttf) normal normal 400 normal>) = 10.05
+2021-02-21 21:48:39,708 DEBUG: findfont: score(<Font 'cmmi10' (cmmi10.ttf) normal normal 400 normal>) = 10.05
+2021-02-21 21:48:39,708 DEBUG: findfont: score(<Font 'DejaVu Serif' (DejaVuSerif-BoldItalic.ttf) italic normal 700 normal>) = 11.335
+2021-02-21 21:48:39,708 DEBUG: findfont: score(<Font 'STIXSizeThreeSym' (STIXSizThreeSymReg.ttf) normal normal 400 normal>) = 10.05
+2021-02-21 21:48:39,708 DEBUG: findfont: score(<Font 'STIXSizeOneSym' (STIXSizOneSymReg.ttf) normal normal 400 normal>) = 10.05
+2021-02-21 21:48:39,708 DEBUG: findfont: score(<Font 'DejaVu Serif' (DejaVuSerif-Bold.ttf) normal normal 700 normal>) = 10.335
+2021-02-21 21:48:39,709 DEBUG: findfont: score(<Font 'DejaVu Sans Mono' (DejaVuSansMono-Bold.ttf) normal normal 700 normal>) = 10.335
+2021-02-21 21:48:39,709 DEBUG: findfont: score(<Font 'DejaVu Serif' (DejaVuSerif.ttf) normal normal 400 normal>) = 10.05
+2021-02-21 21:48:39,709 DEBUG: findfont: score(<Font 'DejaVu Sans' (DejaVuSans.ttf) normal normal 400 normal>) = 0.05
+2021-02-21 21:48:39,709 DEBUG: findfont: score(<Font 'DejaVu Sans' (DejaVuSans-Bold.ttf) normal normal 700 normal>) = 0.33499999999999996
+2021-02-21 21:48:39,709 DEBUG: findfont: score(<Font 'DejaVu Sans Mono' (DejaVuSansMono.ttf) normal normal 400 normal>) = 10.05
+2021-02-21 21:48:39,709 DEBUG: findfont: Matching sans\-serif:style=normal:variant=normal:weight=normal:stretch=normal:size=12.0 to DejaVu Sans ('/usr/local/lib/python3.8/dist-packages/matplotlib/mpl-data/fonts/ttf/DejaVuSans.ttf') with score of 0.050000.
+2021-02-21 21:48:39,939 DEBUG: findfont: Matching sans\-serif:style=normal:variant=normal:weight=normal:stretch=normal:size=10.0.
+2021-02-21 21:48:39,939 DEBUG: findfont: score(<Font 'cmb10' (cmb10.ttf) normal normal 400 normal>) = 10.05
+2021-02-21 21:48:39,939 DEBUG: findfont: score(<Font 'STIXSizeTwoSym' (STIXSizTwoSymReg.ttf) normal normal 400 normal>) = 10.05
+2021-02-21 21:48:39,939 DEBUG: findfont: score(<Font 'cmsy10' (cmsy10.ttf) normal normal 400 normal>) = 10.05
+2021-02-21 21:48:39,940 DEBUG: findfont: score(<Font 'STIXSizeFourSym' (STIXSizFourSymBol.ttf) normal normal 700 normal>) = 10.335
+2021-02-21 21:48:39,940 DEBUG: findfont: score(<Font 'STIXNonUnicode' (STIXNonUniBolIta.ttf) italic normal 700 normal>) = 11.335
+2021-02-21 21:48:39,940 DEBUG: findfont: score(<Font 'DejaVu Sans Mono' (DejaVuSansMono-BoldOblique.ttf) oblique normal 700 normal>) = 11.335
+2021-02-21 21:48:39,940 DEBUG: findfont: score(<Font 'cmss10' (cmss10.ttf) normal normal 400 normal>) = 10.05
+2021-02-21 21:48:39,940 DEBUG: findfont: score(<Font 'DejaVu Sans' (DejaVuSans-Bold.ttf) normal normal 700 normal>) = 0.33499999999999996
+2021-02-21 21:48:39,940 DEBUG: findfont: score(<Font 'STIXGeneral' (STIXGeneral.ttf) normal normal 400 normal>) = 10.05
+2021-02-21 21:48:39,940 DEBUG: findfont: score(<Font 'DejaVu Serif' (DejaVuSerif.ttf) normal normal 400 normal>) = 10.05
+2021-02-21 21:48:39,940 DEBUG: findfont: score(<Font 'STIXSizeThreeSym' (STIXSizThreeSymBol.ttf) normal normal 700 normal>) = 10.335
+2021-02-21 21:48:39,941 DEBUG: findfont: score(<Font 'DejaVu Serif' (DejaVuSerif-Bold.ttf) normal normal 700 normal>) = 10.335
+2021-02-21 21:48:39,941 DEBUG: findfont: score(<Font 'DejaVu Sans Mono' (DejaVuSansMono-Bold.ttf) normal normal 700 normal>) = 10.335
+2021-02-21 21:48:39,941 DEBUG: findfont: score(<Font 'DejaVu Serif Display' (DejaVuSerifDisplay.ttf) normal normal 400 normal>) = 10.05
+2021-02-21 21:48:39,941 DEBUG: findfont: score(<Font 'cmex10' (cmex10.ttf) normal normal 400 normal>) = 10.05
+2021-02-21 21:48:39,941 DEBUG: findfont: score(<Font 'STIXNonUnicode' (STIXNonUniIta.ttf) italic normal 400 normal>) = 11.05
+2021-02-21 21:48:39,941 DEBUG: findfont: score(<Font 'STIXSizeFourSym' (STIXSizFourSymReg.ttf) normal normal 400 normal>) = 10.05
+2021-02-21 21:48:39,941 DEBUG: findfont: score(<Font 'DejaVu Sans Mono' (DejaVuSansMono.ttf) normal normal 400 normal>) = 10.05
+2021-02-21 21:48:39,942 DEBUG: findfont: score(<Font 'cmr10' (cmr10.ttf) normal normal 400 normal>) = 10.05
+2021-02-21 21:48:39,942 DEBUG: findfont: score(<Font 'STIXSizeFiveSym' (STIXSizFiveSymReg.ttf) normal normal 400 normal>) = 10.05
+2021-02-21 21:48:39,942 DEBUG: findfont: score(<Font 'DejaVu Sans' (DejaVuSans-BoldOblique.ttf) oblique normal 700 normal>) = 1.335
+2021-02-21 21:48:39,942 DEBUG: findfont: score(<Font 'STIXGeneral' (STIXGeneralBolIta.ttf) italic normal 700 normal>) = 11.335
+2021-02-21 21:48:39,942 DEBUG: findfont: score(<Font 'STIXNonUnicode' (STIXNonUniBol.ttf) normal normal 700 normal>) = 10.335
+2021-02-21 21:48:39,942 DEBUG: findfont: score(<Font 'DejaVu Serif' (DejaVuSerif-Italic.ttf) italic normal 400 normal>) = 11.05
+2021-02-21 21:48:39,942 DEBUG: findfont: score(<Font 'DejaVu Sans Mono' (DejaVuSansMono-Oblique.ttf) oblique normal 400 normal>) = 11.05
+2021-02-21 21:48:39,943 DEBUG: findfont: score(<Font 'STIXSizeOneSym' (STIXSizOneSymBol.ttf) normal normal 700 normal>) = 10.335
+2021-02-21 21:48:39,943 DEBUG: findfont: score(<Font 'DejaVu Sans' (DejaVuSans-Oblique.ttf) oblique normal 400 normal>) = 1.05
+2021-02-21 21:48:39,943 DEBUG: findfont: score(<Font 'STIXGeneral' (STIXGeneralItalic.ttf) italic normal 400 normal>) = 11.05
+2021-02-21 21:48:39,943 DEBUG: findfont: score(<Font 'cmtt10' (cmtt10.ttf) normal normal 400 normal>) = 10.05
+2021-02-21 21:48:39,943 DEBUG: findfont: score(<Font 'STIXGeneral' (STIXGeneralBol.ttf) normal normal 700 normal>) = 10.335
+2021-02-21 21:48:39,943 DEBUG: findfont: score(<Font 'STIXSizeTwoSym' (STIXSizTwoSymBol.ttf) normal normal 700 normal>) = 10.335
+2021-02-21 21:48:39,943 DEBUG: findfont: score(<Font 'STIXNonUnicode' (STIXNonUni.ttf) normal normal 400 normal>) = 10.05
+2021-02-21 21:48:39,944 DEBUG: findfont: score(<Font 'DejaVu Sans' (DejaVuSans.ttf) normal normal 400 normal>) = 0.05
+2021-02-21 21:48:39,944 DEBUG: findfont: score(<Font 'DejaVu Sans Display' (DejaVuSansDisplay.ttf) normal normal 400 normal>) = 10.05
+2021-02-21 21:48:39,944 DEBUG: findfont: score(<Font 'cmmi10' (cmmi10.ttf) normal normal 400 normal>) = 10.05
+2021-02-21 21:48:39,944 DEBUG: findfont: score(<Font 'DejaVu Serif' (DejaVuSerif-BoldItalic.ttf) italic normal 700 normal>) = 11.335
+2021-02-21 21:48:39,944 DEBUG: findfont: score(<Font 'STIXSizeThreeSym' (STIXSizThreeSymReg.ttf) normal normal 400 normal>) = 10.05
+2021-02-21 21:48:39,944 DEBUG: findfont: score(<Font 'STIXSizeOneSym' (STIXSizOneSymReg.ttf) normal normal 400 normal>) = 10.05
+2021-02-21 21:48:39,944 DEBUG: findfont: score(<Font 'DejaVu Serif' (DejaVuSerif-Bold.ttf) normal normal 700 normal>) = 10.335
+2021-02-21 21:48:39,944 DEBUG: findfont: score(<Font 'DejaVu Sans Mono' (DejaVuSansMono-Bold.ttf) normal normal 700 normal>) = 10.335
+2021-02-21 21:48:39,945 DEBUG: findfont: score(<Font 'DejaVu Serif' (DejaVuSerif.ttf) normal normal 400 normal>) = 10.05
+2021-02-21 21:48:39,945 DEBUG: findfont: score(<Font 'DejaVu Sans' (DejaVuSans.ttf) normal normal 400 normal>) = 0.05
+2021-02-21 21:48:39,945 DEBUG: findfont: score(<Font 'DejaVu Sans' (DejaVuSans-Bold.ttf) normal normal 700 normal>) = 0.33499999999999996
+2021-02-21 21:48:39,945 DEBUG: findfont: score(<Font 'DejaVu Sans Mono' (DejaVuSansMono.ttf) normal normal 400 normal>) = 10.05
+2021-02-21 21:48:39,945 DEBUG: findfont: Matching sans\-serif:style=normal:variant=normal:weight=normal:stretch=normal:size=10.0 to DejaVu Sans ('/usr/local/lib/python3.8/dist-packages/matplotlib/mpl-data/fonts/ttf/DejaVuSans.ttf') with score of 0.050000.
+2021-02-21 21:48:39,948 DEBUG: findfont: Matching sans\-serif:style=normal:variant=normal:weight=normal:stretch=normal:size=6.9399999999999995.
+2021-02-21 21:48:39,948 DEBUG: findfont: score(<Font 'cmb10' (cmb10.ttf) normal normal 400 normal>) = 10.05
+2021-02-21 21:48:39,948 DEBUG: findfont: score(<Font 'STIXSizeTwoSym' (STIXSizTwoSymReg.ttf) normal normal 400 normal>) = 10.05
+2021-02-21 21:48:39,949 DEBUG: findfont: score(<Font 'cmsy10' (cmsy10.ttf) normal normal 400 normal>) = 10.05
+2021-02-21 21:48:39,949 DEBUG: findfont: score(<Font 'STIXSizeFourSym' (STIXSizFourSymBol.ttf) normal normal 700 normal>) = 10.335
+2021-02-21 21:48:39,949 DEBUG: findfont: score(<Font 'STIXNonUnicode' (STIXNonUniBolIta.ttf) italic normal 700 normal>) = 11.335
+2021-02-21 21:48:39,949 DEBUG: findfont: score(<Font 'DejaVu Sans Mono' (DejaVuSansMono-BoldOblique.ttf) oblique normal 700 normal>) = 11.335
+2021-02-21 21:48:39,949 DEBUG: findfont: score(<Font 'cmss10' (cmss10.ttf) normal normal 400 normal>) = 10.05
+2021-02-21 21:48:39,949 DEBUG: findfont: score(<Font 'DejaVu Sans' (DejaVuSans-Bold.ttf) normal normal 700 normal>) = 0.33499999999999996
+2021-02-21 21:48:39,950 DEBUG: findfont: score(<Font 'STIXGeneral' (STIXGeneral.ttf) normal normal 400 normal>) = 10.05
+2021-02-21 21:48:39,950 DEBUG: findfont: score(<Font 'DejaVu Serif' (DejaVuSerif.ttf) normal normal 400 normal>) = 10.05
+2021-02-21 21:48:39,950 DEBUG: findfont: score(<Font 'STIXSizeThreeSym' (STIXSizThreeSymBol.ttf) normal normal 700 normal>) = 10.335
+2021-02-21 21:48:39,950 DEBUG: findfont: score(<Font 'DejaVu Serif' (DejaVuSerif-Bold.ttf) normal normal 700 normal>) = 10.335
+2021-02-21 21:48:39,950 DEBUG: findfont: score(<Font 'DejaVu Sans Mono' (DejaVuSansMono-Bold.ttf) normal normal 700 normal>) = 10.335
+2021-02-21 21:48:39,950 DEBUG: findfont: score(<Font 'DejaVu Serif Display' (DejaVuSerifDisplay.ttf) normal normal 400 normal>) = 10.05
+2021-02-21 21:48:39,951 DEBUG: findfont: score(<Font 'cmex10' (cmex10.ttf) normal normal 400 normal>) = 10.05
+2021-02-21 21:48:39,951 DEBUG: findfont: score(<Font 'STIXNonUnicode' (STIXNonUniIta.ttf) italic normal 400 normal>) = 11.05
+2021-02-21 21:48:39,951 DEBUG: findfont: score(<Font 'STIXSizeFourSym' (STIXSizFourSymReg.ttf) normal normal 400 normal>) = 10.05
+2021-02-21 21:48:39,951 DEBUG: findfont: score(<Font 'DejaVu Sans Mono' (DejaVuSansMono.ttf) normal normal 400 normal>) = 10.05
+2021-02-21 21:48:39,951 DEBUG: findfont: score(<Font 'cmr10' (cmr10.ttf) normal normal 400 normal>) = 10.05
+2021-02-21 21:48:39,951 DEBUG: findfont: score(<Font 'STIXSizeFiveSym' (STIXSizFiveSymReg.ttf) normal normal 400 normal>) = 10.05
+2021-02-21 21:48:39,952 DEBUG: findfont: score(<Font 'DejaVu Sans' (DejaVuSans-BoldOblique.ttf) oblique normal 700 normal>) = 1.335
+2021-02-21 21:48:39,952 DEBUG: findfont: score(<Font 'STIXGeneral' (STIXGeneralBolIta.ttf) italic normal 700 normal>) = 11.335
+2021-02-21 21:48:39,953 DEBUG: findfont: score(<Font 'STIXNonUnicode' (STIXNonUniBol.ttf) normal normal 700 normal>) = 10.335
+2021-02-21 21:48:39,953 DEBUG: findfont: score(<Font 'DejaVu Serif' (DejaVuSerif-Italic.ttf) italic normal 400 normal>) = 11.05
+2021-02-21 21:48:39,953 DEBUG: findfont: score(<Font 'DejaVu Sans Mono' (DejaVuSansMono-Oblique.ttf) oblique normal 400 normal>) = 11.05
+2021-02-21 21:48:39,954 DEBUG: findfont: score(<Font 'STIXSizeOneSym' (STIXSizOneSymBol.ttf) normal normal 700 normal>) = 10.335
+2021-02-21 21:48:39,954 DEBUG: findfont: score(<Font 'DejaVu Sans' (DejaVuSans-Oblique.ttf) oblique normal 400 normal>) = 1.05
+2021-02-21 21:48:39,954 DEBUG: findfont: score(<Font 'STIXGeneral' (STIXGeneralItalic.ttf) italic normal 400 normal>) = 11.05
+2021-02-21 21:48:39,954 DEBUG: findfont: score(<Font 'cmtt10' (cmtt10.ttf) normal normal 400 normal>) = 10.05
+2021-02-21 21:48:39,954 DEBUG: findfont: score(<Font 'STIXGeneral' (STIXGeneralBol.ttf) normal normal 700 normal>) = 10.335
+2021-02-21 21:48:39,955 DEBUG: findfont: score(<Font 'STIXSizeTwoSym' (STIXSizTwoSymBol.ttf) normal normal 700 normal>) = 10.335
+2021-02-21 21:48:39,955 DEBUG: findfont: score(<Font 'STIXNonUnicode' (STIXNonUni.ttf) normal normal 400 normal>) = 10.05
+2021-02-21 21:48:39,955 DEBUG: findfont: score(<Font 'DejaVu Sans' (DejaVuSans.ttf) normal normal 400 normal>) = 0.05
+2021-02-21 21:48:39,955 DEBUG: findfont: score(<Font 'DejaVu Sans Display' (DejaVuSansDisplay.ttf) normal normal 400 normal>) = 10.05
+2021-02-21 21:48:39,955 DEBUG: findfont: score(<Font 'cmmi10' (cmmi10.ttf) normal normal 400 normal>) = 10.05
+2021-02-21 21:48:39,955 DEBUG: findfont: score(<Font 'DejaVu Serif' (DejaVuSerif-BoldItalic.ttf) italic normal 700 normal>) = 11.335
+2021-02-21 21:48:39,955 DEBUG: findfont: score(<Font 'STIXSizeThreeSym' (STIXSizThreeSymReg.ttf) normal normal 400 normal>) = 10.05
+2021-02-21 21:48:39,956 DEBUG: findfont: score(<Font 'STIXSizeOneSym' (STIXSizOneSymReg.ttf) normal normal 400 normal>) = 10.05
+2021-02-21 21:48:39,956 DEBUG: findfont: score(<Font 'DejaVu Serif' (DejaVuSerif-Bold.ttf) normal normal 700 normal>) = 10.335
+2021-02-21 21:48:39,956 DEBUG: findfont: score(<Font 'DejaVu Sans Mono' (DejaVuSansMono-Bold.ttf) normal normal 700 normal>) = 10.335
+2021-02-21 21:48:39,956 DEBUG: findfont: score(<Font 'DejaVu Serif' (DejaVuSerif.ttf) normal normal 400 normal>) = 10.05
+2021-02-21 21:48:39,956 DEBUG: findfont: score(<Font 'DejaVu Sans' (DejaVuSans.ttf) normal normal 400 normal>) = 0.05
+2021-02-21 21:48:39,956 DEBUG: findfont: score(<Font 'DejaVu Sans' (DejaVuSans-Bold.ttf) normal normal 700 normal>) = 0.33499999999999996
+2021-02-21 21:48:39,957 DEBUG: findfont: score(<Font 'DejaVu Sans Mono' (DejaVuSansMono.ttf) normal normal 400 normal>) = 10.05
+2021-02-21 21:48:39,957 DEBUG: findfont: Matching sans\-serif:style=normal:variant=normal:weight=normal:stretch=normal:size=6.9399999999999995 to DejaVu Sans ('/usr/local/lib/python3.8/dist-packages/matplotlib/mpl-data/fonts/ttf/DejaVuSans.ttf') with score of 0.050000.
+2021-02-21 21:48:41,762 DEBUG: locator: <matplotlib.colorbar._ColorbarAutoLocator object at 0x7f069585e580>
+2021-02-21 21:48:41,762 DEBUG: Using auto colorbar locator <matplotlib.colorbar._ColorbarAutoLocator object at 0x7f069585e580> on colorbar
+2021-02-21 21:48:41,763 DEBUG: Setting pcolormesh
+2021-02-21 21:48:58,738 DEBUG: findfont: Matching sans\-serif:style=normal:variant=normal:weight=normal:stretch=normal:size=8.33.
+2021-02-21 21:48:58,738 DEBUG: findfont: score(<Font 'cmb10' (cmb10.ttf) normal normal 400 normal>) = 10.05
+2021-02-21 21:48:58,738 DEBUG: findfont: score(<Font 'STIXSizeTwoSym' (STIXSizTwoSymReg.ttf) normal normal 400 normal>) = 10.05
+2021-02-21 21:48:58,738 DEBUG: findfont: score(<Font 'cmsy10' (cmsy10.ttf) normal normal 400 normal>) = 10.05
+2021-02-21 21:48:58,738 DEBUG: findfont: score(<Font 'STIXSizeFourSym' (STIXSizFourSymBol.ttf) normal normal 700 normal>) = 10.335
+2021-02-21 21:48:58,739 DEBUG: findfont: score(<Font 'STIXNonUnicode' (STIXNonUniBolIta.ttf) italic normal 700 normal>) = 11.335
+2021-02-21 21:48:58,739 DEBUG: findfont: score(<Font 'DejaVu Sans Mono' (DejaVuSansMono-BoldOblique.ttf) oblique normal 700 normal>) = 11.335
+2021-02-21 21:48:58,739 DEBUG: findfont: score(<Font 'cmss10' (cmss10.ttf) normal normal 400 normal>) = 10.05
+2021-02-21 21:48:58,739 DEBUG: findfont: score(<Font 'DejaVu Sans' (DejaVuSans-Bold.ttf) normal normal 700 normal>) = 0.33499999999999996
+2021-02-21 21:48:58,739 DEBUG: findfont: score(<Font 'STIXGeneral' (STIXGeneral.ttf) normal normal 400 normal>) = 10.05
+2021-02-21 21:48:58,739 DEBUG: findfont: score(<Font 'DejaVu Serif' (DejaVuSerif.ttf) normal normal 400 normal>) = 10.05
+2021-02-21 21:48:58,740 DEBUG: findfont: score(<Font 'STIXSizeThreeSym' (STIXSizThreeSymBol.ttf) normal normal 700 normal>) = 10.335
+2021-02-21 21:48:58,740 DEBUG: findfont: score(<Font 'DejaVu Serif' (DejaVuSerif-Bold.ttf) normal normal 700 normal>) = 10.335
+2021-02-21 21:48:58,740 DEBUG: findfont: score(<Font 'DejaVu Sans Mono' (DejaVuSansMono-Bold.ttf) normal normal 700 normal>) = 10.335
+2021-02-21 21:48:58,740 DEBUG: findfont: score(<Font 'DejaVu Serif Display' (DejaVuSerifDisplay.ttf) normal normal 400 normal>) = 10.05
+2021-02-21 21:48:58,740 DEBUG: findfont: score(<Font 'cmex10' (cmex10.ttf) normal normal 400 normal>) = 10.05
+2021-02-21 21:48:58,740 DEBUG: findfont: score(<Font 'STIXNonUnicode' (STIXNonUniIta.ttf) italic normal 400 normal>) = 11.05
+2021-02-21 21:48:58,740 DEBUG: findfont: score(<Font 'STIXSizeFourSym' (STIXSizFourSymReg.ttf) normal normal 400 normal>) = 10.05
+2021-02-21 21:48:58,741 DEBUG: findfont: score(<Font 'DejaVu Sans Mono' (DejaVuSansMono.ttf) normal normal 400 normal>) = 10.05
+2021-02-21 21:48:58,741 DEBUG: findfont: score(<Font 'cmr10' (cmr10.ttf) normal normal 400 normal>) = 10.05
+2021-02-21 21:48:58,741 DEBUG: findfont: score(<Font 'STIXSizeFiveSym' (STIXSizFiveSymReg.ttf) normal normal 400 normal>) = 10.05
+2021-02-21 21:48:58,742 DEBUG: findfont: score(<Font 'DejaVu Sans' (DejaVuSans-BoldOblique.ttf) oblique normal 700 normal>) = 1.335
+2021-02-21 21:48:58,742 DEBUG: findfont: score(<Font 'STIXGeneral' (STIXGeneralBolIta.ttf) italic normal 700 normal>) = 11.335
+2021-02-21 21:48:58,750 DEBUG: findfont: score(<Font 'STIXNonUnicode' (STIXNonUniBol.ttf) normal normal 700 normal>) = 10.335
+2021-02-21 21:48:58,751 DEBUG: findfont: score(<Font 'DejaVu Serif' (DejaVuSerif-Italic.ttf) italic normal 400 normal>) = 11.05
+2021-02-21 21:48:58,751 DEBUG: findfont: score(<Font 'DejaVu Sans Mono' (DejaVuSansMono-Oblique.ttf) oblique normal 400 normal>) = 11.05
+2021-02-21 21:48:58,752 DEBUG: findfont: score(<Font 'STIXSizeOneSym' (STIXSizOneSymBol.ttf) normal normal 700 normal>) = 10.335
+2021-02-21 21:48:58,752 DEBUG: findfont: score(<Font 'DejaVu Sans' (DejaVuSans-Oblique.ttf) oblique normal 400 normal>) = 1.05
+2021-02-21 21:48:58,752 DEBUG: findfont: score(<Font 'STIXGeneral' (STIXGeneralItalic.ttf) italic normal 400 normal>) = 11.05
+2021-02-21 21:48:58,752 DEBUG: findfont: score(<Font 'cmtt10' (cmtt10.ttf) normal normal 400 normal>) = 10.05
+2021-02-21 21:48:58,752 DEBUG: findfont: score(<Font 'STIXGeneral' (STIXGeneralBol.ttf) normal normal 700 normal>) = 10.335
+2021-02-21 21:48:58,753 DEBUG: findfont: score(<Font 'STIXSizeTwoSym' (STIXSizTwoSymBol.ttf) normal normal 700 normal>) = 10.335
+2021-02-21 21:48:58,753 DEBUG: findfont: score(<Font 'STIXNonUnicode' (STIXNonUni.ttf) normal normal 400 normal>) = 10.05
+2021-02-21 21:48:58,753 DEBUG: findfont: score(<Font 'DejaVu Sans' (DejaVuSans.ttf) normal normal 400 normal>) = 0.05
+2021-02-21 21:48:58,753 DEBUG: findfont: score(<Font 'DejaVu Sans Display' (DejaVuSansDisplay.ttf) normal normal 400 normal>) = 10.05
+2021-02-21 21:48:58,753 DEBUG: findfont: score(<Font 'cmmi10' (cmmi10.ttf) normal normal 400 normal>) = 10.05
+2021-02-21 21:48:58,754 DEBUG: findfont: score(<Font 'DejaVu Serif' (DejaVuSerif-BoldItalic.ttf) italic normal 700 normal>) = 11.335
+2021-02-21 21:48:58,754 DEBUG: findfont: score(<Font 'STIXSizeThreeSym' (STIXSizThreeSymReg.ttf) normal normal 400 normal>) = 10.05
+2021-02-21 21:48:58,757 DEBUG: findfont: score(<Font 'STIXSizeOneSym' (STIXSizOneSymReg.ttf) normal normal 400 normal>) = 10.05
+2021-02-21 21:48:58,757 DEBUG: findfont: score(<Font 'DejaVu Serif' (DejaVuSerif-Bold.ttf) normal normal 700 normal>) = 10.335
+2021-02-21 21:48:58,757 DEBUG: findfont: score(<Font 'DejaVu Sans Mono' (DejaVuSansMono-Bold.ttf) normal normal 700 normal>) = 10.335
+2021-02-21 21:48:58,757 DEBUG: findfont: score(<Font 'DejaVu Serif' (DejaVuSerif.ttf) normal normal 400 normal>) = 10.05
+2021-02-21 21:48:58,758 DEBUG: findfont: score(<Font 'DejaVu Sans' (DejaVuSans.ttf) normal normal 400 normal>) = 0.05
+2021-02-21 21:48:58,758 DEBUG: findfont: score(<Font 'DejaVu Sans' (DejaVuSans-Bold.ttf) normal normal 700 normal>) = 0.33499999999999996
+2021-02-21 21:48:58,758 DEBUG: findfont: score(<Font 'DejaVu Sans Mono' (DejaVuSansMono.ttf) normal normal 400 normal>) = 10.05
+2021-02-21 21:48:58,758 DEBUG: findfont: Matching sans\-serif:style=normal:variant=normal:weight=normal:stretch=normal:size=8.33 to DejaVu Sans ('/usr/local/lib/python3.8/dist-packages/matplotlib/mpl-data/fonts/ttf/DejaVuSans.ttf') with score of 0.050000.
+[INFO]    Finished opensfm stage
+[INFO]    Running openmvs stage
+[INFO]    running /code/SuperBuild/src/opensfm/bin/opensfm export_openmvs "/var/www/data/c7462e02-82ff-440d-b11d-3d46906415e5/opensfm"
+[INFO]    Running dense reconstruction. This might take a while.
+[INFO]    running /code/SuperBuild/install/bin/OpenMVS/DensifyPointCloud "/var/www/data/c7462e02-82ff-440d-b11d-3d46906415e5/opensfm/undistorted/openmvs/scene.mvs"  --resolution-level 3 --min-resolution 320 --max-resolution 2048 --max-threads 1 --number-views-fuse 2 -w "/var/www/data/c7462e02-82ff-440d-b11d-3d46906415e5/opensfm/undistorted/openmvs/depthmaps" -v 0
+21:49:05 [App     ] Build date: Feb 10 2021, 20:53:56
+21:49:05 [App     ] CPU: Intel(R) Core(TM) i7-3630QM CPU @ 2.40GHz (1 cores)
+21:49:05 [App     ] RAM: 4.61GB Physical Memory 3.84GB Virtual Memory
+21:49:05 [App     ] OS: Linux 5.4.0-65-generic (x86_64)
+21:49:05 [App     ] SSE & AVX compatible CPU & OS detected
+21:49:05 [App     ] Command line: /var/www/data/c7462e02-82ff-440d-b11d-3d46906415e5/opensfm/undistorted/openmvs/scene.mvs --resolution-level 3 --min-resolution 320 --max-resolution 2048 --max-threads 1 --number-views-fuse 2 -w /var/www/data/c7462e02-82ff-440d-b11d-3d46906415e5/opensfm/undistorted/openmvs/depthmaps -v 0
+21:49:09 [App     ] Preparing images for dense reconstruction completed: 40 images (4s377ms)
+21:49:10 [App     ] Selecting images for dense reconstruction completed: 40 images (352ms)
+Estimated depth-maps 1 (2.50%, 19s, ETA 12m)...
+Estimated depth-maps 2 (5.00%, 39s, ETA 12m)...
+Estimated depth-maps 3 (7.50%, 56s, ETA 11m)...
+Estimated depth-maps 4 (10.00%, 1m17s, ETA 11m)...
+Estimated depth-maps 5 (12.50%, 1m37s, ETA 11m)...
+Estimated depth-maps 6 (15.00%, 1m58s, ETA 11m)...
+Estimated depth-maps 7 (17.50%, 2m20s, ETA 11m)...
+Estimated depth-maps 8 (20.00%, 2m39s, ETA 10m)...
+Estimated depth-maps 9 (22.50%, 2m59s, ETA 10m)...
+Estimated depth-maps 10 (25.00%, 3m20s, ETA 10m)...
+Estimated depth-maps 11 (27.50%, 3m41s, ETA 9m)...
+Estimated depth-maps 12 (30.00%, 4m2s, ETA 9m)...
+Estimated depth-maps 13 (32.50%, 4m23s, ETA 9m)...
+Estimated depth-maps 14 (35.00%, 4m45s, ETA 8m)...
+Estimated depth-maps 15 (37.50%, 5m6s, ETA 8m)...
+Estimated depth-maps 16 (40.00%, 5m27s, ETA 8m)...
+Estimated depth-maps 17 (42.50%, 5m46s, ETA 7m)...
+Estimated depth-maps 18 (45.00%, 6m7s, ETA 7m)...
+Estimated depth-maps 19 (47.50%, 6m29s, ETA 7m)...
+Estimated depth-maps 20 (50.00%, 6m49s, ETA 6m)...
+Estimated depth-maps 21 (52.50%, 7m11s, ETA 6m)...
+Estimated depth-maps 22 (55.00%, 7m34s, ETA 6m)...
+Estimated depth-maps 23 (57.50%, 7m56s, ETA 5m)...
+Estimated depth-maps 24 (60.00%, 8m18s, ETA 5m)...
+Estimated depth-maps 25 (62.50%, 8m38s, ETA 5m)...
+Estimated depth-maps 26 (65.00%, 8m59s, ETA 4m)...
+Estimated depth-maps 27 (67.50%, 9m20s, ETA 4m)...
+Estimated depth-maps 28 (70.00%, 9m42s, ETA 4m)...
+Estimated depth-maps 29 (72.50%, 10m4s, ETA 3m)...
+Estimated depth-maps 30 (75.00%, 10m25s, ETA 3m)...
+Estimated depth-maps 31 (77.50%, 10m47s, ETA 3m)...
+Estimated depth-maps 32 (80.00%, 11m9s, ETA 2m)...
+Estimated depth-maps 33 (82.50%, 11m30s, ETA 2m)...
+Estimated depth-maps 34 (85.00%, 11m50s, ETA 2m)...
+Estimated depth-maps 35 (87.50%, 12m12s, ETA 1m)...
+Estimated depth-maps 36 (90.00%, 12m34s, ETA 1m)...
+Estimated depth-maps 37 (92.50%, 12m55s, ETA 1m)...
+Estimated depth-maps 38 (95.00%, 13m16s, ETA 41s)...
+Estimated depth-maps 39 (97.50%, 13m37s, ETA 20s)...
+Estimated depth-maps 40 (100.00%, 13m59s, ETA 0ms)...
+Estimated depth-maps 40 (100%, 13m59s579ms)
+Filtered depth-maps 1 (2.50%, 9s, ETA 6m)...
+Filtered depth-maps 5 (12.50%, 9s, ETA 1m)...
+Filtered depth-maps 7 (17.50%, 9s, ETA 46s)...
+Filtered depth-maps 10 (25.00%, 10s, ETA 30s)...
+Filtered depth-maps 15 (37.50%, 10s, ETA 16s)...
+Filtered depth-maps 20 (50.00%, 10s, ETA 10s)...
+Filtered depth-maps 25 (62.50%, 10s, ETA 6s)...
+Filtered depth-maps 30 (75.00%, 10s, ETA 3s)...
+Filtered depth-maps 35 (87.50%, 10s, ETA 1s)...
+Filtered depth-maps 40 (100.00%, 10s, ETA 0ms)...
+Filtered depth-maps 40 (100%, 10s766ms)
+Fused depth-maps 0 (0.00%, 261ms, ETA 0ms)...
+Fused depth-maps 2 (5.00%, 381ms, ETA 7s)...
+Fused depth-maps 4 (10.00%, 630ms, ETA 5s)...
+Fused depth-maps 7 (17.50%, 767ms, ETA 3s)...
+Fused depth-maps 10 (25.00%, 911ms, ETA 2s)...
+Fused depth-maps 14 (35.00%, 1s, ETA 1s)...
+Fused depth-maps 16 (40.00%, 1s, ETA 1s)...
+Fused depth-maps 18 (45.00%, 1s, ETA 1s)...
+Fused depth-maps 20 (50.00%, 1s, ETA 1s)...
+Fused depth-maps 21 (52.50%, 1s, ETA 1s)...
+Fused depth-maps 23 (57.50%, 1s, ETA 1s)...
+Fused depth-maps 26 (65.00%, 1s, ETA 959ms)...
+Fused depth-maps 28 (70.00%, 1s, ETA 812ms)...
+Fused depth-maps 31 (77.50%, 2s, ETA 582ms)...
+Fused depth-maps 36 (90.00%, 2s, ETA 235ms)...
+Fused depth-maps 40 (100%, 2s188ms)
+22:03:22 [App     ] Densifying point-cloud completed: 1287476 points (14m17s434ms)
+22:03:28 [App     ] MEMORYINFO: {
+22:03:28 [App     ] 	VmPeak:	  563552 kB
+22:03:28 [App     ] 	VmSize:	  528680 kB
+22:03:28 [App     ] } ENDINFO
+[INFO]    running /code/SuperBuild/install/bin/OpenMVS/DensifyPointCloud --filter-point-cloud -1 -i "/var/www/data/c7462e02-82ff-440d-b11d-3d46906415e5/opensfm/undistorted/openmvs/scene_dense.mvs" -v 0
+22:03:28 [App     ] Build date: Feb 10 2021, 20:53:56
+22:03:28 [App     ] CPU: Intel(R) Core(TM) i7-3630QM CPU @ 2.40GHz (1 cores)
+22:03:28 [App     ] RAM: 4.61GB Physical Memory 3.84GB Virtual Memory
+22:03:28 [App     ] OS: Linux 5.4.0-65-generic (x86_64)
+22:03:28 [App     ] SSE & AVX compatible CPU & OS detected
+22:03:28 [App     ] Command line: --filter-point-cloud -1 -i /var/www/data/c7462e02-82ff-440d-b11d-3d46906415e5/opensfm/undistorted/openmvs/scene_dense.mvs -v 0
+Point visibility checks 56543 (4.39%, 3s, ETA 1m)...
+Point visibility checks 97488 (7.57%, 6s, ETA 1m)...
+Point visibility checks 141638 (11.00%, 9s, ETA 1m)...
+Point visibility checks 205734 (15.98%, 12s, ETA 1m)...
+Point visibility checks 275751 (21.42%, 15s, ETA 55s)...
+Point visibility checks 329836 (25.62%, 18s, ETA 52s)...
+Point visibility checks 378316 (29.38%, 21s, ETA 50s)...
+Point visibility checks 466520 (36.24%, 24s, ETA 42s)...
+Point visibility checks 557109 (43.27%, 27s, ETA 35s)...
+Point visibility checks 666995 (51.81%, 30s, ETA 27s)...
+Point visibility checks 773232 (60.06%, 33s, ETA 21s)...
+Point visibility checks 890226 (69.15%, 36s, ETA 16s)...
+Point visibility checks 1014809 (78.82%, 39s, ETA 10s)...
+Point visibility checks 1157278 (89.89%, 42s, ETA 4s)...
+Point visibility checks 1287476 (100%, 44s202ms)
+22:04:20 [App     ] MEMORYINFO: {
+22:04:20 [App     ] 	VmPeak:	  274876 kB
+22:04:20 [App     ] 	VmSize:	  240000 kB
+22:04:20 [App     ] } ENDINFO
+[INFO]    Finished openmvs stage
+[INFO]    Running odm_filterpoints stage
+[INFO]    Filtering /var/www/data/c7462e02-82ff-440d-b11d-3d46906415e5/opensfm/undistorted/openmvs/scene_dense_dense_filtered.ply (statistical, meanK 16, standard deviation 2.5)
+[INFO]    running pdal translate -i "/var/www/data/c7462e02-82ff-440d-b11d-3d46906415e5/opensfm/undistorted/openmvs/scene_dense_dense_filtered.ply" -o "/var/www/data/c7462e02-82ff-440d-b11d-3d46906415e5/odm_filterpoints/point_cloud.ply" outlier range --writers.ply.sized_types=false --writers.ply.storage_mode='little endian' --writers.ply.dims="x=float,y=float,z=float,nx=float,ny=float,nz=float,red=uchar,blue=uchar,green=uchar,views=uchar" --filters.outlier.method='statistical' --filters.outlier.mean_k=16 --filters.outlier.multiplier=2.5 --filters.range.limits='Classification![7:7]'
+[INFO]    Finished odm_filterpoints stage
+[INFO]    Running odm_meshing stage
+[INFO]    Writing ODM Mesh file in: /var/www/data/c7462e02-82ff-440d-b11d-3d46906415e5/odm_meshing/odm_mesh.ply
+[INFO]    running /code/SuperBuild/src/PoissonRecon/Bin/Linux/PoissonRecon --in /var/www/data/c7462e02-82ff-440d-b11d-3d46906415e5/odm_filterpoints/point_cloud.ply --out /var/www/data/c7462e02-82ff-440d-b11d-3d46906415e5/odm_meshing/odm_mesh.dirty.ply --depth 11 --pointWeight 4.0 --samplesPerNode 1.0 --threads 1 --linearFit
+[INFO]    running /code/build/bin/odm_cleanmesh -inputFile /var/www/data/c7462e02-82ff-440d-b11d-3d46906415e5/odm_meshing/odm_mesh.dirty.ply -outputFile /var/www/data/c7462e02-82ff-440d-b11d-3d46906415e5/odm_meshing/odm_mesh.ply -removeIslands -decimateMesh 200000
+[INFO]    Writing ODM 2.5D Mesh file in: /var/www/data/c7462e02-82ff-440d-b11d-3d46906415e5/odm_meshing/odm_25dmesh.ply
+[WARNING] Maximum resolution set to GSD - 10.0% (4.35 cm / pixel, requested resolution was 4.0 cm / pixel)
+[INFO]    ODM 2.5D DSM resolution: 0.21005574234064123
+[INFO]    Created temporary directory: /var/www/data/c7462e02-82ff-440d-b11d-3d46906415e5/odm_meshing/tmp
+[INFO]    Creating DSM for 2.5D mesh
+[INFO]    running pdal info /var/www/data/c7462e02-82ff-440d-b11d-3d46906415e5/odm_filterpoints/point_cloud.ply > /tmp/tmpzt3ugmsa.json
+[INFO]    Point cloud bounds are [minx: -109.7206726, maxx: 92.25588226] [miny: -84.89552307, maxy: 83.98246765]
+[INFO]    DEM resolution is (804, 962), max tile size is 4096, will split DEM generation into 1 tiles
+[INFO]    Generating /var/www/data/c7462e02-82ff-440d-b11d-3d46906415e5/odm_meshing/tmp/mesh_dsm_r0.2970636796724832_x0_y0.tif (max, radius: 0.2970636796724832, resolution: 0.21005574234064123)
+[INFO]    running pdal pipeline -i /tmp/tmpnc9je2v5.json > /dev/null 2>&1
+[INFO]    running gdalbuildvrt "/var/www/data/c7462e02-82ff-440d-b11d-3d46906415e5/odm_meshing/tmp/tiles.vrt" "/var/www/data/c7462e02-82ff-440d-b11d-3d46906415e5/odm_meshing/tmp/mesh_dsm_r0.2970636796724832_x0_y0.tif"
+0...10...20...30...40...50...60...70...80...90...100 - done.
+[INFO]    running gdal_translate -co NUM_THREADS=1 -co BIGTIFF=IF_SAFER --config GDAL_CACHEMAX 32.6% /var/www/data/c7462e02-82ff-440d-b11d-3d46906415e5/odm_meshing/tmp/tiles.vrt /var/www/data/c7462e02-82ff-440d-b11d-3d46906415e5/odm_meshing/tmp/tiles.tmp.tif
+Input file size is 962, 804
+0
+...10...20...30...40...50
+...60...70...80...90...100 - done.
+[INFO]    running gdal_translate -co NUM_THREADS=1 -co BIGTIFF=IF_SAFER --config GDAL_CACHEMAX 32.6% -outsize 10% 0 /var/www/data/c7462e02-82ff-440d-b11d-3d46906415e5/odm_meshing/tmp/tiles.tmp.tif /var/www/data/c7462e02-82ff-440d-b11d-3d46906415e5/odm_meshing/tmp/tiles.small.tif
+Input file size is 962, 804
+0
+...10...20...30...40...50...60...70...80...90...100 - done.
+[INFO]    running gdal_fillnodata.py -co NUM_THREADS=1 -co BIGTIFF=IF_SAFER --config GDAL_CACHEMAX 32.6% -b 1 -of GTiff /var/www/data/c7462e02-82ff-440d-b11d-3d46906415e5/odm_meshing/tmp/tiles.small.tif /var/www/data/c7462e02-82ff-440d-b11d-3d46906415e5/odm_meshing/tmp/tiles.small_filled.tif
+0
+.
+.
+.
+10
+.
+.
+.
+20
+.
+.
+.
+30
+.
+.
+.
+40
+.
+.
+.
+50
+.
+.
+.
+60
+.
+.
+.
+70
+.
+.
+.
+80
+.
+.
+.
+90
+.
+.
+.
+100 - done.
+[INFO]    running gdalbuildvrt -resolution highest -r bilinear "/var/www/data/c7462e02-82ff-440d-b11d-3d46906415e5/odm_meshing/tmp/merged.vrt" "/var/www/data/c7462e02-82ff-440d-b11d-3d46906415e5/odm_meshing/tmp/tiles.small_filled.tif" "/var/www/data/c7462e02-82ff-440d-b11d-3d46906415e5/odm_meshing/tmp/tiles.tmp.tif"
+0...10...20...30...40...50
+...60...70...80...90...100 - done.
+[INFO]    running gdal_translate -co NUM_THREADS=1 -co TILED=YES -co BIGTIFF=IF_SAFER -co COMPRESS=DEFLATE --config GDAL_CACHEMAX 32.6% /var/www/data/c7462e02-82ff-440d-b11d-3d46906415e5/odm_meshing/tmp/merged.vrt /var/www/data/c7462e02-82ff-440d-b11d-3d46906415e5/odm_meshing/tmp/tiles.tif
+Input file size is 962, 804
+0
+...10...20...30...40...50
+...60...70...80...90...100 - done.
+[INFO]    Starting smoothing...
+[INFO]    Smoothing iteration 1
+[INFO]    Completed smoothing to create ../var/www/data/c7462e02-82ff-440d-b11d-3d46906415e5/odm_meshing/tmp/mesh_dsm.tif in 0:00:00.655748
+[INFO]    Completed mesh_dsm.tif in 0:00:05.550144
+[INFO]    Creating mesh from DSM: /var/www/data/c7462e02-82ff-440d-b11d-3d46906415e5/odm_meshing/tmp/mesh_dsm.tif
+[INFO]    running /code/SuperBuild/src/dem2mesh/dem2mesh -inputFile /var/www/data/c7462e02-82ff-440d-b11d-3d46906415e5/odm_meshing/tmp/mesh_dsm.tif -outputFile /var/www/data/c7462e02-82ff-440d-b11d-3d46906415e5/odm_meshing/odm_25dmesh.dirty.ply -maxTileLength 2000 -maxVertexCount 200000 -maxConcurrency 1
+[INFO]    running /code/build/bin/odm_cleanmesh -inputFile /var/www/data/c7462e02-82ff-440d-b11d-3d46906415e5/odm_meshing/odm_25dmesh.dirty.ply -outputFile /var/www/data/c7462e02-82ff-440d-b11d-3d46906415e5/odm_meshing/odm_25dmesh.ply -removeIslands -decimateMesh 200000
+[INFO]    Finished odm_meshing stage
+[INFO]    Running mvs_texturing stage
+[INFO]    Writing MVS Textured file in: /var/www/data/c7462e02-82ff-440d-b11d-3d46906415e5/odm_texturing/odm_textured_model.obj
+[INFO]    running /code/SuperBuild/install/bin/texrecon /var/www/data/c7462e02-82ff-440d-b11d-3d46906415e5/opensfm/undistorted/reconstruction.nvm /var/www/data/c7462e02-82ff-440d-b11d-3d46906415e5/odm_meshing/odm_mesh.ply /var/www/data/c7462e02-82ff-440d-b11d-3d46906415e5/odm_texturing/odm_textured_model -d gmi -o gauss_clamping -t none --no_intermediate_results
+/code/SuperBuild/install/bin/texrecon (built on Feb 10 2021, 20:43:01)
+Load and prepare mesh:
+PLY Loader: comment VTK generated PLY File
+Reading PLY: 195562 verts...
+390991 faces...
+done.
+Warning: Zero-length normals detected: 104 face normals, 5 vertex normals
+Generating texture views:
+NVM: Loading file...
+NVM: Number of views: 40
+NVM: Number of features: 48091
+Loading 100%... done. (Took 3.76s)
+Building adjacency graph:
+Adding edges 100%... done. (Took 0.862s)
+586508 total edges.
+View selection:
+Building BVH from 390991 faces...
+done. (Took: 1110 ms)
+Calculating face qualities 100%... done. (Took 34.472s)
+Postprocessing face infos 100%... done. (Took 4.054s)
+Maximum quality of a face within an image: 1364.32
+Clamping qualities to 32.7468 within normalization.
+Optimizing:
+Time[s]	Energy
+1	365936
+6	359914
+7	353869
+9	350364
+10	348830
+12	347907
+13	347354
+17	346942
+19	346618
+20	346344
+21	346189
+22	346068
+24	345966
+25	345863
+26	345774
+19131 faces have not been seen
+Took: 67.617s
+Generating texture patches:
+Running...
+done. (Took 4.621s)
+2257 texture patches.
+Running global seam leveling:
+Create matrices for optimization...
+done.
+Lhs dimensionality: 210798 x 210798
+Calculating adjustments:
+Color channel 0: CG took 100 iterations. Residual is 9.05997e-05
+Color channel 1: CG took 101 iterations. Residual is 9.09775e-05
+Color channel 2: CG took 101 iterations. Residual is 9.77461e-05
+Took 1.85 seconds
+Adjusting texture patches 100%... done. (Took 2.477s)
+Running local seam leveling:
+Blending texture patches 100%... done. (Took 55.581s)
+Generating texture atlases:
+Sorting texture patches...
+done.
+Working on atlas 9 100%... done.
+Finalizing texture atlases...
+done. (Took: 23.693s)
+Building objmodel:
+Saving model...
+done.
+Whole texturing procedure took: 172.575s
+[INFO]    Writing MVS Textured file in: /var/www/data/c7462e02-82ff-440d-b11d-3d46906415e5/odm_texturing_25d/odm_textured_model.obj
+[INFO]    running /code/SuperBuild/install/bin/texrecon /var/www/data/c7462e02-82ff-440d-b11d-3d46906415e5/opensfm/undistorted/reconstruction.nvm /var/www/data/c7462e02-82ff-440d-b11d-3d46906415e5/odm_meshing/odm_25dmesh.ply /var/www/data/c7462e02-82ff-440d-b11d-3d46906415e5/odm_texturing_25d/odm_textured_model -d gmi -o gauss_clamping -t none --no_intermediate_results   --nadir_mode
+/code/SuperBuild/install/bin/texrecon (built on Feb 10 2021, 20:43:01)
+Load and prepare mesh:
+PLY Loader: comment VTK generated PLY File
+Reading PLY: 198610 verts...
+396500 faces...
+done.
+Generating texture views:
+NVM: Loading file...
+NVM: Number of views: 40
+NVM: Number of features: 48091
+Loading 100%... done. (Took 3.618s)
+Building adjacency graph:
+Adding edges 100%... done. (Took 0.899s)
+594391 total edges.
+View selection:
+Building BVH from 396500 faces...
+done. (Took: 1147 ms)
+Calculating face qualities 100%... done. (Took 25.01s)
+Postprocessing face infos 100%... done. (Took 3.642s)
+Maximum quality of a face within an image: 0.99999
+Clamping qualities to 0.990989 within normalization.
+Optimizing:
+Time[s]	Energy
+1	107194
+4	107055
+5	104453
+6	103102
+7	102534
+9	102211
+10	102033
+12	102022
+14	101886
+15	101812
+16	101775
+18	101751
+19	101722
+20	101696
+21	101671
+10773 faces have not been seen
+Took: 52.781s
+Generating texture patches:
+Running...
+done. (Took 4.314s)
+1316 texture patches.
+Running global seam leveling:
+Create matrices for optimization...
+done.
+Lhs dimensionality: 204777 x 204777
+Calculating adjustments:
+Color channel 0: CG took 81 iterations. Residual is 9.97813e-05
+Color channel 1: CG took 82 iterations. Residual is 8.08717e-05
+Color channel 2: CG took 76 iterations. Residual is 9.47736e-05
+Took 1.419 seconds
+Adjusting texture patches 100%... done. (Took 2.371s)
+Running local seam leveling:
+Blending texture patches 100%... done. (Took 30.426s)
+Generating texture atlases:
+Sorting texture patches...
+done.
+Working on atlas 4 100%... done.
+Finalizing texture atlases...
+done. (Took: 13.985s)
+Building objmodel:
+Saving model...
+done.
+Whole texturing procedure took: 118.587s
+[INFO]    Finished mvs_texturing stage
+[INFO]    Running odm_georeferencing stage
+[INFO]    Running georeferencing with OpenSfM transformation matrix
+[INFO]    running /code/build/bin/odm_georef -bundleFile /var/www/data/c7462e02-82ff-440d-b11d-3d46906415e5/opensfm/bundle_r000.out -inputTransformFile /var/www/data/c7462e02-82ff-440d-b11d-3d46906415e5/opensfm/geocoords_transformation.txt -inputCoordFile /var/www/data/c7462e02-82ff-440d-b11d-3d46906415e5/odm_georeferencing/coords.txt -inputFile /var/www/data/c7462e02-82ff-440d-b11d-3d46906415e5/odm_texturing_25d/odm_textured_model.obj -outputFile /var/www/data/c7462e02-82ff-440d-b11d-3d46906415e5/odm_texturing_25d/odm_textured_model_geo.obj -inputPointCloudFile /var/www/data/c7462e02-82ff-440d-b11d-3d46906415e5/odm_filterpoints/point_cloud.ply -outputPointCloudFile /var/www/data/c7462e02-82ff-440d-b11d-3d46906415e5/odm_georeferencing/odm_georeferenced_model.laz -outputPointCloudSrs '+proj=utm +zone=16 +datum=WGS84 +units=m +no_defs +type=crs'  -logFile /var/www/data/c7462e02-82ff-440d-b11d-3d46906415e5/odm_georeferencing_25d/odm_georeferencing_log.txt -outputTransformFile /var/www/data/c7462e02-82ff-440d-b11d-3d46906415e5/odm_georeferencing_25d/odm_georeferencing_transform.txt -georefFileOutputPath /var/www/data/c7462e02-82ff-440d-b11d-3d46906415e5/odm_georeferencing_25d/odm_georeferencing_model_geo.txt
+[INFO]    Calculating cropping area and generating bounds shapefile from point cloud
+[INFO]    running pdal translate -i "/var/www/data/c7462e02-82ff-440d-b11d-3d46906415e5/odm_georeferencing/odm_georeferenced_model.laz" -o "/var/www/data/c7462e02-82ff-440d-b11d-3d46906415e5/odm_georeferencing/odm_georeferenced_model.decimated.las" decimation --filters.decimation.step=40
+[INFO]    running pdal info --boundary --filters.hexbin.edge_size=1 --filters.hexbin.threshold=0 /var/www/data/c7462e02-82ff-440d-b11d-3d46906415e5/odm_georeferencing/odm_georeferenced_model.decimated.las > /var/www/data/c7462e02-82ff-440d-b11d-3d46906415e5/odm_georeferencing/odm_georeferenced_model.boundary.json
+[INFO]    running pdal info --summary "/var/www/data/c7462e02-82ff-440d-b11d-3d46906415e5/odm_georeferencing/odm_georeferenced_model.laz" > "/var/www/data/c7462e02-82ff-440d-b11d-3d46906415e5/odm_georeferencing/odm_georeferenced_model.summary.json"
+[INFO]    running ogr2ogr -overwrite -f GPKG -a_srs "+proj=utm +zone=16 +datum=WGS84 +units=m +no_defs" /var/www/data/c7462e02-82ff-440d-b11d-3d46906415e5/odm_georeferencing/odm_georeferenced_model.bounds.gpkg /var/www/data/c7462e02-82ff-440d-b11d-3d46906415e5/odm_georeferencing/odm_georeferenced_model.bounds.geojson
+[INFO]    Running georeferencing with OpenSfM transformation matrix
+[INFO]    running /code/build/bin/odm_georef -bundleFile /var/www/data/c7462e02-82ff-440d-b11d-3d46906415e5/opensfm/bundle_r000.out -inputTransformFile /var/www/data/c7462e02-82ff-440d-b11d-3d46906415e5/opensfm/geocoords_transformation.txt -inputCoordFile /var/www/data/c7462e02-82ff-440d-b11d-3d46906415e5/odm_georeferencing/coords.txt -inputFile /var/www/data/c7462e02-82ff-440d-b11d-3d46906415e5/odm_texturing/odm_textured_model.obj -outputFile /var/www/data/c7462e02-82ff-440d-b11d-3d46906415e5/odm_texturing/odm_textured_model_geo.obj   -logFile /var/www/data/c7462e02-82ff-440d-b11d-3d46906415e5/odm_georeferencing/odm_georeferencing_log.txt -outputTransformFile /var/www/data/c7462e02-82ff-440d-b11d-3d46906415e5/odm_georeferencing/odm_georeferencing_transform.txt -georefFileOutputPath /var/www/data/c7462e02-82ff-440d-b11d-3d46906415e5/odm_georeferencing/odm_georeferencing_model_geo.txt
+[INFO]    Finished odm_georeferencing stage
+[INFO]    Running odm_dem stage
+[WARNING] Maximum resolution set to GSD - -300% (19.32 cm / pixel, requested resolution was 3.0 cm / pixel)
+[INFO]    Classify: True
+[INFO]    Create DSM: True
+[INFO]    Create DTM: True
+[INFO]    DEM input file /var/www/data/c7462e02-82ff-440d-b11d-3d46906415e5/odm_georeferencing/odm_georeferenced_model.laz found: True
+[INFO]    Classifying /var/www/data/c7462e02-82ff-440d-b11d-3d46906415e5/odm_georeferencing/odm_georeferenced_model.laz using Simple Morphological Filter
+[INFO]    running pdal translate -i /var/www/data/c7462e02-82ff-440d-b11d-3d46906415e5/odm_georeferencing/odm_georeferenced_model.laz -o /var/www/data/c7462e02-82ff-440d-b11d-3d46906415e5/odm_georeferencing/odm_georeferenced_model.laz smrf --filters.smrf.scalar=1.25 --filters.smrf.slope=0.15 --filters.smrf.threshold=0.5 --filters.smrf.window=18.0
+[INFO]    Created ../var/www/data/c7462e02-82ff-440d-b11d-3d46906415e5/odm_georeferencing/odm_georeferenced_model.laz in 0:00:03.844181
+[INFO]    running pdal info --summary /var/www/data/c7462e02-82ff-440d-b11d-3d46906415e5/odm_georeferencing/odm_georeferenced_model.laz > /tmp/tmpqzi1wgf8.json
+[INFO]    Point cloud bounds are [minx: 482597.02, maxx: 482798.96] [miny: 1557376.57, maxy: 1557545.35]
+[INFO]    DEM resolution is (874, 1045), max tile size is 4096, will split DEM generation into 1 tiles
+[INFO]    Generating /var/www/data/c7462e02-82ff-440d-b11d-3d46906415e5/odm_dem/dsm_r0.3864959954748567_x0_y0.tif (max, radius: 0.3864959954748567, resolution: 0.19324799773742835)
+[INFO]    running pdal pipeline -i /tmp/tmpkzbmujb7.json > /dev/null 2>&1
+[INFO]    Generating /var/www/data/c7462e02-82ff-440d-b11d-3d46906415e5/odm_dem/dsm_r0.19324799773742835_x0_y0.tif (max, radius: 0.19324799773742835, resolution: 0.19324799773742835)
+[INFO]    running pdal pipeline -i /tmp/tmpp6biqw4a.json > /dev/null 2>&1
+[INFO]    Generating /var/www/data/c7462e02-82ff-440d-b11d-3d46906415e5/odm_dem/dsm_r0.09662399886871417_x0_y0.tif (max, radius: 0.09662399886871417, resolution: 0.19324799773742835)
+[INFO]    running pdal pipeline -i /tmp/tmp3agg43tn.json > /dev/null 2>&1
+[INFO]    running gdalbuildvrt "/var/www/data/c7462e02-82ff-440d-b11d-3d46906415e5/odm_dem/tiles.vrt" "/var/www/data/c7462e02-82ff-440d-b11d-3d46906415e5/odm_dem/dsm_r0.3864959954748567_x0_y0.tif" "/var/www/data/c7462e02-82ff-440d-b11d-3d46906415e5/odm_dem/dsm_r0.19324799773742835_x0_y0.tif" "/var/www/data/c7462e02-82ff-440d-b11d-3d46906415e5/odm_dem/dsm_r0.09662399886871417_x0_y0.tif"
+0...10...20...30.
+..40...50...60..
+.70...80...90...100 - done.
+[INFO]    running gdal_translate -co NUM_THREADS=1 -co BIGTIFF=IF_SAFER --config GDAL_CACHEMAX 28.25% /var/www/data/c7462e02-82ff-440d-b11d-3d46906415e5/odm_dem/tiles.vrt /var/www/data/c7462e02-82ff-440d-b11d-3d46906415e5/odm_dem/tiles.tmp.tif
+Input file size is 1045, 874
+0
+...10...20...30...40...50
+...60...70...80...90...100 - done.
+[INFO]    running gdal_translate -co NUM_THREADS=1 -co BIGTIFF=IF_SAFER --config GDAL_CACHEMAX 28.25% -outsize 10% 0 /var/www/data/c7462e02-82ff-440d-b11d-3d46906415e5/odm_dem/tiles.tmp.tif /var/www/data/c7462e02-82ff-440d-b11d-3d46906415e5/odm_dem/tiles.small.tif
+Input file size is 1045, 874
+0
+...10...20...30...40...50...60...70...80...90...100 - done.
+[INFO]    running gdal_fillnodata.py -co NUM_THREADS=1 -co BIGTIFF=IF_SAFER --config GDAL_CACHEMAX 28.25% -b 1 -of GTiff /var/www/data/c7462e02-82ff-440d-b11d-3d46906415e5/odm_dem/tiles.small.tif /var/www/data/c7462e02-82ff-440d-b11d-3d46906415e5/odm_dem/tiles.small_filled.tif
+0
+.
+..10...20...30...40...50...60...70...80...90...100 - done.
+[INFO]    running gdalbuildvrt -resolution highest -r bilinear "/var/www/data/c7462e02-82ff-440d-b11d-3d46906415e5/odm_dem/merged.vrt" "/var/www/data/c7462e02-82ff-440d-b11d-3d46906415e5/odm_dem/tiles.small_filled.tif" "/var/www/data/c7462e02-82ff-440d-b11d-3d46906415e5/odm_dem/tiles.tmp.tif"
+0...10...20...30...40...50
+...60...70...80...90...100 - done.
+[INFO]    running gdal_translate -co NUM_THREADS=1 -co TILED=YES -co BIGTIFF=IF_SAFER -co COMPRESS=DEFLATE --config GDAL_CACHEMAX 28.25% /var/www/data/c7462e02-82ff-440d-b11d-3d46906415e5/odm_dem/merged.vrt /var/www/data/c7462e02-82ff-440d-b11d-3d46906415e5/odm_dem/tiles.tif
+Input file size is 1045, 874
+0
+...10...20..
+.30...40...50
+...60...70..
+.80...90...100 - done.
+[INFO]    Starting smoothing...
+[INFO]    Smoothing iteration 1
+[INFO]    Completed smoothing to create ../var/www/data/c7462e02-82ff-440d-b11d-3d46906415e5/odm_dem/dsm.tif in 0:00:00.710270
+[INFO]    Completed dsm.tif in 0:00:09.297319
+[INFO]    Cropping /var/www/data/c7462e02-82ff-440d-b11d-3d46906415e5/odm_dem/dsm.tif
+[INFO]    running gdalwarp -cutline /var/www/data/c7462e02-82ff-440d-b11d-3d46906415e5/odm_georeferencing/odm_georeferenced_model.bounds.gpkg -crop_to_cutline -co TILED=YES -co COMPRESS=DEFLATE -co BLOCKXSIZE=512 -co BLOCKYSIZE=512 -co BIGTIFF=IF_SAFER -co NUM_THREADS=1  /var/www/data/c7462e02-82ff-440d-b11d-3d46906415e5/odm_dem/dsm.original.tif /var/www/data/c7462e02-82ff-440d-b11d-3d46906415e5/odm_dem/dsm.tif --config GDAL_CACHEMAX 28.25%
+Creating output file that is 1016P x 832L.
+Processing /var/www/data/c7462e02-82ff-440d-b11d-3d46906415e5/odm_dem/dsm.original.tif [1/1] : 0
+Using internal nodata values (e.g. -9999) for image /var/www/data/c7462e02-82ff-440d-b11d-3d46906415e5/odm_dem/dsm.original.tif.
+Copying nodata values from source /var/www/data/c7462e02-82ff-440d-b11d-3d46906415e5/odm_dem/dsm.original.tif to destination /var/www/data/c7462e02-82ff-440d-b11d-3d46906415e5/odm_dem/dsm.tif.
+.
+.
+.
+10
+.
+.
+.
+20
+.
+.
+.
+30
+.
+.
+.
+40
+.
+.
+.
+50
+.
+.
+.
+60
+.
+.
+.
+70
+.
+.
+.
+80
+.
+.
+.
+90
+.
+.
+.
+100 - done.
+[INFO]    running pdal info --summary /var/www/data/c7462e02-82ff-440d-b11d-3d46906415e5/odm_georeferencing/odm_georeferenced_model.laz > /tmp/tmpxpg4l1c8.json
+[INFO]    Point cloud bounds are [minx: 482597.02, maxx: 482798.96] [miny: 1557376.57, maxy: 1557545.35]
+[INFO]    DEM resolution is (874, 1045), max tile size is 4096, will split DEM generation into 1 tiles
+[INFO]    Generating /var/www/data/c7462e02-82ff-440d-b11d-3d46906415e5/odm_dem/dtm_r0.3864959954748567_x0_y0.tif (idw, radius: 0.3864959954748567, resolution: 0.19324799773742835)
+[INFO]    running pdal pipeline -i /tmp/tmpa3u5t_q9.json > /dev/null 2>&1
+[INFO]    Generating /var/www/data/c7462e02-82ff-440d-b11d-3d46906415e5/odm_dem/dtm_r0.19324799773742835_x0_y0.tif (idw, radius: 0.19324799773742835, resolution: 0.19324799773742835)
+[INFO]    running pdal pipeline -i /tmp/tmphdtxkvpz.json > /dev/null 2>&1
+[INFO]    Generating /var/www/data/c7462e02-82ff-440d-b11d-3d46906415e5/odm_dem/dtm_r0.09662399886871417_x0_y0.tif (idw, radius: 0.09662399886871417, resolution: 0.19324799773742835)
+[INFO]    running pdal pipeline -i /tmp/tmpdit46206.json > /dev/null 2>&1
+[INFO]    running gdalbuildvrt "/var/www/data/c7462e02-82ff-440d-b11d-3d46906415e5/odm_dem/tiles.vrt" "/var/www/data/c7462e02-82ff-440d-b11d-3d46906415e5/odm_dem/dtm_r0.3864959954748567_x0_y0.tif" "/var/www/data/c7462e02-82ff-440d-b11d-3d46906415e5/odm_dem/dtm_r0.19324799773742835_x0_y0.tif" "/var/www/data/c7462e02-82ff-440d-b11d-3d46906415e5/odm_dem/dtm_r0.09662399886871417_x0_y0.tif"
+0...10...20...30.
+..40...50...60..
+.70...80...90...100 - done.
+[INFO]    running gdal_translate -co NUM_THREADS=1 -co BIGTIFF=IF_SAFER --config GDAL_CACHEMAX 28.25% /var/www/data/c7462e02-82ff-440d-b11d-3d46906415e5/odm_dem/tiles.vrt /var/www/data/c7462e02-82ff-440d-b11d-3d46906415e5/odm_dem/tiles.tmp.tif
+Input file size is 1045, 874
+0
+...10...20...30...40...50
+...60...70...80...90...100 - done.
+[INFO]    running gdal_translate -co NUM_THREADS=1 -co BIGTIFF=IF_SAFER --config GDAL_CACHEMAX 28.25% -outsize 10% 0 /var/www/data/c7462e02-82ff-440d-b11d-3d46906415e5/odm_dem/tiles.tmp.tif /var/www/data/c7462e02-82ff-440d-b11d-3d46906415e5/odm_dem/tiles.small.tif
+Input file size is 1045, 874
+0
+...10...20...30...40...50...60...70...80...90...100 - done.
+[INFO]    running gdal_fillnodata.py -co NUM_THREADS=1 -co BIGTIFF=IF_SAFER --config GDAL_CACHEMAX 28.25% -b 1 -of GTiff /var/www/data/c7462e02-82ff-440d-b11d-3d46906415e5/odm_dem/tiles.small.tif /var/www/data/c7462e02-82ff-440d-b11d-3d46906415e5/odm_dem/tiles.small_filled.tif
+0
+.
+.
+.
+10
+.
+.
+.
+20
+.
+.
+.
+30
+.
+.
+.
+40
+.
+.
+.
+50
+.
+.
+.
+60
+.
+.
+.
+70
+.
+.
+.
+80
+.
+.
+.
+90
+.
+.
+.
+100 - done.
+[INFO]    running gdalbuildvrt -resolution highest -r bilinear "/var/www/data/c7462e02-82ff-440d-b11d-3d46906415e5/odm_dem/merged.vrt" "/var/www/data/c7462e02-82ff-440d-b11d-3d46906415e5/odm_dem/tiles.small_filled.tif" "/var/www/data/c7462e02-82ff-440d-b11d-3d46906415e5/odm_dem/tiles.tmp.tif"
+0...10...20...30...40...50
+...60...70...80...90...100 - done.
+[INFO]    running gdal_translate -co NUM_THREADS=1 -co TILED=YES -co BIGTIFF=IF_SAFER -co COMPRESS=DEFLATE --config GDAL_CACHEMAX 28.25% /var/www/data/c7462e02-82ff-440d-b11d-3d46906415e5/odm_dem/merged.vrt /var/www/data/c7462e02-82ff-440d-b11d-3d46906415e5/odm_dem/tiles.tif
+Input file size is 1045, 874
+0
+...10...20..
+.30...40...50
+...60...70..
+.80...90...100 - done.
+[INFO]    Starting smoothing...
+[INFO]    Smoothing iteration 1
+[INFO]    Completed smoothing to create ../var/www/data/c7462e02-82ff-440d-b11d-3d46906415e5/odm_dem/dtm.tif in 0:00:00.783597
+[INFO]    Completed dtm.tif in 0:00:10.661184
+[INFO]    Cropping /var/www/data/c7462e02-82ff-440d-b11d-3d46906415e5/odm_dem/dtm.tif
+[INFO]    running gdalwarp -cutline /var/www/data/c7462e02-82ff-440d-b11d-3d46906415e5/odm_georeferencing/odm_georeferenced_model.bounds.gpkg -crop_to_cutline -co TILED=YES -co COMPRESS=DEFLATE -co BLOCKXSIZE=512 -co BLOCKYSIZE=512 -co BIGTIFF=IF_SAFER -co NUM_THREADS=1  /var/www/data/c7462e02-82ff-440d-b11d-3d46906415e5/odm_dem/dtm.original.tif /var/www/data/c7462e02-82ff-440d-b11d-3d46906415e5/odm_dem/dtm.tif --config GDAL_CACHEMAX 28.25%
+Creating output file that is 1016P x 832L.
+Processing /var/www/data/c7462e02-82ff-440d-b11d-3d46906415e5/odm_dem/dtm.original.tif [1/1] : 0
+Using internal nodata values (e.g. -9999) for image /var/www/data/c7462e02-82ff-440d-b11d-3d46906415e5/odm_dem/dtm.original.tif.
+Copying nodata values from source /var/www/data/c7462e02-82ff-440d-b11d-3d46906415e5/odm_dem/dtm.original.tif to destination /var/www/data/c7462e02-82ff-440d-b11d-3d46906415e5/odm_dem/dtm.tif.
+.
+.
+.
+10
+.
+.
+.
+20
+.
+.
+.
+30
+.
+.
+.
+40
+.
+.
+.
+50
+.
+.
+.
+60
+.
+.
+.
+70
+.
+.
+.
+80
+.
+.
+.
+90
+.
+.
+.
+100 - done.
+[INFO]    Finished odm_dem stage
+[INFO]    Running odm_orthophoto stage
+[WARNING] Maximum resolution set to GSD - 10.0% (4.35 cm / pixel, requested resolution was 4.0 cm / pixel)
+[INFO]    running /code/build/bin/odm_orthophoto -inputFiles /var/www/data/c7462e02-82ff-440d-b11d-3d46906415e5/odm_texturing_25d/odm_textured_model_geo.obj -logFile /var/www/data/c7462e02-82ff-440d-b11d-3d46906415e5/odm_orthophoto/odm_orthophoto_log.txt -outputFile /var/www/data/c7462e02-82ff-440d-b11d-3d46906415e5/odm_orthophoto/odm_orthophoto_render.tif -resolution 22.998657147709437  -outputCornerFile /var/www/data/c7462e02-82ff-440d-b11d-3d46906415e5/odm_orthophoto/odm_orthophoto_corners.txt
+[INFO]    Creating GeoTIFF
+[INFO]    running gdal_translate -a_ullr 482596.9640679421 1557545.4263438126 482798.86258936545 1557376.6809290787 -co TILED=YES -co COMPRESS=DEFLATE -co PREDICTOR=2 -co BIGTIFF=IF_SAFER -co BLOCKXSIZE=512 -co BLOCKYSIZE=512 -co NUM_THREADS=1 -a_srs "+proj=utm +zone=16 +datum=WGS84 +units=m +no_defs +type=crs" --config GDAL_CACHEMAX 30.3% --config GDAL_TIFF_INTERNAL_MASK YES /var/www/data/c7462e02-82ff-440d-b11d-3d46906415e5/odm_orthophoto/odm_orthophoto_render.tif /var/www/data/c7462e02-82ff-440d-b11d-3d46906415e5/odm_orthophoto/odm_orthophoto.tif > /var/www/data/c7462e02-82ff-440d-b11d-3d46906415e5/odm_orthophoto/gdal_translate_log.txt
+[INFO]    Cropping /var/www/data/c7462e02-82ff-440d-b11d-3d46906415e5/odm_orthophoto/odm_orthophoto.tif
+[INFO]    running gdalwarp -cutline /var/www/data/c7462e02-82ff-440d-b11d-3d46906415e5/odm_georeferencing/odm_georeferenced_model.bounds.gpkg -crop_to_cutline -co TILED=YES -co COMPRESS=DEFLATE -co PREDICTOR=2 -co BIGTIFF=IF_SAFER -co BLOCKXSIZE=512 -co BLOCKYSIZE=512 -co NUM_THREADS=1 -dstalpha /var/www/data/c7462e02-82ff-440d-b11d-3d46906415e5/odm_orthophoto/odm_orthophoto.original.tif /var/www/data/c7462e02-82ff-440d-b11d-3d46906415e5/odm_orthophoto/odm_orthophoto.tif --config GDAL_CACHEMAX 30.3%
+Using band 4 of source image as alpha.
+Creating output file that is 4518P x 3705L.
+Processing /var/www/data/c7462e02-82ff-440d-b11d-3d46906415e5/odm_orthophoto/odm_orthophoto.original.tif [1/1] : 0
+.
+.
+.
+10
+.
+.
+.
+20
+.
+.
+.
+30
+.
+.
+.
+40
+.
+.
+.
+50
+.
+.
+.
+60
+.
+.
+.
+70
+.
+.
+.
+80
+.
+.
+.
+90
+.
+.
+.
+100 - done.
+[INFO]    Finished odm_orthophoto stage
+[INFO]    Running odm_report stage
+[INFO]    Exporting shots.geojson
+[INFO]    Wrote /var/www/data/c7462e02-82ff-440d-b11d-3d46906415e5/odm_report/shots.geojson
+[INFO]    running pdal info --dimensions "X,Y,Z" "/var/www/data/c7462e02-82ff-440d-b11d-3d46906415e5/odm_georeferencing/odm_georeferenced_model.laz" > "/var/www/data/c7462e02-82ff-440d-b11d-3d46906415e5/odm_georeferencing/odm_georeferenced_model.info.json"
+[INFO]    running pdal translate -i "/var/www/data/c7462e02-82ff-440d-b11d-3d46906415e5/odm_georeferencing/odm_georeferenced_model.laz" -o "/var/www/data/c7462e02-82ff-440d-b11d-3d46906415e5/opensfm/stats/overlap.tif" --writer gdal --writers.gdal.resolution=0.1442428571428588 --writers.gdal.data_type=uint8_t --writers.gdal.dimension=UserData --writers.gdal.output_type=max --writers.gdal.radius=0.2039902048468758
+[INFO]    Cropping /var/www/data/c7462e02-82ff-440d-b11d-3d46906415e5/opensfm/stats/overlap.tif
+[INFO]    running gdalwarp -cutline /var/www/data/c7462e02-82ff-440d-b11d-3d46906415e5/odm_georeferencing/odm_georeferenced_model.bounds.gpkg -crop_to_cutline -co TILED=YES -co COMPRESS=DEFLATE -co PREDICTOR=2 -co BIGTIFF=IF_SAFER -co BLOCKXSIZE=512 -co BLOCKYSIZE=512 -co NUM_THREADS=1  /var/www/data/c7462e02-82ff-440d-b11d-3d46906415e5/opensfm/stats/overlap.original.tif /var/www/data/c7462e02-82ff-440d-b11d-3d46906415e5/opensfm/stats/overlap.tif --config GDAL_CACHEMAX 30.3%
+Creating output file that is 1361P x 1116L.
+Processing /var/www/data/c7462e02-82ff-440d-b11d-3d46906415e5/opensfm/stats/overlap.original.tif [1/1] : 0
+Using internal nodata values (e.g. 255) for image /var/www/data/c7462e02-82ff-440d-b11d-3d46906415e5/opensfm/stats/overlap.original.tif.
+Copying nodata values from source /var/www/data/c7462e02-82ff-440d-b11d-3d46906415e5/opensfm/stats/overlap.original.tif to destination /var/www/data/c7462e02-82ff-440d-b11d-3d46906415e5/opensfm/stats/overlap.tif.
+.
+.
+.
+10
+.
+.
+.
+20
+.
+.
+.
+30
+.
+.
+.
+40
+.
+.
+.
+50
+.
+.
+.
+60
+.
+.
+.
+70
+.
+.
+.
+80
+.
+.
+.
+90
+.
+.
+.
+100 - done.
+[INFO]    running gdaldem color-relief "/var/www/data/c7462e02-82ff-440d-b11d-3d46906415e5/opensfm/stats/overlap.tif" "/code/opendm/report/overlap_color_map.txt" "/var/www/data/c7462e02-82ff-440d-b11d-3d46906415e5/opensfm/stats/overlap.png" -of PNG -alpha
+0
+.
+.
+.
+10
+.
+.
+.
+20
+.
+.
+.
+30
+.
+.
+.
+40
+.
+.
+.
+50
+.
+.
+.
+60
+.
+.
+.
+70
+.
+.
+.
+80
+.
+.
+.
+90
+.
+.
+.
+100 - done.
+[INFO]    running gdal_translate -of png "/var/www/data/c7462e02-82ff-440d-b11d-3d46906415e5/odm_orthophoto/odm_orthophoto.tif" "/var/www/data/c7462e02-82ff-440d-b11d-3d46906415e5/opensfm/stats/ortho.png" -outsize 1400 0  --config GDAL_CACHEMAX 30.3%
+Input file size is 4518, 3705
+0
+.
+.
+.
+10
+.
+.
+.
+20
+.
+.
+.
+30
+.
+.
+.
+40
+.
+.
+.
+50
+.
+.
+.
+60
+.
+.
+.
+70
+.
+.
+.
+80
+.
+.
+.
+90
+.
+.
+.
+100 - done.
+[INFO]    running gdal_translate -outsize 1400 0 "/var/www/data/c7462e02-82ff-440d-b11d-3d46906415e5/odm_dem/dsm.tif" "/var/www/data/c7462e02-82ff-440d-b11d-3d46906415e5/odm_dem/dsm.preview.tif" --config GDAL_CACHEMAX 30.3%
+Input file size is 1016, 832
+0
+...10...20...30...40...50
+...60...70...80...90...100 - done.
+[INFO]    Computing raster stats for /var/www/data/c7462e02-82ff-440d-b11d-3d46906415e5/odm_dem/dsm.preview.tif
+[INFO]    running gdaldem color-relief "/var/www/data/c7462e02-82ff-440d-b11d-3d46906415e5/odm_dem/dsm.preview.tif" "/code/opendm/tiles/color_relief.txt" "/var/www/data/c7462e02-82ff-440d-b11d-3d46906415e5/odm_dem/dsm.previewcolor.tif" -alpha -co ALPHA=YES
+0
+.
+.
+.
+10
+.
+.
+.
+20
+.
+.
+.
+30
+.
+.
+.
+40
+.
+.
+.
+50
+.
+.
+.
+60
+.
+.
+.
+70
+.
+.
+.
+80
+.
+.
+.
+90
+.
+.
+.
+100 - done.
+[INFO]    running gdaldem hillshade "/var/www/data/c7462e02-82ff-440d-b11d-3d46906415e5/odm_dem/dsm.preview.tif" "/var/www/data/c7462e02-82ff-440d-b11d-3d46906415e5/odm_dem/dsm.previewhillshade.tif" -z 1.0 -s 1.0 -az 315.0 -alt 45.0
+0
+.
+.
+.
+10
+.
+.
+.
+20
+.
+.
+.
+30
+.
+.
+.
+40
+.
+.
+.
+50
+.
+.
+.
+60
+.
+.
+.
+70
+.
+.
+.
+80
+.
+.
+.
+90
+.
+.
+.
+100 - done.
+[INFO]    running python3 "/code/opendm/tiles/hsv_merge.py" "/var/www/data/c7462e02-82ff-440d-b11d-3d46906415e5/odm_dem/dsm.previewcolor.tif" "/var/www/data/c7462e02-82ff-440d-b11d-3d46906415e5/odm_dem/dsm.previewhillshade.tif" "/var/www/data/c7462e02-82ff-440d-b11d-3d46906415e5/odm_dem/dsm.previewcolored_hillshade.tif"
+0
+.
+.
+.
+10
+.
+.
+.
+20
+.
+.
+.
+30
+.
+.
+.
+40
+.
+.
+.
+50
+.
+.
+.
+60
+.
+.
+.
+70
+.
+.
+.
+80
+.
+.
+.
+90
+.
+.
+.
+100 - done.
+[INFO]    running gdal_translate -outsize 1400 0 -of png "/var/www/data/c7462e02-82ff-440d-b11d-3d46906415e5/odm_dem/dsm.previewcolored_hillshade.tif" "/var/www/data/c7462e02-82ff-440d-b11d-3d46906415e5/opensfm/stats/dsm.png" --config GDAL_CACHEMAX 30.3%
+Input file size is 1400, 1146
+0
+.
+.
+.
+10
+.
+.
+.
+20
+.
+.
+.
+30
+.
+.
+.
+40
+.
+.
+.
+50
+.
+.
+.
+60
+.
+.
+.
+70
+.
+.
+.
+80
+.
+.
+.
+90
+.
+.
+.
+100 - done.
+[INFO]    running gdal_translate -outsize 1400 0 "/var/www/data/c7462e02-82ff-440d-b11d-3d46906415e5/odm_dem/dtm.tif" "/var/www/data/c7462e02-82ff-440d-b11d-3d46906415e5/odm_dem/dtm.preview.tif" --config GDAL_CACHEMAX 30.3%
+Input file size is 1016, 832
+0
+...10...20...30...40...50
+...60...70...80...90...100 - done.
+[INFO]    Computing raster stats for /var/www/data/c7462e02-82ff-440d-b11d-3d46906415e5/odm_dem/dtm.preview.tif
+[INFO]    running gdaldem color-relief "/var/www/data/c7462e02-82ff-440d-b11d-3d46906415e5/odm_dem/dtm.preview.tif" "/code/opendm/tiles/color_relief.txt" "/var/www/data/c7462e02-82ff-440d-b11d-3d46906415e5/odm_dem/dtm.previewcolor.tif" -alpha -co ALPHA=YES
+0
+.
+.
+.
+10
+.
+.
+.
+20
+.
+.
+.
+30
+.
+.
+.
+40
+.
+.
+.
+50
+.
+.
+.
+60
+.
+.
+.
+70
+.
+.
+.
+80
+.
+.
+.
+90
+.
+.
+.
+100 - done.
+[INFO]    running gdaldem hillshade "/var/www/data/c7462e02-82ff-440d-b11d-3d46906415e5/odm_dem/dtm.preview.tif" "/var/www/data/c7462e02-82ff-440d-b11d-3d46906415e5/odm_dem/dtm.previewhillshade.tif" -z 1.0 -s 1.0 -az 315.0 -alt 45.0
+0
+.
+.
+.
+10
+.
+.
+.
+20
+.
+.
+.
+30
+.
+.
+.
+40
+.
+.
+.
+50
+.
+.
+.
+60
+.
+.
+.
+70
+.
+.
+.
+80
+.
+.
+.
+90
+.
+.
+.
+100 - done.
+[INFO]    running python3 "/code/opendm/tiles/hsv_merge.py" "/var/www/data/c7462e02-82ff-440d-b11d-3d46906415e5/odm_dem/dtm.previewcolor.tif" "/var/www/data/c7462e02-82ff-440d-b11d-3d46906415e5/odm_dem/dtm.previewhillshade.tif" "/var/www/data/c7462e02-82ff-440d-b11d-3d46906415e5/odm_dem/dtm.previewcolored_hillshade.tif"
+0
+.
+.
+.
+10
+.
+.
+.
+20
+.
+.
+.
+30
+.
+.
+.
+40
+.
+.
+.
+50
+.
+.
+.
+60
+.
+.
+.
+70
+.
+.
+.
+80
+.
+.
+.
+90
+.
+.
+.
+100 - done.
+[INFO]    running gdal_translate -outsize 1400 0 -of png "/var/www/data/c7462e02-82ff-440d-b11d-3d46906415e5/odm_dem/dtm.previewcolored_hillshade.tif" "/var/www/data/c7462e02-82ff-440d-b11d-3d46906415e5/opensfm/stats/dtm.png" --config GDAL_CACHEMAX 30.3%
+Input file size is 1400, 1146
+0
+.
+.
+.
+10
+.
+.
+.
+20
+.
+.
+.
+30
+.
+.
+.
+40
+.
+.
+.
+50
+.
+.
+.
+60
+.
+.
+.
+70
+.
+.
+.
+80
+.
+.
+.
+90
+.
+.
+.
+100 - done.
+[INFO]    Exporting report to /var/www/data/c7462e02-82ff-440d-b11d-3d46906415e5/odm_report/report.pdf
+2021-02-21 22:15:45,354 DEBUG: Final doc sections size summary:
+2021-02-21 22:15:45,354 DEBUG: - header.size: 9.0B
+2021-02-21 22:15:45,355 DEBUG: - pages.size: 4.0KiB
+2021-02-21 22:15:45,355 DEBUG: - resources.fonts.size: 199.0B
+2021-02-21 22:15:45,376 DEBUG: - resources.images.size: 13.0MiB
+2021-02-21 22:15:45,376 DEBUG: - resources.dict.size: 227.0B
+2021-02-21 22:15:45,377 DEBUG: - info.size: 55.0B
+2021-02-21 22:15:45,377 DEBUG: - catalog.size: 104.0B
+2021-02-21 22:15:45,377 DEBUG: - xref.size: 790.0B
+2021-02-21 22:15:45,377 DEBUG: - trailer.size: 68.0B
+[INFO]    Finished odm_report stage
+[INFO]    No more stages to run
+[INFO]    MMMMMMMMMMMNNNMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMNNNMMMMMMMMMMM
+[INFO]    MMMMMMdo:..---../sNMMMMMMMMMMMMMMMMMMMMMMMMMMNs/..---..:odMMMMMM
+[INFO]    MMMMy-.odNMMMMMNy/`/mMMMMMMMMMMMMMMMMMMMMMMm/`/hNMMMMMNdo.-yMMMM
+[INFO]    MMN/`sMMMMMMMMMNNMm/`yMMMMMMMMMMMMMMMMMMMMy`/mMNNMMMMMMMMNs`/MMM
+[INFO]    MM/ hMMMMMMMMNs.+MMM/ dMMMMMMMMMMMMMMMMMMh +MMM+.sNMMMMMMMMh +MM
+[INFO]    MN /MMMMMMNo/./mMMMMN :MMMMMMMMMMMMMMMMMM: NMMMMm/./oNMMMMMM: NM
+[INFO]    Mm +MMMMMN+ `/MMMMMMM`-MMMMMMMMMMMMMMMMMM-`MMMMMMM:` oNMMMMM+ mM
+[INFO]    MM..NMMNs./mNMMMMMMMy sMMMMMMMMMMMMMMMMMMo hMMMMMMMNm/.sNMMN`-MM
+[INFO]    MMd`:mMNomMMMMMMMMMy`:MMMMMMMNmmmmNMMMMMMN:`hMMMMMMMMMdoNMm-`dMM
+[INFO]    MMMm:.omMMMMMMMMNh/  sdmmho/.`..`-``-/sddh+  /hNMMMMMMMMdo.:mMMM
+[INFO]    MMMMMd+--/osss+:-:/`  ```:- .ym+ hmo``:-`   `+:-:ossso/-:+dMMMMM
+[INFO]    MMMMMMMNmhysosydmNMo   /ds`/NMM+ hMMd..dh.  sMNmdysosyhmNMMMMMMM
+[INFO]    MMMMMMMMMMMMMMMMMMMs .:-:``hmmN+ yNmds -:.:`-NMMMMMMMMMMMMMMMMMM
+[INFO]    MMMMMMMMMMMMMMMMMMN.-mNm- //:::. -:://: +mMd`-NMMMMMMMMMMMMMMMMM
+[INFO]    MMMMMMMMMMMMMMMMMM+ dMMN -MMNNN+ yNNNMN :MMMs sMMMMMMMMMMMMMMMMM
+[INFO]    MMMMMMMMMMMMMMMMMM`.mmmy /mmmmm/ smmmmm``mmmh :MMMMMMMMMMMMMMMMM
+[INFO]    MMMMMMMMMMMMMMMMMM``:::- ./////. -:::::` :::: -MMMMMMMMMMMMMMMMM
+[INFO]    MMMMMMMMMMMMMMMMMM:`mNNd /NNNNN+ hNNNNN .NNNy +MMMMMMMMMMMMMMMMM
+[INFO]    MMMMMMMMMMMMMMMMMMd`/MMM.`ys+//. -/+oso +MMN.`mMMMMMMMMMMMMMMMMM
+[INFO]    MMMMMMMMMMMMMMMMMMMy /o:- `oyhd/ shys+ `-:s-`hMMMMMMMMMMMMMMMMMM
+[INFO]    MMMMMMMMNmdhhhdmNMMM`  +d+ sMMM+ hMMN:`hh-  sMMNmdhhhdmNMMMMMMMM
+[INFO]    MMMMMms:::/++//::+ho    .+- /dM+ hNh- +/`   -h+:://++/::/smMMMMM
+[INFO]    MMMN+./hmMMMMMMNds-  ./oso:.``:. :-``.:os+-  -sdNMMMMMMmy:.oNMMM
+[INFO]    MMm-.hMNhNMMMMMMMMNo`/MMMMMNdhyyyyhhdNMMMM+`oNMMMMMMMMNhNMh.-mMM
+[INFO]    MM:`mMMN/-sNNMMMMMMMo yMMMMMMMMMMMMMMMMMMy sMMMMMMMNNs-/NMMm`:MM
+[INFO]    Mm /MMMMMd/.-oMMMMMMN :MMMMMMMMMMMMMMMMMM-`MMMMMMMo-./dMMMMM/ NM
+[INFO]    Mm /MMMMMMm:-`sNMMMMN :MMMMMMMMMMMMMMMMMM-`MMMMMNs`-/NMMMMMM/ NM
+[INFO]    MM:`mMMMMMMMMd/-sMMMo yMMMMMMMMMMMMMMMMMMy sMMMs-/dMMMMMMMMd`:MM
+[INFO]    MMm-.hMMMMMMMMMdhMNo`+MMMMMMMMMMMMMMMMMMMM+`oNMhdMMMMMMMMMh.-mMM
+[INFO]    MMMNo./hmNMMMMMNms--yMMMMMMMMMMMMMMMMMMMMMMy--smNMMMMMNmy/.oNMMM
+[INFO]    MMMMMms:-:/+++/:-+hMMMMMMMMMMMMMMMMMMMMMMMMMNh+-:/+++/:-:smMMMMM
+[INFO]    MMMMMMMMNdhhyhdmMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMmdhyhhmNMMMMMMMM
+[INFO]    MMMMMMMMMMMMMMMNNNNNMMMMMMNNNNNNMMMMMMMMNNMMMMMMMNNMMMMMMMMMMMMM
+[INFO]    MMMMMMMMMMMMMh/-...-+dMMMm......:+hMMMMs../MMMMMo..sMMMMMMMMMMMM
+[INFO]    MMMMMMMMMMMM/  /yhy-  sMMm  -hhy/  :NMM+   oMMMy   /MMMMMMMMMMMM
+[INFO]    MMMMMMMMMMMy  /MMMMN`  NMm  /MMMMo  +MM: .` yMd``` :MMMMMMMMMMMM
+[INFO]    MMMMMMMMMMM+  sMMMMM:  hMm  /MMMMd  -MM- /s `h.`d- -MMMMMMMMMMMM
+[INFO]    MMMMMMMMMMMs  +MMMMM.  mMm  /MMMMy  /MM. +M/   yM: `MMMMMMMMMMMM
+[INFO]    MMMMMMMMMMMN-  smNm/  +MMm  :NNdo` .mMM` oMM+/yMM/  MMMMMMMMMMMM
+[INFO]    MMMMMMMMMMMMNo-    `:yMMMm      `:sNMMM` sMMMMMMM+  NMMMMMMMMMMM
+[INFO]    MMMMMMMMMMMMMMMNmmNMMMMMMMNmmmmNMMMMMMMNNMMMMMMMMMNNMMMMMMMMMMMM
+[INFO]    ODM app finished - Sun Feb 21 22:15:45  2021
+Postprocessing: /var/www/data/c7462e02-82ff-440d-b11d-3d46906415e5
+Found point cloud: odm_georeferencing/odm_georeferenced_model.laz
+
+Scanning input
+
+1/1: odm_georeferencing/odm_georeferenced_model.laz
+
+Determined SRS from an input file
+
+
+
+Entwine Version: 2.1.0
+EPT Version: 1.0.0
+Input:
+	File: odm_georeferencing/odm_georeferenced_model.laz
+
+	Total points: 1,198,721
+
+	Density estimate (per square unit): 35.1702
+
+	Threads: [1, 4]
+
+Output:
+	Path: entwine_pointcloud/
+	Data type: laszip
+	Hierarchy type: json
+	Sleep count: 2,097,152
+
+	Scale: 0.01
+
+	Offset: (482698, 1557461, 1100)
+
+Metadata:
+	SRS: EPSG:32616
+	Bounds: [(482597, 1557376, 1085), (482799, 1557546, 1115)]
+	Cube: [(482596, 1557359, 998), (482800, 1557563, 1202)]
+	Storing dimensions: [
+                X:int32, Y:int32, Z:int32, Intensity:uint16, ReturnNumber:uint8,
+                NumberOfReturns:uint8, ScanDirectionFlag:uint8,
+                EdgeOfFlightLine:uint8, Classification:uint8, ScanAngleRank:float,
+                UserData:uint8, PointSourceId:uint16, GpsTime:double, Red:uint16,
+                Green:uint16, Blue:uint16, OriginId:uint32
+	]
+Build parameters:
+	Span: 128
+	Resolution 2D: 128 * 128 = 16,384
+	Resolution 3D: 128 * 128 * 128 = 2,097,152
+	Maximum node size: 65,536
+	Minimum node size: 16,384
+	Cache size: 64
+
+
+Adding 0 - odm_georeferencing/odm_georeferenced_model.laz
+
+	Pushes complete - joining...
+
+	Done 0
+
+Reawakened: 0
+Saving registry...
+
+Saving metadata...
+
+
+Index completed in 00:06.
+
+Save complete.
+	Points inserted: 1,198,721
+
+Entwine point cloud is already built.
+Postprocessing: done (•̀ᴗ•́)و!
